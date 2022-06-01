@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+
+}
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5%;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+}
+.title li {
+    margin-left: 20px;
+}
+.title a {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.title-menu {
+    display: flex;
+
+}
+.title-login {
+    display: flex;
+}
