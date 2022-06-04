@@ -129,7 +129,7 @@ input[id="menuicon"]:checked+label+div {
     left: 0;
 
 }
-/* 슬라디으 바 끝 */
+/* 슬라이드 바 끝 */
 .title-menu {
     display: flex;
     padding: 10px;
@@ -237,18 +237,21 @@ input[id="menuicon"]:checked+label+div {
 .map-button{
     color: rgba(0, 0, 0, 0.374);
     background-color: rgba(0, 0, 0, 0);
-    font-size: 3rem;
+    font-size: 2.7rem;
     font-weight: bolder;
     transition: .5s;
     position: absolute;
     width: 260px;
     margin-top: 50px;
 
-    
+    padding: 10px;
+    text-align: center;
 
 }
 .map-button:hover {
     color: black;
+    
+    
 }
 .map-button span {
     display: block;
@@ -258,7 +261,7 @@ input[id="menuicon"]:checked+label+div {
 .map-button span:nth-child(1) {
     left: 0;
     bottom: 0;
-    width: 1px;
+    width: 2px;
     height: 100%;
     transform: scaleY(0);
     transform-origin: top;
@@ -277,7 +280,7 @@ input[id="menuicon"]:checked+label+div {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 1px;
+    height: 2px;
     transform: scaleY(0);
     transform-origin: right;
     transition: transform 0.5s;
