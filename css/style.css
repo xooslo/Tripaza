@@ -203,25 +203,13 @@ input[id="menuicon"]:checked+label+div {
     }
     
 }
+
 #visual-container {
     background-image: url(/images/global.JPG);
     background-position-y: 100px;
     background-position-x: center;
     background-repeat: no-repeat;
     height: 1100px;
-}
-
-.visual-font hr {
-    height: 0.1px;
-    margin-top: 5%;
-    margin-left: -400px;
-    width: 135%;
-
-}
-
-hr {
-    opacity: 0.4;
-
 }
 
 .visual-font {
@@ -234,7 +222,7 @@ hr {
     animation: font-slider 1s ease-out;
 
 }
-
+/* 버튼 디자인 시작 */
 .map-button{
     color: rgba(0, 0, 0, 0.374);
     background-color: rgba(0, 0, 0, 0);
@@ -332,13 +320,9 @@ hr {
 }
 
 
-button {
-    padding: 100px;
-}
+/* 버튼 디자인 끝 */
 
-.visual-container .visual-font .map-button:hover {
-    color: rgb(255, 0, 0);
-}
+/* 로그인 페이지 시작 */
 #login_container {
     position: absolute;
     left: 50%;
@@ -443,6 +427,7 @@ input
     margin-right: 80px;
     
 }
+/* 로그인 페이지 끝 */
 /* .japan {
     width: 100%;
     background-color: rgba(179, 179, 179, 0.357);
