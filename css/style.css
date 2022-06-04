@@ -199,9 +199,20 @@ input[id="menuicon"]:checked+label+div {
         opacity: 0;
     }
     to {
-        left: 250px;
+        left: 8%;
+        opacity: 1;
     }
     
+}
+@keyframes font-disapper {
+    from {
+        left: 8%;
+        opacity: 1;
+    }
+    to {
+        left: -280px;
+        opacity: 0;
+    }
 }
 
 #visual-container {
@@ -209,15 +220,15 @@ input[id="menuicon"]:checked+label+div {
     background-position-y: 100px;
     background-position-x: center;
     background-repeat: no-repeat;
-    height: 1300px;
+    height: 1900px;
 }
 
 .visual-font {
     position: absolute;
     font-size: 5rem;
     top: 280px;
-    left: 250px;
-    color: black;   
+    left: 8%;
+    color: black;
     font-family: 'Open Sans', sans-serif;
     animation: font-slider 1s ease-out;
 
@@ -230,8 +241,8 @@ input[id="menuicon"]:checked+label+div {
     font-weight: bolder;
     transition: .5s;
     position: absolute;
-   width: 260px;
-   margin-top: 50px;
+    width: 260px;
+    margin-top: 50px;
 
     
 
