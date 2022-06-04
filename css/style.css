@@ -192,19 +192,22 @@ input[id="menuicon"]:checked+label+div {
     transition: all .3s ease;
     
 }
-
-.visual-container {
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
-
+@keyframes font-slider {
+    from {
+        left: -280px;
+        opacity: 0;
+    }
+    to {
+        left: 250px;
+    }
+    
 }
-
-.visual-container img {
-    width: 80%;
-    height: 80vh;
-     margin-top: 105px;
-
+#visual-container {
+    background-image: url(/images/global.JPG);
+    background-position-y: 100px;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    height: 1100px;
 }
 
 .visual-font hr {
@@ -224,9 +227,10 @@ hr {
     position: absolute;
     font-size: 5rem;
     top: 280px;
-    right: 70%;
+    left: 250px;
     color: black;   
     font-family: 'Open Sans', sans-serif;
+    animation: font-slider 1s ease-out;
 
 }
 
