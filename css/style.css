@@ -17,7 +17,7 @@ a {
     color: black;
 
 }
-
+/* header 부분 시작 */
 .title {
     display: flex;
     justify-content: space-between;
@@ -34,7 +34,7 @@ a {
     margin-left: 15px;
 
 }
-
+/* 슬라이드 바 시작*/
 input[id="menuicon"] {
     display: none;
 
@@ -129,7 +129,7 @@ input[id="menuicon"]:checked+label+div {
     left: 0;
 
 }
-
+/* 슬라디으 바 끝 */
 .title-menu {
     display: flex;
     padding: 10px;
@@ -192,6 +192,7 @@ input[id="menuicon"]:checked+label+div {
     transition: all .8s ease;
     
 }
+/* header 부분 끝 */
 @keyframes font-slider {
     from {
         left: -280px;
@@ -235,8 +236,8 @@ hr {
 }
 
 .map-button{
-    color: rgba(0, 0, 0, 0.332);bottom;
-    background-color: rgba(129, 129, 129, 0.257);
+    color: rgba(0, 0, 0, 0.374);
+    background-color: rgba(0, 0, 0, 0);
     font-size: 3rem;
     font-weight: bolder;
     transition: .5s;
