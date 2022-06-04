@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Times New Roman', Times, serif;
 }
 li {
     list-style: none;
@@ -11,6 +12,8 @@ a {
     text-decoration: none;
     color: black;
 }
+
+/* header 부분 시작 */
 .title {
     display: flex;
     justify-content: space-around;
@@ -20,6 +23,8 @@ a {
     position: fixed;
     width: 100%;
 }
+
+/* 슬라이드 바 부분 시작 */
 .sidebar input + label {
     margin-left: 85px;
 
@@ -107,9 +112,8 @@ input[id="menuicon"]:checked ~ .title > .title-logo > h1 {
 .sidebar h2 {
     text-align: center;
     margin-top: 50px;
-
-    
 }
+
 div[class="sidebar"] {
     width: 370px;
     height: 100%;
@@ -122,11 +126,11 @@ div[class="sidebar"] {
 
 }
 
-
 input[id="menuicon"]:checked+label+div {
     left: 0;
 
 }
+/* 슬라이드 바 끝 */
 
 .title-menu {
     display: flex;

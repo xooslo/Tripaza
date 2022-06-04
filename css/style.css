@@ -8,14 +8,11 @@
 
 li {
     list-style: none;
-        
-
 }
 
 a {
     text-decoration: none;
     color: black;
-
 }
 /* header 부분 시작 */
 .title {
@@ -129,7 +126,9 @@ input[id="menuicon"]:checked+label+div {
     left: 0;
 
 }
-/* 슬라디으 바 끝 */
+/* 슬라이드 바 끝 */
+
+
 .title-menu {
     display: flex;
     padding: 10px;
@@ -341,9 +340,6 @@ input[id="menuicon"]:checked+label+div {
     width: 100%;
     text-align: center;
     transform: translate(-50% , -75%);
-   
-   
-
 }
 .login_title {
     margin-bottom: 30px;
@@ -354,8 +350,6 @@ input[id="menuicon"]:checked+label+div {
 }
 .id_password input:nth-of-type(2){
     margin-top: 10px;
-    
-
 }
 .id_password input {
     padding: 20px;
@@ -399,7 +393,6 @@ input[id="menuicon"]:checked+label+div {
 }
 .btn_login:hover {
     cursor: pointer;
-
 }
 .btn_join:hover {
     cursor: pointer;
@@ -410,6 +403,7 @@ input[id="menuicon"]:checked+label+div {
     color: black;
 
 }
+/*
 .join_container {
     text-align: center;
     line-height: 30px;
@@ -421,7 +415,7 @@ input[id="menuicon"]:checked+label+div {
     margin-bottom: 30px;
 
 }
-input 
+
 .join_container input[type = "text"] {
     opacity: 0.5;
     padding: 15px;
@@ -438,7 +432,80 @@ input
     margin-right: 80px;
     
 }
+*/
 /* 로그인 페이지 끝 */
+
+/* 회원가입 페이지 시작 */
+
+#join_container {
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    width: 150%;
+    height: 50%;
+    text-align: center;
+    transform: translate(-50% , -75%);
+}
+
+.join_title {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.join_title h2 {
+    font-weight: bolder;
+}
+
+.info_form input {
+    padding: 20px;
+    opacity: 0.5;
+    width: 15%;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.322);
+}
+
+.info_form select {
+    padding: 20px;
+    opacity: 0.5;
+    width: 15%;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.322);
+}
+
+.user_Bday{
+    width: 40%;
+}
+
+.submit button {
+    padding: 20px;
+    width: 15%;
+    border: 1px solid #0151E5;
+}
+
+.ubmit button:nth-of-type(2) {
+    margin-top: 10px;
+    background-color: white;
+    color: #5F00A1;
+    font-size: 1rem;
+}
+
+.join_submit {
+    background-color: white;
+    margin-top: 10px;
+}
+
+.join_submit:hover {
+    cursor: pointer;
+    background-color: #0151E5;
+    color: white;
+}
+
+.submit .login{
+    padding-bottom: 50px;
+}
+
+/* 회원가입 페이지 끝 */
+
 /* .japan {
     width: 100%;
     background-color: rgba(179, 179, 179, 0.357);
