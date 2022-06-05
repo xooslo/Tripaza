@@ -8,7 +8,8 @@
 * {
     box-sizing: border-box;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
+    scroll-behavior: smooth;
 }
 
 li {
@@ -21,20 +22,30 @@ a {
     color: black;
 }
 
+body {
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
 
 /* header 부분 시작 */
 .title {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 1.5%;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.384);
-    position: relative;
+    position: absolute;
     width: 100%;
+    height: 100px;
+    z-index: 10;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.185);
+
 }
 
 
-.text-logo{
+.text-logo {
     text-decoration: none;
     font-size: xx-large;
     font-weight: bolder;
@@ -44,13 +55,13 @@ a {
 
 }
 
-.text-logo:link{
+.text-logo:link {
     text-decoration: none;
     color: #000;
 
 }
 
-.text-logo:hover{
+.text-logo:hover {
     text-decoration: none;
     color: #000;
 
@@ -61,20 +72,20 @@ a {
 /* 사이드 바 시작*/
 .sidebar input+label {
     margin-left: 85px;
+
 }
 
 input[id="menuicon"] {
     display: none;
     align-items: center;
-    
 }
 
 input[id="menuicon"]+label {
     display: block;
     width: 35px;
     height: 25px;
-    cursor: pointer;
     position: absolute;
+    cursor: pointer;
     left: 10%;
 }
 
@@ -86,16 +97,17 @@ input[id="menuicon"]+label span {
     background-color: #000;
     transition: all .35s;
 
-
 }
 
 input[id="menuicon"]+label span:nth-child(1) {
     top: 0;
+
 }
 
 input[id="menuicon"]+label span:nth-child(2) {
     top: 50%;
     transform: translateY(-50%);
+
 
 }
 
@@ -107,6 +119,7 @@ input[id="menuicon"]+label span:nth-child(3) {
 input[id="menuicon"]:checked+label span:nth-child(1) {
     top: 50%;
     transform: translateY(-50%) rotate(45deg);
+
 
 }
 
@@ -161,18 +174,13 @@ div[class="sidebar"] {
 
 input[id="menuicon"]:checked+label+div {
     left: 0;
-
 }
 
-
-.sidebar-item{
-    font-size: large;
-    margin-left: 5%;    
-    
-    
+.sidebar-item {
+    margin-left: 5%;
 }
 
-.sidebar-item li a{
+.sidebar-item li a {
     text-decoration: none;
     color: white;
 }
@@ -200,7 +208,7 @@ input[id="menuicon"]:checked+label+div {
 }
 
 .title-menu a:hover {
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.514);
     color: white;
     transition: all .3s ease;
 
@@ -258,15 +266,13 @@ input[id="menuicon"]:checked+label+div {
 .title-login a:hover {
     background-color: rgba(0, 0, 0, 0.514);
     color: white;
-    transition: all .3s ease;
-    
+    transition: all .8s ease;
+
 }
 
 /* header 부분 끝 */
 
 /* body 부분 시작 */
-
-
 
 
 

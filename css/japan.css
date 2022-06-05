@@ -37,7 +37,7 @@ a {
     left: 13%;
 }
 
-.title-menu a{
+.title-menu a {
     text-decoration: none;
     font-size: xx-large;
     font-weight: bolder;
@@ -45,20 +45,20 @@ a {
 
 }
 
-.title-menu a:link{
+.title-menu a:link {
     text-decoration: none;
     color: #000;
 
 }
 
-.title-menu a:hover{
+.title-menu a:hover {
     text-decoration: none;
     color: #000;
 
 }
 
 /* 슬라이드 바 부분 시작 */
-.sidebar input + label {
+.sidebar input+label {
     margin-left: 85px;
 
 }
@@ -95,25 +95,25 @@ input[id="menuicon"]+label span:nth-child(1) {
 input[id="menuicon"]+label span:nth-child(2) {
     top: 50%;
     transform: translateY(-50%);
-    
+
 
 }
 
 input[id="menuicon"]+label span:nth-child(3) {
     bottom: 0;
-    
+
 }
 
 input[id="menuicon"]:checked+label span:nth-child(1) {
     top: 50%;
     transform: translateY(-50%) rotate(45deg);
-   
-    
+
+
 }
 
 input[id="menuicon"]:checked+label span:nth-child(2) {
     opacity: 0;
-    
+
 }
 
 
@@ -138,9 +138,10 @@ input[id="menuicon"]:checked+label span {
 
 }
 
-input[id="menuicon"]:checked ~ .title > .title-logo > h1 {
+input[id="menuicon"]:checked~.title>.title-logo>h1 {
     z-index: 10;
 }
+
 .sidebar h2 {
     text-align: center;
     margin-top: 50px;
@@ -162,11 +163,11 @@ input[id="menuicon"]:checked+label+div {
     left: 0;
 }
 
-.sidebar-item{
+.sidebar-item {
     margin-left: 5%;
 }
 
-.sidebar-item li a{
+.sidebar-item li a {
     text-decoration: none;
     color: white;
 }
@@ -176,7 +177,7 @@ input[id="menuicon"]:checked+label+div {
 .title-menu {
     display: flex;
     padding: 10px;
-    
+
 }
 
 .title-menu a {
@@ -185,14 +186,14 @@ input[id="menuicon"]:checked+label+div {
     border-radius: 10px;
     font-weight: bolder;
     font-size: 1.2rem;
-    
+
 }
 
 .title-menu a:hover {
     background-color: rgb(0, 0, 0);
     color: white;
     transition: all .3s ease;
-    
+
 }
 
 .title-menu li {
@@ -210,26 +211,31 @@ input[id="menuicon"]:checked+label+div {
     cursor: pointer;
 
 }
-.title > .title-logo > .sidebar > h2 {
+
+.title>.title-logo>.sidebar>h2 {
     color: white;
 }
+
 .title-login {
     display: flex;
     font-weight: bolder;
     font-size: 1.2rem;
 
 }
+
 .title-login a {
     transition: all .3s ease;
     padding: 10px;
     border-radius: 10px;
     text-decoration: none;
     color: #000;
-    
+
 }
+
 .title-login li {
     margin-left: 20px;
 }
+
 .title-login a:hover {
     background-color: rgba(0, 0, 0, 0.514);
     color: white;
