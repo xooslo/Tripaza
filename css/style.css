@@ -563,6 +563,7 @@ input[id="menuicon"]:checked+label+div {
 
 .submit .login{
     padding-bottom: 50px;
+    color: #0151E5;
 }
 
 /* 회원가입 페이지 끝 */
