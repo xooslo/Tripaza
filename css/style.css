@@ -1,10 +1,16 @@
+@font-face {
+    font-family: 'Happiness-Sans-Title';
+    src: url("../css/fonts/screen/ttf/Happiness-Sans-Title.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+ 
  * {
     box-sizing: border-box;
     padding: 0;
     margin: 0 auto;
-    font-family: 'Times New Roman', Times, serif;
-
-}
+    scroll-behavior: smooth;
+ }
 
 li {
     list-style: none;
@@ -14,6 +20,15 @@ a {
     text-decoration: none;
     color: black;
 }
+
+body{
+    -ms-overflow-style: none;
+    }
+    
+   ::-webkit-scrollbar {
+     display: none;
+   }
+
 /* header 부분 시작 */
 .title {
     display: flex;
@@ -27,24 +42,50 @@ a {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.185);
 
 }
-.trip {
-    margin-left: 15px;
+
+.title h1 {
+    font-weight: bold;
+    position: absolute;
+    left: 13%;
+}
+
+.title-menu a{
+    text-decoration: none;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: #000;
+
+}
+
+.title-menu a:link{
+    text-decoration: none;
+    color: #000;
+
+}
+
+.title-menu a:hover{
+    text-decoration: none;
+    color: #000;
 
 }
 /* 슬라이드 바 시작*/
+.sidebar input + label {
+    margin-left: 85px;
+
+}
+
 input[id="menuicon"] {
     display: none;
-
+    align-items: center;
 }
 
 input[id="menuicon"]+label {
     display: block;
     width: 35px;
     height: 25px;
-    position: relative;
+    position: absolute;
     cursor: pointer;
-    transition: all .35s ease;
-
+    left: 10%;
 }
 
 input[id="menuicon"]+label span {
@@ -77,6 +118,7 @@ input[id="menuicon"]+label span:nth-child(3) {
 input[id="menuicon"]:checked+label span:nth-child(1) {
     top: 50%;
     transform: translateY(-50%) rotate(45deg);
+   
     
 }
 
@@ -85,10 +127,12 @@ input[id="menuicon"]:checked+label span:nth-child(2) {
     
 }
 
+
 input[id="menuicon"]:checked+label span:nth-child(3) {
     bottom: 50%;
     transform: translateY(50%) rotate(-45deg);
-    
+
+
 }
 
 input[id="menuicon"] {
@@ -97,35 +141,47 @@ input[id="menuicon"] {
 
 input[id="menuicon"]:checked+label {
     z-index: 2;
-    left: 100px;
-
 
 }
 
 input[id="menuicon"]:checked+label span {
-    background: #fff;
+    background: rgb(0, 0, 0);
 
 }
+
 input[id="menuicon"]:checked ~ .title > .title-logo > h1 {
     z-index: 10;
 }
+.sidebar h2 {
+    text-align: center;
+    margin-top: 50px;
+}
 
 div[class="sidebar"] {
-    width: 500px;
+    width: 370px;
     height: 100%;
-    background: rgb(34, 34, 34);
+    background: rgb(0, 0, 0);
     position: fixed;
-    top: 0;
-    left: -500px;
-    z-index: 1;
+    top: 100px;
+    left: -370px;
+    z-index: 1000000;
     transition: all .35s;
 
 }
 
 input[id="menuicon"]:checked+label+div {
     left: 0;
-
 }
+
+.sidebar-item{
+    margin-left: 5%;
+}
+
+.sidebar-item li a{
+    text-decoration: none;
+    color: white;
+}
+
 /* 슬라이드 바 끝 */
 
 .title-menu {
@@ -227,10 +283,14 @@ input[id="menuicon"]:checked+label+div {
     top: 280px;
     left: 8%;
     color: black;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     animation: font-slider 1s ease-out;
-
 }
+
+.visual-font .map-button {
+    font-family: 'Happiness-Sans-Title';
+}
+
 /* 버튼 디자인 시작 */
 .map-button{
     color: rgba(0, 0, 0, 0.374);
@@ -503,6 +563,7 @@ input[id="menuicon"]:checked+label+div {
 
 .submit .login{
     padding-bottom: 50px;
+    color: #0151E5;
 }
 
 /* 회원가입 페이지 끝 */
