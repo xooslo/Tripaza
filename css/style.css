@@ -521,16 +521,18 @@ input[id="menuicon"]:checked+label+div {
 }
 .japan-track {
 } */
-/* card 부분 */
+
+/* card 부분 시작 */
 @keyframes country-font {
     
 }
 #country {
-    
-    
+    top: 80%;
 }
+
 #country > h2 {
-    text-align: center;
+    text-align: left;
+    padding-left: 170px;
     font-size: 2.5rem;
 }
 .container {
@@ -545,7 +547,7 @@ input[id="menuicon"]:checked+label+div {
 .container .card {
     position: relative;
     border-radius: 5%;
-    max-width: 300px;
+    max-width: 350px;
     height:215px;
     margin: 30px 10px;
     padding: 20px 15px;
@@ -560,7 +562,7 @@ input[id="menuicon"]:checked+label+div {
 }
 .container .crad .imgBx {
     position: relative;
-    width: 260px;
+    width: 350px;
     height: 260px;
     top: -60px;
     left: 20px;
@@ -568,14 +570,13 @@ input[id="menuicon"]:checked+label+div {
 
 }
 .container .card .imgBx img {
-    width: 100%;
+    width: 310px;
     border-radius: 5%;
     height: 180px;
 }
 .container .card .content {
     position: relative;
     margin-top: -140px;
-
     padding: 10px 15px;
     text-align: center;
     color: #111;
@@ -589,3 +590,4 @@ input[id="menuicon"]:checked+label+div {
     margin-top: 0px;
     transition-delay: .3s;
 }
+/* card 부분 끝 */
