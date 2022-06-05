@@ -28,23 +28,47 @@ a {
     width: 100%;
 }
 
-.title h1 {
-    font-weight: bold;
+.text-logo {
+    text-decoration: none;
+    color: #000;
 
     position: absolute;
-    left: 13%;
+    left: 15%;
 }
+
+.text-logo a{
+    text-decoration: none;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: #000;
+
+}
+
+.text-logo a:link{
+    text-decoration: none;
+    color: #000;
+
+}
+
+.text-logo a:hover{
+    text-decoration: none;
+    color: #000;
+
+}
+
 
 
 /* 사이드 바 시작*/
 .sidebar input+label {
     margin-left: 85px;
+    
 
 }
 
 input[id="menuicon"] {
     display: none;
     align-items: center;
+    
 }
 
 input[id="menuicon"]+label {
@@ -123,6 +147,7 @@ input[id="menuicon"]:checked~.title>.title-logo>h1 {
 .sidebar h2 {
     text-align: center;
     margin-top: 50px;
+    cursor: default;
 }
 
 div[class="sidebar"] {
@@ -240,3 +265,11 @@ input[id="menuicon"]:checked+label+div {
 }
 
 /* header 부분 끝 */
+
+/* body 부분 시작 */
+
+
+
+
+
+/* body 부분 끝 */
