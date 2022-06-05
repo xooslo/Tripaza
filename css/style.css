@@ -696,9 +696,9 @@ input[id="menuicon"]:checked+label+div {
     margin-top: 0px;
     transition-delay: .3s;
     
-    
 }
 /* card 부분 끝 */
+
 /* footer 부분 */
 footer {
     background: linear-gradient(to right, #00093c, #2d0b00);
@@ -731,12 +731,6 @@ footer hr {
 .footer-icon a:hover i{
     cursor: pointer;
     transform: translateY(-25%);
-    
-
-    
-
 }
-
-
 
 /* footer 부분 끝 */
