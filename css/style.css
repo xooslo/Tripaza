@@ -526,12 +526,10 @@ input[id="menuicon"]:checked+label+div {
     
 }
 #country {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
     
 }
-#country-container h1 {
+#country > h2 {
     text-align: center;
     font-size: 2.5rem;
 }
