@@ -30,6 +30,26 @@ a {
     left: 13%;
 }
 
+.title-menu a{
+    text-decoration: none;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: #000;
+
+}
+
+.title-menu a:link{
+    text-decoration: none;
+    color: #000;
+
+}
+
+.title-menu a:hover{
+    text-decoration: none;
+    color: #000;
+
+}
+
 /* 슬라이드 바 부분 시작 */
 .sidebar input + label {
     margin-left: 85px;
@@ -177,9 +197,6 @@ input[id="menuicon"]:checked+label+div {
     display: flex;
     align-items: center;
     gap: 15px;
-    
-
-
 }
 
 .title-logo:hover {
@@ -199,6 +216,8 @@ input[id="menuicon"]:checked+label+div {
     transition: all .3s ease;
     padding: 10px;
     border-radius: 10px;
+    text-decoration: none;
+    color: #000;
     
 }
 .title-login li {
