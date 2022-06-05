@@ -215,11 +215,8 @@ input[id="menuicon"]:checked+label+div {
     gap: 15px;
 
 }
-.horiziontal {
-    display: flex;
-    align-items: center;
-    
-}
+
+
 .title-logo:hover {
     cursor: pointer;
 
