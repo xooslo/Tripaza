@@ -53,8 +53,6 @@ a {
 /* 사이드 바 시작*/
 .sidebar input+label {
     margin-left: 85px;
-    
-
 }
 
 input[id="menuicon"] {
