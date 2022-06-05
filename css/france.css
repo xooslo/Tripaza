@@ -129,7 +129,7 @@ div[class="sidebar"] {
     position: fixed;
     top: 100px;
     left: -370px;
-    z-index: 1000000;
+    z-index: 1000;
     transition: all .35s;
 
 }
@@ -165,7 +165,6 @@ input[id="menuicon"]:checked+label+div {
 .title-menu a {
     text-decoration: none;
     color: #000;
-
     transition: all .3s ease;
     padding: 10px;
     border-radius: 10px;
@@ -234,6 +233,7 @@ input[id="menuicon"]:checked+label+div {
     background-color: rgba(0, 0, 0, 0.514);
     color: white;
     transition: all .3s ease;
+    
 }
 
 /* header 부분 끝 */
