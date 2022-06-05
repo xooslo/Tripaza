@@ -28,21 +28,23 @@ a {
 }
 
 
-.text-logo a{
+.text-logo{
     text-decoration: none;
     font-size: xx-large;
     font-weight: bolder;
     color: #000;
 
+    margin-left: 100px;
+
 }
 
-.text-logo a:link{
+.text-logo:link{
     text-decoration: none;
     color: #000;
 
 }
 
-.text-logo a:hover{
+.text-logo:hover{
     text-decoration: none;
     color: #000;
 
@@ -160,7 +162,8 @@ input[id="menuicon"]:checked+label+div {
 
 
 .sidebar-item{
-    margin-left: 5%;
+    font-size: large;
+    margin-left: 5%;    
     
     
 }
