@@ -6,7 +6,5 @@ window.addEventListener('scroll' ,function(){
     
     
 
-    if(value > 400) {
-        
-    }
+   
 });

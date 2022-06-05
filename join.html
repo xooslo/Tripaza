@@ -34,6 +34,49 @@
             </div>
         </ul>
     </header>
-    
+
+    <div id="join_container">
+        <div class="join_title">
+            <h2> Tripaza </h2>
+        </div>
+        <div class="info_form">
+            아이디 &nbsp; <input type="text" name="id" id="userId"> <br><br>
+            비밀번호 &nbsp; <input type="password" name="pwd" id="userPwd"> <br><br>
+            비밀번호 재확인 &nbsp; <input type="password" name="pwdCk" id="pwdCk"> <br><br>
+            이름 &nbsp; <input type="text" name="name" id="userName"> <br><br>
+        <div class="user_Bday">
+            생년월일 &nbsp; <input type="text" name="year" id="userDate" placeholder="년(4자)">
+            <select name="year" id="userDate" aria-placeholder="월">
+                <option value="" selected>월</option>
+                <option value="1월">1</option>
+                <option value="2월">2</option>
+                <option value="3월">3</option>
+                <option value="4월">4</option>
+                <option value="5월">5</option>
+                <option value="6월">6</option>
+                <option value="7월">7</option>
+                <option value="8월">8</option>
+                <option value="9월">9</option>
+                <option value="10월">10</option>
+                <option value="11월">11</option>
+                <option value="12월">12</option>
+            </select>
+            <input type="text" name="day" id="userDate" placeholder="일"> <br><br>
+        </div>
+        <div class="info_form">
+            성별 &nbsp; 
+            <select name="gender" id="userGd" aria-placeholder="성별">
+                <option value="" selected>성별</option>
+                <option value="male">남자</option>
+                <option value="female">여자</option>
+                <option value="none">선택 안함</option>
+            </select> <br><br>
+            휴대전화 &nbsp; <input type="tel" name="tel" id="userTel" placeholder="전화번호 입력"> <br><br>
+        </div>
+        <div class="submit">
+            <a href="#"><button class="join_submit">가입하기</button></a> <br><br>
+            이미 계정이 있으신가요? -> <a href="http://127.0.0.1:5500/login.html#" class="login">로그인</a>
+        </div>
+    </div>
 </body>
 </html>

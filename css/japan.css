@@ -12,15 +12,25 @@ a {
     text-decoration: none;
     color: black;
 }
+
+/* header 부분 시작 */
 .title {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 1.5%;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.384);
-    position: fixed;
+    position: relative;
     width: 100%;
 }
+
+.title h1 {
+    font-weight: bold;
+    position: absolute;
+    left: 13%;
+}
+
+/* 슬라이드 바 부분 시작 */
 .sidebar input + label {
     margin-left: 85px;
 
@@ -28,17 +38,16 @@ a {
 
 input[id="menuicon"] {
     display: none;
-
+    align-items: center;
 }
 
 input[id="menuicon"]+label {
     display: block;
     width: 35px;
     height: 25px;
-    position: relative;
+    position: absolute;
     cursor: pointer;
-    
-
+    left: 10%;
 }
 
 input[id="menuicon"]+label span {
@@ -108,9 +117,8 @@ input[id="menuicon"]:checked ~ .title > .title-logo > h1 {
 .sidebar h2 {
     text-align: center;
     margin-top: 50px;
-
-    
 }
+
 div[class="sidebar"] {
     width: 370px;
     height: 100%;
@@ -123,11 +131,20 @@ div[class="sidebar"] {
 
 }
 
-
 input[id="menuicon"]:checked+label+div {
     left: 0;
-
 }
+
+.sidebar-item{
+    margin-left: 5%;
+}
+
+.sidebar-item li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* 슬라이드 바 끝 */
 
 .title-menu {
     display: flex;

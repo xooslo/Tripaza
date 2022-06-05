@@ -8,14 +8,11 @@
 
 li {
     list-style: none;
-        
-
 }
 
 a {
     text-decoration: none;
     color: black;
-
 }
 /* header 부분 시작 */
 .title {
@@ -130,6 +127,7 @@ input[id="menuicon"]:checked+label+div {
 
 }
 /* 슬라이드 바 끝 */
+
 .title-menu {
     display: flex;
     padding: 10px;
@@ -220,7 +218,7 @@ input[id="menuicon"]:checked+label+div {
     background-position-y: 100px;
     background-position-x: center;
     background-repeat: no-repeat;
-    height: 1900px;
+    height: 1300px;
 }
 
 .visual-font {
@@ -243,7 +241,6 @@ input[id="menuicon"]:checked+label+div {
     position: absolute;
     width: 260px;
     margin-top: 50px;
-
     padding: 10px;
     text-align: center;
 
@@ -261,18 +258,18 @@ input[id="menuicon"]:checked+label+div {
 .map-button span:nth-child(1) {
     left: 0;
     bottom: 0;
-    width: 2px;
+    width: 1px;
     height: 100%;
     transform: scaleY(0);
     transform-origin: top;
-    transition: transform 0.5s;
+    transition: transform .3s;
     
 
 }
 .map-button:hover span:nth-child(1) {
     transform: scaleY(1);
     transform-origin: bottom;
-    transition: transform 0.5s;
+    transition: transform .3s;
 }
 
 
@@ -280,16 +277,16 @@ input[id="menuicon"]:checked+label+div {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 2px;
-    transform: scaleY(0);
+    height: 1px;
+    transform: scaleX(0);
     transform-origin: right;
-    transition: transform 0.5s;
+    transition: transform .3s;
 
 }
 .map-button:hover span:nth-child(2) {
     transform: scaleX(1);
     transform-origin: left;
-    transition: transform 0.5s;
+    transition: transform .3s;
 }
 
 
@@ -300,16 +297,16 @@ input[id="menuicon"]:checked+label+div {
     height: 100%;
     transform: scaleY(0);
     transform-origin: top;
-    transition: transform 0.5s;
-    transition-delay: 0.5s;
+    transition: transform .3s;
+    transition-delay: .3s;
 
 
 }
 .map-button:hover span:nth-child(3) {
     transform: scaleY(1);
     transform-origin: bottom;
-    transition: transform 0.5s;
-    transition-delay: 0.5s;
+    transition: transform .3s;
+    transition-delay: .3s;
 
 }
 
@@ -321,15 +318,15 @@ input[id="menuicon"]:checked+label+div {
     height: 1px;
     transform: scaleX(0);
     transform-origin: right;
-    transition: transform 0.5s;
-    transition-delay: 0.5s;
+    transition: transform .3s;
+    transition-delay: .3s;
 
 }
 .map-button:hover span:nth-child(4) {
     transform: scaleX(1);
     transform-origin: left;
-    transition: transform 0.5s;
-    transition-delay: 0.5s;
+    transition: transform .3s;
+    transition-delay: .3s;
 
 }
 
@@ -344,9 +341,6 @@ input[id="menuicon"]:checked+label+div {
     width: 100%;
     text-align: center;
     transform: translate(-50% , -75%);
-   
-   
-
 }
 .login_title {
     margin-bottom: 30px;
@@ -357,8 +351,6 @@ input[id="menuicon"]:checked+label+div {
 }
 .id_password input:nth-of-type(2){
     margin-top: 10px;
-    
-
 }
 .id_password input {
     padding: 20px;
@@ -402,7 +394,6 @@ input[id="menuicon"]:checked+label+div {
 }
 .btn_login:hover {
     cursor: pointer;
-
 }
 .btn_join:hover {
     cursor: pointer;
@@ -413,6 +404,7 @@ input[id="menuicon"]:checked+label+div {
     color: black;
 
 }
+/*
 .join_container {
     text-align: center;
     line-height: 30px;
@@ -424,7 +416,7 @@ input[id="menuicon"]:checked+label+div {
     margin-bottom: 30px;
 
 }
-input 
+
 .join_container input[type = "text"] {
     opacity: 0.5;
     padding: 15px;
@@ -441,7 +433,80 @@ input
     margin-right: 80px;
     
 }
+*/
 /* 로그인 페이지 끝 */
+
+/* 회원가입 페이지 시작 */
+
+#join_container {
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    width: 150%;
+    height: 50%;
+    text-align: center;
+    transform: translate(-50% , -75%);
+}
+
+.join_title {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.join_title h2 {
+    font-weight: bolder;
+}
+
+.info_form input {
+    padding: 20px;
+    opacity: 0.5;
+    width: 15%;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.322);
+}
+
+.info_form select {
+    padding: 20px;
+    opacity: 0.5;
+    width: 15%;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.322);
+}
+
+.user_Bday{
+    width: 40%;
+}
+
+.submit button {
+    padding: 20px;
+    width: 15%;
+    border: 1px solid #0151E5;
+}
+
+.ubmit button:nth-of-type(2) {
+    margin-top: 10px;
+    background-color: white;
+    color: #5F00A1;
+    font-size: 1rem;
+}
+
+.join_submit {
+    background-color: white;
+    margin-top: 10px;
+}
+
+.join_submit:hover {
+    cursor: pointer;
+    background-color: #0151E5;
+    color: white;
+}
+
+.submit .login{
+    padding-bottom: 50px;
+}
+
+/* 회원가입 페이지 끝 */
+
 /* .japan {
     width: 100%;
     background-color: rgba(179, 179, 179, 0.357);
@@ -456,3 +521,73 @@ input
 }
 .japan-track {
 } */
+/* card 부분 */
+@keyframes country-font {
+    
+}
+#country {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#country-container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+.container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;    
+}
+.container .card {
+    position: relative;
+    border-radius: 5%;
+    max-width: 300px;
+    height:215px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: .3s ease-in-out;
+
+}
+.container .card:hover {
+    height: 420px;
+}
+.container .crad .imgBx {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.2);
+
+}
+.container .card .imgBx img {
+    width: 100%;
+    border-radius: 5%;
+    height: 180px;
+}
+.container .card .content {
+    position: relative;
+    margin-top: -140px;
+
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+.container .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0px;
+    transition-delay: .3s;
+}
