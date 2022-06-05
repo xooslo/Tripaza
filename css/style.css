@@ -520,7 +520,6 @@ input[id="menuicon"]:checked+label+div {
 .info_form input {
     padding: 20px;
     opacity: 0.5;
-    width: 15%;
     border-radius: 3px;
     border: 1px solid rgba(0, 0, 0, 0.322);
 }
@@ -553,12 +552,14 @@ input[id="menuicon"]:checked+label+div {
 .join_submit {
     background-color: white;
     margin-top: 10px;
+    transition: all .3s ease-in-out;
 }
 
 .join_submit:hover {
     cursor: pointer;
     background-color: #0151E5;
     color: white;
+   
 }
 
 .submit .login{
@@ -596,6 +597,7 @@ input[id="menuicon"]:checked+label+div {
     text-align: left;
     padding-left: 170px;
     font-size: 2.5rem;
+    font-weight: bolder;
 }
 .container {
     position: relative;
@@ -620,7 +622,7 @@ input[id="menuicon"]:checked+label+div {
 
 }
 .container .card:hover {
-    height: 420px;
+    height: 450px;
 }
 .container .crad .imgBx {
     position: relative;
