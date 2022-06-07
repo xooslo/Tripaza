@@ -671,6 +671,24 @@ footer hr {
 
 }
 
-
-
 /* footer 부분 끝 */
+
+/* user 부분 시작*/
+.user-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 500px;
+}
+
+.user-profile i{
+    color: lightblue;
+}
+
+.user-profile a{
+    text-decoration: none;
+    color: #0151E5;
+}
+
+/* user 부분 끝*/
+
