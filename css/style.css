@@ -673,7 +673,7 @@ input[id="menuicon"]:checked+label+div {
 
 /* footer 부분 */
 footer {
-    background: linear-gradient(to bottom, #fff, #000);
+    
     color: white;
     height: 400px;
     text-align: center;
@@ -681,10 +681,11 @@ footer {
     display: flex;
     flex: 1;
 
+
 }
 .footer-title h2 {
     font-size: 3rem;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .footer-font {
     line-height: 25px;
