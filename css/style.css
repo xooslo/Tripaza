@@ -49,25 +49,6 @@ body{
     left: 13%;
 }
 
-.title-menu a{
-    text-decoration: none;
-    font-size: xx-large;
-    font-weight: bolder;
-    color: #000;
-
-}
-
-.title-menu a:link{
-    text-decoration: none;
-    color: #000;
-
-}
-
-.title-menu a:hover{
-    text-decoration: none;
-    color: #000;
-
-}
 /* 슬라이드 바 시작*/
 .sidebar input + label {
     margin-left: 85px;
@@ -188,41 +169,12 @@ input[id="menuicon"]:checked+label+div {
 
 /* 슬라이드 바 끝 */
 
-.title-menu {
-    display: flex;
-    padding: 10px;
-    
-}
-
-.title-menu a {
-    transition: all .3s ease;
-    padding: 10px;
-    border-radius: 10px;
-    font-weight: bolder;
-    font-size: 1.2rem;
-    
-}
-
-.title-menu a:hover {
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.514);
-    color: white;
-    transition: all .8s ease;
-    
-}
-
-.title-menu li {
-    margin-left: 20px;
-
-}
-
 .title-logo {
     display: flex;
     align-items: center;
     gap: 15px;
 
 }
-
 
 .title-logo:hover {
     cursor: pointer;
@@ -241,11 +193,12 @@ input[id="menuicon"]:checked+label+div {
     transition: all .3s ease;
     padding: 10px;
     border-radius: 10px;
-    
 }
+
 .title-login li {
     margin-left: 20px;
 }
+
 .title-login a:hover {
     background-color: rgba(0, 0, 0, 0.514);
     color: white;
@@ -396,7 +349,6 @@ input[id="menuicon"]:checked+label+div {
 
 }
 
-
 /* 버튼 디자인 끝 */
 
 /* 로그인 페이지 시작 */
@@ -408,16 +360,20 @@ input[id="menuicon"]:checked+label+div {
     text-align: center;
     transform: translate(-50% , -75%);
 }
+
 .login_title {
     margin-bottom: 30px;
     margin-top: 30px;
 }
+
 .login_title h2 {
     font-weight: bolder;
 }
+
 .id_password input:nth-of-type(2){
     margin-top: 10px;
 }
+
 .id_password input {
     padding: 20px;
     opacity: 0.5;
@@ -425,6 +381,7 @@ input[id="menuicon"]:checked+label+div {
     border-radius: 3px;
     border: 1px solid rgba(0, 0, 0, 0.322);
 }
+
 .pass_find {
     width: 18%;
     margin: 0 auto;
@@ -438,38 +395,39 @@ input[id="menuicon"]:checked+label+div {
     padding: 20px;
     width: 15%;
     border: 1px solid #0151E5;
-
 }
+
 .login_join button:nth-of-type(2) {
     margin-top: 10px;
     background-color: white;
     color: #5F00A1;
     font-size: 1rem;
-
 }
+
 .btn_join {
     background-color: white;
     margin-top: 10px;
-
 }
+
 .btn_login {
     background-color: #0151E5;
     color: white;
     font-size: 1rem;
-
 }
+
 .btn_login:hover {
     cursor: pointer;
 }
+
 .btn_join:hover {
     cursor: pointer;
-
 }
+
 .pass_find a{
     text-decoration: none;
     color: black;
-
 }
+
 /*
 .join_container {
     text-align: center;
