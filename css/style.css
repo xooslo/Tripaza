@@ -638,14 +638,13 @@ input[id="menuicon"]:checked+label+div {
 
 /* footer 부분 */
 footer {
-    
-    color: #000;
-    height: 400px;
+    background-color: #0151E5;
+    height: 300px;
     text-align: center;
     align-items: center;
     display: flex;
     flex: 1;
-
+    color: white;
 
 }
 .footer-title h2 {
@@ -663,8 +662,9 @@ footer hr {
     font-size: 30px;
     margin-top: 30px;
     margin-left: 20px;
-    color: #000;
+    color: #fff;
     transition: all .3s;
+
 }
 .footer-icon a:hover i{
     cursor: pointer;
