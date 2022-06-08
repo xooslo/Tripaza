@@ -639,7 +639,7 @@ input[id="menuicon"]:checked+label+div {
 /* footer 부분 */
 footer {
     
-    color: white;
+    color: #000;
     height: 400px;
     text-align: center;
     align-items: center;
@@ -663,13 +663,12 @@ footer hr {
     font-size: 30px;
     margin-top: 30px;
     margin-left: 20px;
-    color: white;
+    color: #000;
     transition: all .3s;
 }
 .footer-icon a:hover i{
     cursor: pointer;
     transform: translateY(-25%);
-
 }
 
 /* footer 부분 끝 */
