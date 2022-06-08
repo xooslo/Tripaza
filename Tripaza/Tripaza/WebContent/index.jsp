@@ -1,3 +1,11 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
 @font-face {
     font-family: 'Happiness-Sans-Title';
     src: url("../css/fonts/screen/ttf/Happiness-Sans-Title.ttf");
@@ -207,27 +215,6 @@ input[id="menuicon"]:checked+label+div {
     
 }
 /* header 부분 끝 */
-@keyframes font-slider {
-    from {
-        left: -280px;
-        opacity: 0;
-    }
-    to {
-        left: 8%;
-        opacity: 1;
-    }
-    
-}
-@keyframes font-disapper {
-    from {
-        left: 8%;
-        opacity: 1;
-    }
-    to {
-        left: -280px;
-        opacity: 0;
-    }
-}
 
 #visual-container {
     background-image: url(/images/global.JPG);
@@ -352,218 +339,6 @@ input[id="menuicon"]:checked+label+div {
 
 /* 버튼 디자인 끝 */
 
-/* 로그인 페이지 시작 */
-#login_container {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    transform: translate(-50% , -75%);
-}
-
-.login_title {
-    margin-bottom: 30px;
-    margin-top: 30px;
-}
-
-.login_title h2 {
-    font-weight: bolder;
-}
-
-.id_password input:nth-of-type(2){
-    margin-top: 10px;
-}
-
-.id_password input {
-    padding: 20px;
-    opacity: 0.5;
-    width: 15%;
-    border-radius: 3px;
-    border: 1px solid rgba(0, 0, 0, 0.322);
-}
-
-.pass_find {
-    width: 18%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.login_join button {
-    padding: 20px;
-    width: 15%;
-    border: 1px solid #0151E5;
-}
-
-.login_join button:nth-of-type(2) {
-    margin-top: 10px;
-    background-color: white;
-    color: #5F00A1;
-    font-size: 1rem;
-}
-
-.btn_join {
-    background-color: white;
-    margin-top: 10px;
-}
-
-.btn_login {
-    background-color: #0151E5;
-    color: white;
-    font-size: 1rem;
-}
-
-.btn_login:hover {
-    cursor: pointer;
-}
-
-.btn_join:hover {
-    cursor: pointer;
-}
-
-.pass_find a{
-    text-decoration: none;
-    color: black;
-}
-
-/*
-.join_container {
-    text-align: center;
-    line-height: 30px;
-
-}
-.join_title {
-    font-size: 1.3rem;
-    margin-top: 30px;
-    margin-bottom: 30px;
-
-}
-
-.join_container input[type = "text"] {
-    opacity: 0.5;
-    padding: 15px;
-    width: 15%;
-    margin-left: 80px;
-    margin-right: 80px;
-    
-}
-.join_container input[type = "password"] {
-    opacity: 0.5;
-    padding: 15px;
-    width: 15%;
-    margin-left: 80px;
-    margin-right: 80px;
-    
-}
-*/
-/* 로그인 페이지 끝 */
-
-/* 회원가입 페이지 시작 */
-
-#join-container {
-    margin: 0 auto;
-    transform: translateY(40%);
-    width: 50%;
-    height: 600px;
-    text-align: center;
-    
-}
-#join-container > div > div.info-form > table {
-    line-height: 80px;
-    margin-right: 30%;
-}
-
-#join-container .join .join-title h2 {
-    margin-bottom: 50px;
-    font-size: 2rem;
-    font-weight: bold;
-}
-.join-input {
-    width: 80%;
-}
-.join-input input {
-    width: 100%;
-    border-radius: 3px;
-    border: 1px solid rgba(0, 0, 0, 0.322);
-    padding: 20px;
-    opacity: 0.5;
-}
-.join-input-di input{
-    width: 41.5%;
-    border-radius: 3px;
-    border: 1px solid rgba(0, 0, 0, 0.322);
-    padding: 20px;
-    opacity: 0.5;
-}
-.join select {
-    padding: 20px;
-    opacity: 0.5;
-    border-radius: 3px;
-    border: 1px solid rgba(0, 0, 0, 0.322);
-}
- 
-.submit button {
-    padding: 20px;
-    border: 1px solid #0151E5;
-}
-
-.ubmit button:nth-of-type(2) {
-    margin-top: 10px;
-    background-color: white;
-    color: #5F00A1;
-    font-size: 1rem;
-}
-
-.join-submit {
-    background-color: white;
-    margin-top: 10px;
-    width: 50%;
-    transition: all .3s;
-}
-
-.join-submit:hover {
-    cursor: pointer;
-    background-color: #0151E5;
-    color: white;
-}
-
-.submit .login{
-    padding-bottom: 50px;
-    color: #0151E5;
-}
-#userGd {
-    width: 100%;
-}
-
-
-
-
-
-/* ??? 이거 왜 안될까 */
-/* #join-container .join .info-form table td input:nth-of-type(2) {
-    width: 100%;
-} */
-
-/* 회원가입 페이지 끝 */
-
-/* .japan {
-    width: 100%;
-    background-color: rgba(179, 179, 179, 0.357);
-    
-
-}
-.japan-title h1{
-    font-size: 1.8rem;
-    font-weight: bold;
-    
-
-}
-.japan-track {
-} */
-
 /* card 부분 시작 */
 @keyframes country-font {
     
@@ -674,22 +449,147 @@ footer hr {
 
 /* footer 부분 끝 */
 
-/* user 부분 시작*/
-.user-container{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    height: 500px;
-}
+</style>
+</head>
+<body>
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./js/main.js"></script>
 
-.user-profile i{
-    color: lightblue;
-}
+    <!-- 헤더 시작 -->
+    <header>
+        <ul class="title">
+            <div class="title-logo">
+                <input type="checkbox" id="menuicon">
+                <label for="menuicon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="sidebar">
+                    <h2>Tripaza</h2><br>
+                    <div class="sidebar-item">
+                        <li><a href="#">홈</a></li><br>
+                        <li><a href="#">나라 별 보기</a></li><br>
+                        <li><a href="#">커뮤니티</a></li><br>
+                        <li><a href="#">개인</a></li><br>
+                    </div>
+                </div>
+                <h1>Tripaza</h1>
+            </div>
+                <div class="title-login">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="">회원가입</a></li>
+                </div>
+        </ul>
+    </header>
+    <!-- 헤더 끝 -->
 
-.user-profile a{
-    text-decoration: none;
-    color: #0151E5;
-}
+    <!-- visual 시작 -->
+    <section id="visual-container">
+        <div class="visual-font">
+            <p><span class="f">Smart item</span> for</p>
+            <p>your brand are here</p>
+            <a href="#" class="map-button">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                지도로 가기
+            </a>
+        </div>
+    </section>
+    <!-- visual 끝 -->
 
-/* user 부분 끝*/
+    <!-- card 시작 -->
+    <section id="country">
+        <h2>나라 별 보기</h2>
+        <div class="container">
 
+            <a href="">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./images/경복궁.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>한국</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                            Minus distinctio quo repellendus sint ratione placeat. Fuga et incidunt maiores. <br>
+                            Amet vitae distinctio unde fugit sint enim perspiciatis necessitatibus molestiae provident.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./images/후지산_밤.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>일본</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                            Minus distinctio quo repellendus sint ratione placeat. Fuga et incidunt maiores. <br>
+                            Amet vitae distinctio unde fugit sint enim perspiciatis necessitatibus molestiae provident.</p>
+                    </div>
+                </div>    
+            </a>
+
+            <a href="">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./images/링컨기념관.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>미국</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                            Minus distinctio quo repellendus sint ratione placeat. Fuga et incidunt maiores. <br>
+                            Amet vitae distinctio unde fugit sint enim perspiciatis necessitatibus molestiae provident.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./images/콩코르드다리.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>프랑스</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                            Minus distinctio quo repellendus sint ratione placeat. Fuga et incidunt maiores. <br>
+                            Amet vitae distinctio unde fugit sint enim perspiciatis necessitatibus molestiae provident.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <!-- card 끝 -->
+
+    <!-- footer 시작-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-title">
+                    <h2>Tripaza</h2>
+                </div>
+                <div class="footer-font">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
+                        Quas, vel vero? Officiis ipsa dolor sequi animi, <br>
+                        autem voluptates dicta reprehenderit inventore dolores fuga cupiditate incidunt. <br>
+                        Delectus animi doloremque laboriosam exercitationem!</p>
+                </div>
+                <hr>
+                <div class="footer-icon">
+                    <a href="https://github.com/xooslo/Tripaza"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-solid fa-people-group"></i></a>
+                    <a href="#"><i class="fa-regular fa-circle-question"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer 끝-->
+</body>
+</body>
+</html>
