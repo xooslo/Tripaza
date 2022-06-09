@@ -397,9 +397,9 @@ footer hr {
 /* footer 부분 끝 */
     </style>
 </head>
-
 <body>
-    <header>
+    <form action="joinProc.jsp" method="post">
+    	<header>
         <ul class="title">
             <div class="title-logo">
                 <input type="checkbox" id="menuicon">
@@ -445,6 +445,11 @@ footer hr {
                     <tr>
                         <td>비밀번호 재확인</td>
                         <td class="join-input"> <input type="password" name="pwdCk" id="pwdCk"></td>
+
+                    </tr>
+                    <tr>
+                        <td>닉네임</td>
+                        <td class="join-input"><input type="text" name="name" id="userNick"></td>
 
                     </tr>
                     <tr>
@@ -495,5 +500,6 @@ footer hr {
             </div>
         </div>
     </section>
+    </form>
 </body>
 </html>

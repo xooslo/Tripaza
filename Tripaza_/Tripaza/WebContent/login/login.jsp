@@ -419,7 +419,7 @@ footer hr {
         	</div>
         	<div class="login_join">
             	<a href="#"><button class="btn_login">로그인</button><br></a>
-            	<a href="http://127.0.0.1:5500/join.html"><button class="btn_join">회원가입</button></a> 
+            	<a href="http://localhost:8090/join/join.jsp"><button class="btn_join">회원가입</button></a> 
         	</div>
     	</div>
     </form>
