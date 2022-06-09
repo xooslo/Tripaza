@@ -170,8 +170,25 @@ input[id="menuicon"]:checked+label+div {
     text-decoration: none;
     color: white;
     font-family: 'Happiness-Sans-Title';
+    line-height: 40px;
+    padding: 0px 10px;
+    position: relative;
 }
+.sidebar-item li a:after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: .3s;
 
+}
+.sidebar-item li a:hover:after{
+    width: 100%;
+   
+}
 .sidebar-item li a:hover{
     color: gray;
 }
@@ -471,7 +488,7 @@ footer hr {
                 <div class="sidebar">
                     <h2>Tripaza</h2><br>
                     <div class="sidebar-item">
-                        <li><a href="#">홈</a></li><br>
+                        <li><a href="http://localhost:8090/index.jsp">홈</a></li><br>
                         <li><a href="#">나라 별 보기</a></li><br>
                         <li><a href="#">커뮤니티</a></li><br>
                         <li><a href="#">개인</a></li><br>

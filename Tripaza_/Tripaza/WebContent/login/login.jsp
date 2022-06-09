@@ -170,6 +170,24 @@ input[id="menuicon"]:checked+label+div {
     text-decoration: none;
     color: white;
     font-family: 'Happiness-Sans-Title';
+    line-height: 40px;
+    padding: 0px 10px;
+    position: relative;
+}
+.sidebar-item li a:after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: .3s;
+
+}
+.sidebar-item li a:hover:after{
+    width: 100%;
+   
 }
 
 .sidebar-item li a:hover{
@@ -200,20 +218,37 @@ input[id="menuicon"]:checked+label+div {
 }
 .title-login a {
     transition: all .3s ease;
-    padding: 10px;
+    padding: 0px 10px;
     border-radius: 10px;
+    position: relative;
+}
+.title-login li a:after{
+    content: "";
+    position: absolute;
+    background-color: #0151E5;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: .3s;
+
+}
+.title-login li a:hover:after{
+    width: 100%;
+   
+}
+
+
+.title-login li a:hover{
+    color: black;
+
+
 }
 
 .title-login li {
     margin-left: 20px;
 }
 
-.title-login a:hover {
-    background-color: rgba(0, 0, 0, 0.514);
-    color: white;
-    transition: all .8s ease;
-    
-}
 /* header 부분 끝 */
 
 /* 로그인 페이지 시작 */
@@ -363,8 +398,8 @@ footer hr {
                 <h1>Tripaza</h1>
             </div>
             <div class="title-login">
-                <li><a href="http://127.0.0.1:5500/login.html#">로그인</a></li>
-                <li><a href="http://127.0.0.1:5500/join.html">회원가입</a></li>
+                <li><a href="">로그인</a></li>
+                <li><a href="http://localhost:8090/join/join.jsp">회원가입</a></li>
             </div>
         </ul>
     </header>
