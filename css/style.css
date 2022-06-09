@@ -756,7 +756,7 @@ input[id="menuicon"]:checked+label+div {
 }
 #country {
     top: 80%;
-    height: 800px;
+    height: 1050px;
 }
 
 #country > h2 {
