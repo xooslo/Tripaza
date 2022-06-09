@@ -386,6 +386,104 @@ input[id="menuicon"]:checked+label+div {
     transition-delay: .3s;
 
 }
+.more{
+    color: rgba(0, 0, 0, 0.374);
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 2.7rem;
+    font-weight: bolder;
+    transition:all .5s ease-in;
+    position: absolute;
+    right: 0;
+    margin-right: 80px;
+    transform: translate(-50%);
+    margin-top: 50px;
+    padding: 10px;
+
+}
+.more:hover {
+    color: black;
+    
+    
+}
+.more span {
+    display: block;
+    position: absolute;
+    background-color: #0151E5;
+}
+.more span:nth-child(1) {
+    left: 0;
+    bottom: 0;
+    width: 1px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform .3s;
+    
+
+}
+.more:hover span:nth-child(1) {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform .3s;
+}
+
+
+.more span:nth-child(2) {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .3s;
+
+}
+.more:hover span:nth-child(2) {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform .3s;
+}
+
+
+.more span:nth-child(3) {
+    right: 0;
+    bottom: 0;
+    width: 1px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform .3s;
+    transition-delay: .3s;
+
+
+}
+.more:hover span:nth-child(3) {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform .3s;
+    transition-delay: .3s;
+
+}
+
+
+.more span:nth-child(4) {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .3s;
+    transition-delay: .3s;
+
+}
+.more:hover span:nth-child(4) {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform .3s;
+    transition-delay: .3s;
+
+}
 
 /* 버튼 디자인 끝 */
 
@@ -602,13 +700,63 @@ input[id="menuicon"]:checked+label+div {
 .japan-track {
 } */
 
+
+/* 사이트 설명 시작 */
+#information{
+    top: 60%;
+    height: 1500px;
+}
+
+#information > h2 {
+    text-align: left;
+    padding-left: 100px;
+    font-size: 2.9rem;
+    font-weight: bolder;
+}
+
+#information > h4 {
+    text-align: left;
+    padding-left: 100px;
+    font-size: 1.5rem;
+}
+
+#information > p {
+    text-align: left;
+    padding-left: 100px;
+    font-size: 1.2rem;
+}
+
+.information-item1{
+    width: 500px;
+    background-image: url(/images/social-media.png);
+    background-size: 500px;
+    background-position-x: right;
+    margin-left: 20%;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.information-item2{
+    width: 700px;
+    background-image: url(/images/trip.jpg);
+    background-size: 600px;
+    background-position-x: right;
+    margin-left: 10%;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+
+/* 사이트 설명 끝 */
+
+
 /* card 부분 시작 */
 @keyframes country-font {
     
 }
 #country {
     top: 80%;
-    height: 1300px;
+    height: 1050px;
 }
 
 #country > h2 {
@@ -620,7 +768,9 @@ input[id="menuicon"]:checked+label+div {
 .container {
     position: relative;
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,3fr);
+    grid-gap: 10px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -699,7 +849,7 @@ footer hr {
 }
 .footer-icon i{
     font-size: 30px;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-left: 20px;
     color: #fff;
     transition: all .3s;
