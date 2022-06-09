@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tripaza-회원가입</title>
+    <title>Tripaza</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -325,6 +325,11 @@ input[id="menuicon"]:checked+label+div {
     border: 1px solid rgba(0, 0, 0, 0.322);
 }
  
+.join-input-gender #gender{
+	width: 500px
+
+}
+ 
 .submit button {
     padding: 20px;
     border: 1px solid #0151E5;
@@ -361,7 +366,9 @@ input[id="menuicon"]:checked+label+div {
 
 /* footer 부분 */
 footer {
-    background-color: rgba(0, 0, 0, 0.514);
+    background: #bdc3c7;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 300px;
     text-align: center;
     align-items: center;
@@ -433,13 +440,12 @@ footer hr {
             <div class="info-form">
                 <table>
                     <tr>
-
                         <td>아이디</td>
-                        <td class="join-input"><input type="text" name="id" id="userId"></td>
+                        <td class="join-input"><input type="text" name="id" id="id"></td>
                     </tr>
                     <tr>
                         <td>비밀번호</td>
-                        <td class="join-input"><input type="password" name="pwd" id="userPwd"></td>
+                        <td class="join-input"><input type="password" name="pwd" id="pwd"></td>
 
                     </tr>
                     <tr>
@@ -449,18 +455,18 @@ footer hr {
                     </tr>
                     <tr>
                         <td>닉네임</td>
-                        <td class="join-input"><input type="text" name="name" id="userNick"></td>
+                        <td class="join-input"><input type="text" name="name" id="nick"></td>
 
                     </tr>
                     <tr>
                         <td>이름</td>
-                        <td class="join-input"><input type="text" name="name" id="userName"></td>
+                        <td class="join-input"><input type="text" name="name" id="name"></td>
 
                     </tr>
                     <tr>
                         <td>생년월일</td>
-                        <td class="join-input-di"><input type="text" name="year" id="userDate" placeholder="년(4자)"><select name="year"
-                                id="userDate">
+                        <td class="join-input-di"><input type="text" name="year" id="Bday" placeholder="년(4자)"><select name="year"
+                                id="Bday">
                                 <option value="" selected>월</option>
                                 <option value="1월">1</option>
                                 <option value="2월">2</option>
@@ -475,13 +481,13 @@ footer hr {
                                 <option value="11월">11</option>
                                 <option value="12월">12</option>
                             </select>
-                            <input type="text" name="day" id="userDate" placeholder="일">
+                            <input type="text" name="day" id="Bday" placeholder="일">
                             </span>
                         </td>
                     </tr>
                     <tr>
                         <td>성별</td>
-                        <td class="join-input-gender"> <select name="gender" id="userGd">
+                        <td class="join-input-gender"> <select name="gender" id="gender">
                         <option value="" selected>성별</option>
                         <option value="male">남자</option>
                         <option value="female">여자</option>
@@ -490,12 +496,12 @@ footer hr {
                     </tr>
                     <tr>
                         <td>휴대전화</td>
-                        <td class="join-input"><input type="tel" name="tel" id="userTel" placeholder="전화번호 입력"></td>
+                        <td class="join-input"><input type="tel" name="tel" id="tel" placeholder="전화번호 입력"></td>
                     </tr>
                 </table>
                 <div class="submit">
                     <a href="#"><button class="join-submit">가입하기</button></a> <br><br>
-                    이미 계정이 있으신가요? -> <a href="http://localhost:8090/login/login.jsp" class="login">로그인</a>
+                    이미 계정이 있으신가요? -> <a href="http://localhost:8090/Tripaza/login/login.jsp" class="login">로그인</a>
                 </div>
             </div>
         </div>

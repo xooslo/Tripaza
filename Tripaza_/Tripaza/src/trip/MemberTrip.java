@@ -9,24 +9,32 @@ import trip.JDBCUtil;
 
 public class MemberTrip {
 	
-	public int insertMember(String userId, String userPwd, String userNick, String userName, String userDate, String userGd, String userTel) {
+	public int insertMember(String userId, String userPwd, String pwdCk, String userNick, String userName, String userDate, String userGd, String userTel) {
 		int n = 0;
 		
 		Connection con = null;
 		PreparedStatement pstmt = null;
-		String sql = "insert into member values(?, ?, ?, ?, ?, ?, ?)";
+		String sql = "insert into member values(?, ?, ?, ?, ?, ?, ?, ?)";
 		
 		con = JDBCUtil.getConnection();
+		
+		if(con == null) {
+			System.out.println("con == null");
+		}
+		
 		try {
 			pstmt = con.prepareStatement(sql);
+			System.out.println("--------------------1111");
 			pstmt.setString(1, userId);
 			pstmt.setString(2, userPwd);
-			pstmt.setString(3, userNick);
-			pstmt.setString(4, userName);
-			pstmt.setString(5, userDate);
-			pstmt.setString(6, userGd);
-			pstmt.setString(7, userTel);
+			pstmt.setString(3, pwdCk);
+			pstmt.setString(4, userNick);
+			pstmt.setString(5, userName);
+			pstmt.setString(6, userDate);
+			pstmt.setString(7, userGd);
+			pstmt.setString(8, userTel);
 			n = pstmt.executeUpdate();
+			System.out.println("--------------------2222");
 			
 		} catch (SQLException e) {
 			e.printStackTrace();

@@ -1,4 +1,4 @@
-<%@page import="trip.MemberTrip"%>
+ <%@page import="trip.MemberTrip"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -9,19 +9,23 @@
 </head>
 <body>
 <%
-	String userId, userPwd, userNick, userName, userDate, userGd, userTel;
+	String id, pwd, pwdCk, nick, name, Bday, gender, tel;
 	MemberTrip trip = new MemberTrip();
 	int n = 0;
 	
-	userId = request.getParameter("userId");
-	userPwd = request.getParameter("userPwd");
-	userNick = request.getParameter("userNick");
-	userName = request.getParameter("userName");
-	userDate = request.getParameter("userDate");
-	userGd = request.getParameter("userGd");
-	userTel = request.getParameter("userTel");
+	System.out.println("--------------------3333");
+	id = request.getParameter("id");
+	pwd = request.getParameter("pwd");
+	pwdCk = request.getParameter("pwdCk");
+	nick = request.getParameter("nick");
+	name = request.getParameter("name");
+	Bday = request.getParameter("Bday");
+	gender = request.getParameter("gender");
+	tel = request.getParameter("tel");
 	
-	n = trip.insertMember(userId, userPwd, userNick, userName, userDate, userGd, userTel);
+	n = trip.insertMember(id, pwd, pwdCk, nick, name, Bday, gender, tel);
+	
+	System.out.println("--------------------4444");
 	
 	if(n > 0)
 		response.sendRedirect("/login/login.jsp");

@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Tripaza</title>
 <style>
 @font-face {
     font-family: 'Happiness-Sans-Title';
@@ -431,7 +431,9 @@ input[id="menuicon"]:checked+label+div {
 
 /* footer 부분 */
 footer {
-    background-color: rgba(0, 0, 0, 0.514);
+    background: #bdc3c7;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 300px;
     text-align: center;
     align-items: center;
@@ -593,10 +595,7 @@ footer hr {
                     <h2>Tripaza</h2>
                 </div>
                 <div class="footer-font">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
-                        Quas, vel vero? Officiis ipsa dolor sequi animi, <br>
-                        autem voluptates dicta reprehenderit inventore dolores fuga cupiditate incidunt. <br>
-                        Delectus animi doloremque laboriosam exercitationem!</p>
+                    <p> 2022 Team Project &copy; copyright </p>
                 </div>
                 <hr>
                 <div class="footer-icon">

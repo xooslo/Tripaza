@@ -827,7 +827,7 @@ input[id="menuicon"]:checked+label+div {
 
 /* footer 부분 */
 footer {
-    background-color: rgba(0, 0, 0, 0.514);
+    background: linear-gradient(#fff, #000);
     height: 300px;
     text-align: center;
     align-items: center;

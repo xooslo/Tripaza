@@ -20,7 +20,7 @@ create table contents(
 drop table member;
 drop table contents;
 
-insert into member values('asd1234', '1234', '아기', 'sherlock', 'baker 221B', 22334, 'sherlock_1854@gmail.com');
-insert into member values('yonghwan', '0610', '최강용환', '김용환', '서울특별시 청와대', 34228, 'ys2110114@y-y.hs.kr');
+insert into member values('asd1234', '1234', '아기', 'sherlock', '1963-11-09', '남자', '824-456-789');
+insert into member values('yonghwan', '0610', '최강용환', '김용환', '2005-06-10', '남자', '010-4567-8901');
 
 select * from MEMBER;
