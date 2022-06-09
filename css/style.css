@@ -386,6 +386,104 @@ input[id="menuicon"]:checked+label+div {
     transition-delay: .3s;
 
 }
+.more{
+    color: rgba(0, 0, 0, 0.374);
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 2.7rem;
+    font-weight: bolder;
+    transition:all .5s ease-in;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 50px;
+    padding: 10px;
+
+}
+.more:hover {
+    color: black;
+    
+    
+}
+.more span {
+    display: block;
+    position: absolute;
+    background-color: #0151E5;
+}
+.more span:nth-child(1) {
+    left: 0;
+    bottom: 0;
+    width: 1px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform .3s;
+    
+
+}
+.more:hover span:nth-child(1) {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform .3s;
+}
+
+
+.more span:nth-child(2) {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .3s;
+
+}
+.more:hover span:nth-child(2) {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform .3s;
+}
+
+
+.more span:nth-child(3) {
+    right: 0;
+    bottom: 0;
+    width: 1px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform .3s;
+    transition-delay: .3s;
+
+
+}
+.more:hover span:nth-child(3) {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform .3s;
+    transition-delay: .3s;
+
+}
+
+
+.more span:nth-child(4) {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .3s;
+    transition-delay: .3s;
+
+}
+.more:hover span:nth-child(4) {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform .3s;
+    transition-delay: .3s;
+
+}
 
 /* 버튼 디자인 끝 */
 
@@ -620,7 +718,9 @@ input[id="menuicon"]:checked+label+div {
 .container {
     position: relative;
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,3fr);
+    grid-gap: 10px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -699,7 +799,7 @@ footer hr {
 }
 .footer-icon i{
     font-size: 30px;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-left: 20px;
     color: #fff;
     transition: all .3s;
