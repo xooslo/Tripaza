@@ -334,15 +334,15 @@ footer hr {
 </head>
 <body>
 
+    <div class="wrapper">
 <%
-		String id = (String)session.getAttribute("loginOK");
-
-		if(id != null){
-			pageContext.forward("/index.jsp");
-		}
-		else{
+	String id = (String)session.getAttribute("loginOK");
+	
+	if(id != null){
+		pageContext.forward("/index.jsp");
+	} else {
 %>
-    <header>
+    	<header>
         <ul class="title">
             <div class="title-logo">
                 <input type="checkbox" id="menuicon">
@@ -376,7 +376,7 @@ footer hr {
         	</div>
         	<div class="id_password">
             	<input type="text" name="id" id="id" placeholder="아이디를 입력해주세요"><br>
-            	<input type="password" name="password" id="pwd" placeholder="비밀번호를 입력해주세요">
+            	<input type="password" name="pwd" id="pwd" placeholder="비밀번호를 입력해주세요">
         	</div>
         	<div class="pass_find">
             	<label for="checkbox"><input type="checkbox" name="checkbox" id="checkbox"> 보안접속</label>
@@ -389,7 +389,9 @@ footer hr {
     	</div>
     </form>
 <%
-		}
+	}
 %>
+    
+    </div>
 </body>
 </html>

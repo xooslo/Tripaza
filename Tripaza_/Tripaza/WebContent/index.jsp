@@ -511,7 +511,7 @@ footer hr {
             <a href="">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./images/경복궁.jpg" alt="">
+                        <img src="./images/한국/경복궁.jpg" alt="">
                     </div>
                     <div class="content">
                         <h2>한국</h2>
@@ -525,7 +525,7 @@ footer hr {
             <a href="">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./images/후지산_밤.jpeg" alt="">
+                        <img src="./images/일본/후지산_밤.jpeg" alt="">
                     </div>
                     <div class="content">
                         <h2>일본</h2>
@@ -539,7 +539,7 @@ footer hr {
             <a href="">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./images/링컨기념관.jpeg" alt="">
+                        <img src="./images/미국/링컨기념관.jpeg" alt="">
                     </div>
                     <div class="content">
                         <h2>미국</h2>
@@ -553,7 +553,7 @@ footer hr {
             <a href="">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./images/콩코르드다리.jpeg" alt="">
+                        <img src="./images/프랑스/콩코르드다리.jpeg" alt="">
                     </div>
                     <div class="content">
                         <h2>프랑스</h2>
