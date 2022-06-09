@@ -374,7 +374,7 @@ footer hr {
 	String id = (String)session.getAttribute("loginOK");
 	
 	if(id != null){
-		pageContext.forward("/index.jsp");
+		response.sendRedirect("/index-after.jsp");
 	} else {
 %>
     	<header>
@@ -389,10 +389,10 @@ footer hr {
                     <div class="sidebar">
                         <h2>Tripaza</h2><br>
                         <div class="sidebar-item">
-                        	<li><a href="#">홈</a></li><br>
+                        	<li><a href="http://localhost:8090/index.jsp">홈</a></li><br>
                         	<li><a href="#">나라 별 보기</a></li><br>
-                            <li><a href="#">커뮤니티</a></li><br>
-                            <li><a href="#">개인</a></li>
+                            <li><a href="http://localhost:8090/login/login.jsp">커뮤니티</a></li><br>
+                            <li><a href="http://localhost:8090/login/login.jsp">개인</a></li>
                         </div>
                     </div>
                 <h1>Tripaza</h1>
