@@ -328,7 +328,7 @@ input[id="menuicon"]:checked+label+div {
 .submit button {
     padding: 20px;
     border: 1px solid #0151E5;
-    width: 100%;
+    width: 70%;
 }
 
 .ubmit button:nth-of-type(2) {
@@ -411,17 +411,17 @@ footer hr {
                 <div class="sidebar">
                     <h2>Tripaza</h2><br>
                     <div class="sidebar-item">
-                    	<li><a href="#">홈</a></li>
+                    	<li><a href="http://localhost:8090/index.jsp">홈</a></li>
                     	<li><a href="#">나라 별 보기</a></li>
-                    	<li><a href="#">커뮤니티</a></li>
-                        <li><a href="#">개인</a></li>
+                    	<li><a href="http://localhost:8090/login/login.jsp">커뮤니티</a></li>
+                        <li><a href="http://localhost:8090/login/login.jsp">개인</a></li>
                     </div>
                 </div>
                 <h1>Tripaza</h1>
             </div>
             <div class="title-login">
-                <li><a href="http://127.0.0.1:5500/login.html#">로그인</a></li>
-                <li><a href="http://127.0.0.1:5500/join.html">회원가입</a></li>
+                <li><a href="http://localhost:8090/login/login.jsp">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
             </div>
         </ul>
     </header>
@@ -490,7 +490,7 @@ footer hr {
                 </table>
                 <div class="submit">
                     <a href="#"><button class="join-submit">가입하기</button></a> <br><br>
-                    이미 계정이 있으신가요? -> <a href="http://127.0.0.1:5500/login.html#" class="login">로그인</a>
+                    이미 계정이 있으신가요? -> <a href="http://localhost:8090/login/login.jsp" class="login">로그인</a>
                 </div>
             </div>
         </div>
