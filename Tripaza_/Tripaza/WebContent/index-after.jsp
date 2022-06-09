@@ -488,18 +488,19 @@ footer hr {
                 <div class="sidebar">
                     <h2>Tripaza</h2><br>
                     <div class="sidebar-item">
-                        <li><a href="http://localhost:8090/index.jsp">홈</a></li><br>
+                        <li><a href="#">홈</a></li><br>
                         <li><a href="#">나라 별 보기</a></li><br>
-                        <li><a href="http://localhost:8090/login/login.jsp">커뮤니티</a></li><br>
-                        <li><a href="http://localhost:8090/login/login.jsp">개인</a></li><br>
+                        <li><a href="#">커뮤니티</a></li><br>
+                        <li><a href="#">개인</a></li><br>
                     </div>
                 </div>
                 <h1>Tripaza</h1>
             </div>
-                <div class="title-login">
-                    <li><a href="#">로그인</a></li>
-                    <li><a href="">회원가입</a></li>
-                </div>
+                <form action="" method="get">
+                	<div class="title-login">
+                    	<li><a href="http://localhost:8090/index.jsp">로그아웃</a></li>
+                	</div>
+                </form>
         </ul>
     </header>
     <!-- 헤더 끝 -->
