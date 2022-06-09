@@ -3,9 +3,9 @@ create table member(
 	pwd varchar2(20) not null,
 	nick varchar2(25) not null,
 	name varchar2(30) not null,
-	address varchar2(150),
-	zip_code number(6),
-	email varchar2(50),
+	Bday date,
+	gender varchar(10),
+	tel varchar2(50),
 	primary key(id)
 );
 

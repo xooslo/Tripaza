@@ -700,13 +700,63 @@ input[id="menuicon"]:checked+label+div {
 .japan-track {
 } */
 
+
+/* 사이트 설명 시작 */
+#information{
+    top: 60%;
+    height: 1500px;
+}
+
+#information > h2 {
+    text-align: left;
+    padding-left: 100px;
+    font-size: 2.9rem;
+    font-weight: bolder;
+}
+
+#information > h4 {
+    text-align: left;
+    padding-left: 100px;
+    font-size: 1.5rem;
+}
+
+#information > p {
+    text-align: left;
+    padding-left: 100px;
+    font-size: 1.2rem;
+}
+
+.information-item1{
+    width: 500px;
+    background-image: url(/images/social-media.png);
+    background-size: 500px;
+    background-position-x: right;
+    margin-left: 20%;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.information-item2{
+    width: 700px;
+    background-image: url(/images/trip.jpg);
+    background-size: 600px;
+    background-position-x: right;
+    margin-left: 10%;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+
+/* 사이트 설명 끝 */
+
+
 /* card 부분 시작 */
 @keyframes country-font {
     
 }
 #country {
     top: 80%;
-    height: 1300px;
+    height: 1050px;
 }
 
 #country > h2 {
