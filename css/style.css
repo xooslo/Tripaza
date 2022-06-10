@@ -824,6 +824,167 @@ input[id="menuicon"]:checked+label+div {
     
 }
 /* card 부분 끝 */
+/* information section*/
+.information-container {
+    width: 1300px;
+    height: 500px;
+
+}
+
+.information-container h2{
+    font-size: 45px;
+
+}
+
+
+
+.information-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.information-title {
+    text-align: center;
+    margin-bottom: 100px;
+}
+.information-img {
+    width: 500px;
+    height: 300px;
+}
+.information-img img {
+    width: 100%;
+    height: 100%;
+}
+/* information section 끝 */
+
+/* introduce 시작 */
+@keyframes visual-slider {
+    8.3% {
+        transform: translateX(0%);
+
+    }
+    16.6% {
+        transform: translateX(-100%);
+    }
+    24.9% {
+        transform: translateX(-100%);
+    }
+    33.2% {
+        transform: translateX(-200%);
+    }
+    41.5% {
+        transform: translateX(-200%);
+    }
+    49.8% {
+        transform: translateX(-300%);
+    }
+    58.1% {
+        transform: translateX(-300%);
+    }
+    66.4% {
+        transform: translateX(-400%);
+    }
+    74.7% {
+        transform: translateX(-400%);
+    }
+    83% {
+        transform: translateX(-500%);
+    }
+    91.3% {
+        transform: translateX(-500%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+#introduce-wrapper .introduce-container .introduce-title {
+    text-align: center;
+}
+
+.introduce-title h2{
+    font-size: 40px;
+}
+
+
+
+.introduce-content {
+    text-align: center;
+    font-size: 18px;
+}
+.visual-img {
+    height: 100%;
+    width: 100%;
+    animation: visual-slider  20s infinite;
+}
+.visual-container {
+    height: 50vw;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+.introduce-img:nth-of-type(1) {
+    width: 100%;
+    right: 0;
+    position: absolute;
+}
+.introduce-img img:nth-of-type(1) {
+    
+    height: 100%;
+    width: 100%;
+}
+.introduce-img:nth-of-type(2) {
+    right: -100%;
+    position: absolute;
+    width: 100%;
+}
+.introduce-img img:nth-of-type(2) {
+    
+    height: 100%;
+    width: 100%;
+}
+.introduce-img:nth-of-type(3) {
+    right: -200%;
+    position: absolute;
+    width: 100%;
+}
+.introduce-img img:nth-of-type(3) {
+    
+    height: 100%;
+    width: 100%;
+}
+.introduce-img:nth-of-type(4) {
+    right: -300%;
+    position: absolute;
+    width: 100%;
+}
+.introduce-img img:nth-of-type(4) {
+    
+    height: 100%;
+    width: 100%;
+}
+.introduce-img:nth-of-type(5) {
+    right: -400%;
+    position: absolute;
+    width: 100%;
+}
+.introduce-img img:nth-of-type(5) {
+    
+    height: 100%;
+    width: 100%;
+}
+.introduce-img:nth-of-type(6) {
+    right: -500%;
+    position: absolute;
+    width: 100%;
+}
+.introduce-img img:nth-of-type(6) {
+    
+    height: 100%;
+    width: 100%;
+}
+
+/* introduce 끝 */
+
 
 /* footer 부분 */
 footer {

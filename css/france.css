@@ -265,7 +265,7 @@ input[id="menuicon"]:checked+label+div {
 
 /* footer 부분 */
 footer {
-    background: linear-gradient(#fff, #000);
+    background: linear-gradient(to right, #1f40ff, #fc3f0081);
     height: 300px;
     text-align: center;
     align-items: center;
