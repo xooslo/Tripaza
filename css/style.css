@@ -275,7 +275,7 @@ input[id="menuicon"]:checked+label+div {
 }
 
 #visual-container {
-    height: 1300px;
+    height: 1000px;
     position: relative;
 }
 
@@ -569,38 +569,6 @@ input[id="menuicon"]:checked+label+div {
     color: black;
 }
 
-/*
-.join_container {
-    text-align: center;
-    line-height: 30px;
-
-}
-.join_title {
-    font-size: 1.3rem;
-    margin-top: 30px;
-    margin-bottom: 30px;
-
-}
-
-.join_container input[type = "text"] {
-    opacity: 0.5;
-    padding: 15px;
-    width: 15%;
-    margin-left: 80px;
-    margin-right: 80px;
-    
-}
-.join_container input[type = "password"] {
-    opacity: 0.5;
-    padding: 15px;
-    width: 15%;
-    margin-left: 80px;
-    margin-right: 80px;
-    
-}
-*/
-/* 로그인 페이지 끝 */
-
 /* 회원가입 페이지 시작 */
 
 #join-container {
@@ -678,83 +646,189 @@ input[id="menuicon"]:checked+label+div {
 #userGd {
     width: 100%;
 }
-
-
-
-
-
-/* ??? 이거 왜 안될까 */
-/* #join-container .join .info-form table td input:nth-of-type(2) {
-    width: 100%;
-} */
-
-/* 회원가입 페이지 끝 */
-
-/* .japan {
-    width: 100%;
-    background-color: rgba(179, 179, 179, 0.357);
-    
+/* information section*/
+.information-container {
+    width: 1300px;
+    height: 900px;
 
 }
-.japan-title h1{
-    font-size: 1.8rem;
-    font-weight: bold;
-    
+
+.information-container h2{
+    font-size: 45px;
 
 }
-.japan-track {
-} */
 
 
-/* 사이트 설명 시작 */
-#information{
-    top: 60%;
-    height: 1500px;
+
+.information-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
-#information > h2 {
-    text-align: left;
-    padding-left: 100px;
-    font-size: 2.9rem;
-    font-weight: bolder;
+.information-title {
+    text-align: center;
+    margin-bottom: 100px;
 }
-
-#information > h4 {
-    text-align: left;
-    padding-left: 100px;
-    font-size: 1.5rem;
-}
-
-#information > p {
-    text-align: left;
-    padding-left: 100px;
-    font-size: 1.2rem;
-}
-
-.information-item1{
+.information-img {
     width: 500px;
-    background-image: url(/images/social-media.png);
-    background-size: 500px;
-    background-position-x: right;
-    margin-left: 20%;
-    background-repeat: no-repeat;
-    height: 400px;
+    height: 300px;
+}
+.information-img img {
+    width: 100%;
+    height: 100%;
+}
+/* information section 끝 */
+
+/* introduce 시작 */
+@keyframes visual-slider {
+    8.3% {
+        transform: translateX(0%);
+
+    }
+    16.6% {
+        transform: translateX(-100%);
+    }
+    24.9% {
+        transform: translateX(-100%);
+    }
+    33.2% {
+        transform: translateX(-200%);
+    }
+    41.5% {
+        transform: translateX(-200%);
+    }
+    49.8% {
+        transform: translateX(-300%);
+    }
+    58.1% {
+        transform: translateX(-300%);
+    }
+    66.4% {
+        transform: translateX(-400%);
+    }
+    74.7% {
+        transform: translateX(-400%);
+    }
+    83% {
+        transform: translateX(-500%);
+    }
+    91.3% {
+        transform: translateX(-500%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+#introduce-wrapper {
+    height: 1100px;
+}
+#introduce-wrapper .introduce-container .introduce-title {
+    text-align: center;
 }
 
-.information-item2{
-    width: 700px;
-    background-image: url(/images/trip.jpg);
-    background-size: 600px;
-    background-position-x: right;
-    margin-left: 10%;
-    background-repeat: no-repeat;
-    height: 400px;
+.introduce-title h2{
+    font-size: 40px;
 }
 
+.introduce-content {
+    text-align: center;
+    font-size: 18px;
+    
+}
 
-/* 사이트 설명 끝 */
+.visual-container {
+    height: 34vw;
+    border-radius: 125px;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
 
+}
+.visual-img {
+    height: 100%;
+    width: 100%;
+    animation: visual-slider  35s infinite;
+}
+.introduce-font {
+    text-align: center;
+}
+.introduce-img:nth-of-type(1) {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    position: absolute;
+}
+.introduce-img img:nth-of-type(1) {
+    object-fit: cover;
+    
+    height: 100%;
+    width: 100%;
+}
+.introduce-img:nth-of-type(2) {
+    right: -100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
 
+}
+.introduce-img img:nth-of-type(2) {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.introduce-img:nth-of-type(3) {
+    right: -200%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+.introduce-img img:nth-of-type(3) {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.introduce-img:nth-of-type(4) {
+    right: -300%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+.introduce-img img:nth-of-type(4) {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.introduce-img:nth-of-type(5) {
+    right: -400%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+.introduce-img img:nth-of-type(5) {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.introduce-img:nth-of-type(6) {
+    right: -500%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+.introduce-img img:nth-of-type(6) {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* introduce 끝 */
 /* card 부분 시작 */
 @keyframes country-font {
     
@@ -829,166 +903,6 @@ input[id="menuicon"]:checked+label+div {
     
 }
 /* card 부분 끝 */
-/* information section*/
-.information-container {
-    width: 1300px;
-    height: 500px;
-
-}
-
-.information-container h2{
-    font-size: 45px;
-
-}
-
-
-
-.information-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.information-title {
-    text-align: center;
-    margin-bottom: 100px;
-}
-.information-img {
-    width: 500px;
-    height: 300px;
-}
-.information-img img {
-    width: 100%;
-    height: 100%;
-}
-/* information section 끝 */
-
-/* introduce 시작 */
-@keyframes visual-slider {
-    8.3% {
-        transform: translateX(0%);
-
-    }
-    16.6% {
-        transform: translateX(-100%);
-    }
-    24.9% {
-        transform: translateX(-100%);
-    }
-    33.2% {
-        transform: translateX(-200%);
-    }
-    41.5% {
-        transform: translateX(-200%);
-    }
-    49.8% {
-        transform: translateX(-300%);
-    }
-    58.1% {
-        transform: translateX(-300%);
-    }
-    66.4% {
-        transform: translateX(-400%);
-    }
-    74.7% {
-        transform: translateX(-400%);
-    }
-    83% {
-        transform: translateX(-500%);
-    }
-    91.3% {
-        transform: translateX(-500%);
-    }
-    100% {
-        transform: translateX(0%);
-    }
-}
-#introduce-wrapper .introduce-container .introduce-title {
-    text-align: center;
-}
-
-.introduce-title h2{
-    font-size: 40px;
-}
-
-
-
-.introduce-content {
-    text-align: center;
-    font-size: 18px;
-}
-.visual-img {
-    height: 100%;
-    width: 100%;
-    animation: visual-slider  20s infinite;
-}
-.visual-container {
-    height: 50vw;
-    overflow: hidden;
-    width: 100%;
-    margin: 0 auto;
-}
-.introduce-img:nth-of-type(1) {
-    width: 100%;
-    right: 0;
-    position: absolute;
-}
-.introduce-img img:nth-of-type(1) {
-    
-    height: 100%;
-    width: 100%;
-}
-.introduce-img:nth-of-type(2) {
-    right: -100%;
-    position: absolute;
-    width: 100%;
-}
-.introduce-img img:nth-of-type(2) {
-    
-    height: 100%;
-    width: 100%;
-}
-.introduce-img:nth-of-type(3) {
-    right: -200%;
-    position: absolute;
-    width: 100%;
-}
-.introduce-img img:nth-of-type(3) {
-    
-    height: 100%;
-    width: 100%;
-}
-.introduce-img:nth-of-type(4) {
-    right: -300%;
-    position: absolute;
-    width: 100%;
-}
-.introduce-img img:nth-of-type(4) {
-    
-    height: 100%;
-    width: 100%;
-}
-.introduce-img:nth-of-type(5) {
-    right: -400%;
-    position: absolute;
-    width: 100%;
-}
-.introduce-img img:nth-of-type(5) {
-    
-    height: 100%;
-    width: 100%;
-}
-.introduce-img:nth-of-type(6) {
-    right: -500%;
-    position: absolute;
-    width: 100%;
-}
-.introduce-img img:nth-of-type(6) {
-    
-    height: 100%;
-    width: 100%;
-}
-
-/* introduce 끝 */
 
 
 /* footer 부분 */
