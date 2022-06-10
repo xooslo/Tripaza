@@ -839,17 +839,17 @@ input[id="menuicon"]:checked+label+div {
 }
 
 #country > h2 {
-    text-align: left;
-    padding-left: 100px;
+    text-align: center;
+    
     font-size: 2.5rem;
     font-weight: bolder;
 }
 .container {
     position: relative;
-    width: 100%;
+    width: 70%;
     display: grid;
     grid-template-columns: repeat(3,3fr);
-    grid-gap: 10px;
+    grid-gap: 0px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
