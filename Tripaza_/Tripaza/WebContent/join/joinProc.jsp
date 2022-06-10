@@ -9,21 +9,20 @@
 </head>
 <body>
 <%
-	String id, pwd, pwdCk, nick, name, Bday, gender, tel;
+	String id, pwd, pwdCk, nick, name, gender, tel;
 	MemberTrip trip = new MemberTrip();
 	int n = 0;
 	
-	System.out.println("--------------------3333");
+	System.out.println("--------------------1111");
 	id = request.getParameter("id");
 	pwd = request.getParameter("pwd");
 	pwdCk = request.getParameter("pwdCk");
 	nick = request.getParameter("nick");
 	name = request.getParameter("name");
-	Bday = request.getParameter("Bday");
 	gender = request.getParameter("gender");
 	tel = request.getParameter("tel");
 	
-	n = trip.insertMember(id, pwd, pwdCk, nick, name, Bday, gender, tel);
+	n = trip.insertMember(id, pwd, pwdCk, nick, name, gender, tel);
 	
 	System.out.println("--------------------4444");
 	

@@ -12,6 +12,13 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'DMSerifDisplay-Regular';
+    src: url("../css/DM_Serif_Display/DMSerifDisplay-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
  
  * {
     box-sizing: border-box;
@@ -247,7 +254,7 @@ input[id="menuicon"]:checked+label+div {
     top: 280px;
     left: 8%;
     color: black;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'DMSerifDisplay-Regular';
     animation: font-slider 1s;
 }
 

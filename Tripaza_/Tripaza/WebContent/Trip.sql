@@ -1,9 +1,9 @@
 create table member(
 	id varchar2(30) not null,
 	pwd varchar2(20) not null,
+	pwdCk varchar2(20),
 	nick varchar2(25) not null,
 	name varchar2(30) not null,
-	Bday date,
 	gender varchar(10),
 	tel varchar2(50),
 	primary key(id)
@@ -11,9 +11,11 @@ create table member(
 
 create table contents(
 	id varchar2(30),
-	name varchar2(25),
 	content varchar2(4000),
 	title varchar2(100),
+	country number(20),
+	uploadDate date,
+	primary key(country),
 	foreign key (id) references member(id)
 );
 

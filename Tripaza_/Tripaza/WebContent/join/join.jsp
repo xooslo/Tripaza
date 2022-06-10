@@ -222,19 +222,35 @@ input[id="menuicon"]:checked+label+div {
 }
 .title-login a {
     transition: all .3s ease;
-    padding: 10px;
+    padding: 0px 10px;
     border-radius: 10px;
+    position: relative;
+}
+.title-login li a:after{
+    content: "";
+    position: absolute;
+    background-color: #0151E5;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: .3s;
+
+}
+.title-login li a:hover:after{
+    width: 100%;
+   
+}
+
+
+.title-login li a:hover{
+    color: black;
+
+
 }
 
 .title-login li {
     margin-left: 20px;
-}
-
-.title-login a:hover {
-    background-color: rgba(0, 0, 0, 0.514);
-    color: white;
-    transition: all .8s ease;
-    
 }
 /* header 부분 끝 */
 @keyframes font-slider {
@@ -462,28 +478,6 @@ footer hr {
                         <td>이름</td>
                         <td class="join-input"><input type="text" name="name" id="name"></td>
 
-                    </tr>
-                    <tr>
-                        <td>생년월일</td>
-                        <td class="join-input-di"><input type="text" name="year" id="Bday" placeholder="년(4자)"><select name="year"
-                                id="Bday">
-                                <option value="" selected>월</option>
-                                <option value="1월">1</option>
-                                <option value="2월">2</option>
-                                <option value="3월">3</option>
-                                <option value="4월">4</option>
-                                <option value="5월">5</option>
-                                <option value="6월">6</option>
-                                <option value="7월">7</option>
-                                <option value="8월">8</option>
-                                <option value="9월">9</option>
-                                <option value="10월">10</option>
-                                <option value="11월">11</option>
-                                <option value="12월">12</option>
-                            </select>
-                            <input type="text" name="day" id="Bday" placeholder="일">
-                            </span>
-                        </td>
                     </tr>
                     <tr>
                         <td>성별</td>
