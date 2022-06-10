@@ -12,7 +12,14 @@
     font-weight: normal;
     font-style: normal;
 }
- 
+
+@font-face {
+    font-family: 'DMSerifDisplay-Regular';
+    src: url("../css/DM_Serif_Display/DMSerifDisplay-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
  * {
     box-sizing: border-box;
     padding: 0;
@@ -234,10 +241,6 @@ input[id="menuicon"]:checked+label+div {
 /* header 부분 끝 */
 
 #visual-container {
-    background-image: url(/images/global.JPG);
-    background-position-y: 100px;
-    background-position-x: center;
-    background-repeat: no-repeat;
     height: 1300px;
 }
 
@@ -247,12 +250,13 @@ input[id="menuicon"]:checked+label+div {
     top: 280px;
     left: 8%;
     color: black;
-    font-family: 'Times New Roman', Times, serif;
-    animation: font-slider 1s;
+    font-family: 'DMSerifDisplay-Regular';
+    animation: font-slider 3s;
 }
 
 .visual-font .map-button {
     font-family: 'Happiness-Sans-Title';
+    
 }
 
 /* 버튼 디자인 시작 */
@@ -490,6 +494,10 @@ footer hr {
                 <div class="sidebar">
                     <h2>Tripaza</h2><br>
                     <div class="sidebar-item">
+                    	<div class="title-login">
+                    		<li><a href="http://localhost:8090/login/login.jsp">로그인</a></li>
+                    		<li><a href="http://localhost:8090/join/join.jsp">회원가입</a></li>
+                		</div><br><br>
                         <li><a href="#">홈</a></li><br>
                         <li><a href="#">나라 별 보기</a></li><br>
                         <li><a href="http://localhost:8090/login/login.jsp">커뮤니티</a></li><br>
@@ -498,10 +506,6 @@ footer hr {
                 </div>
                 <h1>Tripaza</h1>
             </div>
-                <div class="title-login">
-                    <li><a href="http://localhost:8090/login/login.jsp">로그인</a></li>
-                    <li><a href="http://localhost:8090/join/join.jsp">회원가입</a></li>
-                </div>
         </ul>
     </header>
     <!-- 헤더 끝 -->

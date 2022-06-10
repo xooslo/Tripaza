@@ -9,12 +9,12 @@ import trip.JDBCUtil;
 
 public class MemberTrip {
 	
-	public int insertMember(String userId, String userPwd, String pwdCk, String userNick, String userName, String userDate, String userGd, String userTel) {
+	public int insertMember(String id, String pwd, String pwdCk, String nick, String name, String gender, String tel) {
 		int n = 0;
 		
 		Connection con = null;
 		PreparedStatement pstmt = null;
-		String sql = "insert into member values(?, ?, ?, ?, ?, ?, ?, ?)";
+		String sql = "insert into member values(?, ?, ?, ?, ?, ?, ?)";
 		
 		con = JDBCUtil.getConnection();
 		
@@ -24,17 +24,16 @@ public class MemberTrip {
 		
 		try {
 			pstmt = con.prepareStatement(sql);
-			System.out.println("--------------------1111");
-			pstmt.setString(1, userId);
-			pstmt.setString(2, userPwd);
-			pstmt.setString(3, pwdCk);
-			pstmt.setString(4, userNick);
-			pstmt.setString(5, userName);
-			pstmt.setString(6, userDate);
-			pstmt.setString(7, userGd);
-			pstmt.setString(8, userTel);
-			n = pstmt.executeUpdate();
 			System.out.println("--------------------2222");
+			pstmt.setString(1, id);
+			pstmt.setString(2, pwd);
+			pstmt.setString(3, pwdCk);
+			pstmt.setString(4, nick);
+			pstmt.setString(5, name);
+			pstmt.setString(6, gender);
+			pstmt.setString(7, tel);
+			n = pstmt.executeUpdate();
+			System.out.println("--------------------3333");
 			
 		} catch (SQLException e) {
 			e.printStackTrace();

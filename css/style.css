@@ -4,6 +4,13 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'DMSerifDisplay-Regular';
+    src: url("../css/DM_Serif_Display/DMSerifDisplay-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
  
  * {
     box-sizing: border-box;
@@ -22,6 +29,7 @@ a {
 }
 
 body{
+    /*background: -webkit-radial-gradient(60% 60%, circle, yellow, #fff);*/
     -ms-overflow-style: none;
     }
     
@@ -267,11 +275,8 @@ input[id="menuicon"]:checked+label+div {
 }
 
 #visual-container {
-    background-image: url(/images/global.JPG);
-    background-position-y: 100px;
-    background-position-x: center;
-    background-repeat: no-repeat;
     height: 1300px;
+    position: relative;
 }
 
 .visual-font {
@@ -280,7 +285,7 @@ input[id="menuicon"]:checked+label+div {
     top: 280px;
     left: 8%;
     color: black;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'DMSerifDisplay-Regular';
     animation: font-slider 1s;
 }
 
