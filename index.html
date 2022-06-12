@@ -28,10 +28,14 @@
                 <div class="sidebar">
                     <h2>Tripaza</h2><br>
                     <div class="sidebar-item">
-                        <li><a href="#">홈</a></li>
-                        <li><a href="#">나라 별 보기</a></li>
-                        <li><a href="#">커뮤니티</a></li>
-                        <li><a href="#">개인</a></li>
+                    	<div class="title-login">
+                    		<li><a href="http://localhost:8090/login/login.jsp">로그인</a></li>
+                    		<li><a href="http://localhost:8090/join/join.jsp">회원가입</a></li>
+                		</div><br><br>
+                        <li><a href="#">홈</a></li><br>
+                        <li><a href="#">나라 별 보기</a></li><br>
+                        <li><a href="http://localhost:8090/login/login.jsp">커뮤니티</a></li><br>
+                        <li><a href="http://localhost:8090/login/login.jsp">개인</a></li><br>
                     </div>
                 </div>
                 <a href="http://127.0.0.1:5500/index.html"><h1>Tripaza</h1></a>
@@ -60,7 +64,7 @@
     </section>
     <!-- visual 끝 -->
 
-    <!-- 설명 시작 -->
+	<!-- 설명 시작 -->
     <!-- br, item 부분 나중에 수정-->
     <section id="information-wrapper">
         <div class="information-container">
@@ -74,11 +78,10 @@
                     <img src="./images/trip.jpg" alt="">
                 </div>
                 <div class="information-content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit <br>
-                        Velit consectetur sequi<br>
-                        natus minima iure odio distinctio necessitatibus minus dolorum<br>
-                        exercitationem, maxime quidem ipsa nemo harum autem libero quae<br>
-                        sint ipsam! </p>
+                    <p>Tripaza 는 코로나 종식에 한발짝 더 가까워진 지금 <br>
+                    	 해외여행에 보다 쉽게 접근할 수 있도록,<br>
+                    	 낯선 곳에서 어려움 없이 즐길 수 있기를 바라는 마음으로 만들어졌습니다.<br><br>
+                    	당신이 가는 그 곳이 나중에 아름다운 추억으로 남기를 바라며 </p>
                 </div>
             </div>
 
@@ -106,117 +109,78 @@
                     </div>
                 </div>
                 <div class="introduce-font">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                         Odit minus atque sapiente blanditiis laboriosam similique <br>
-                         aspernatur nostrum ea illo, harum consequuntur impedit? <br>
-                          Provident, nulla enim. <br>
-                        Nobis numquam labore exercitationem? Veniam!</p>
+                    <p>각 나라에서 가장 유명한 명소들을 방문해본 사람들의 감상과 경험담을 바탕으로 <br>
+                    	더 즐거운 여행을 계획하실 수 있습니다!</p>
                 </div>
             </div>
     </section>
-
+	
 
     <!-- card 시작 -->
     <section id="country">
         <h2>나라 별 보기</h2>
-        <div class="information-title"><i class="fa-solid fa-plane-arrival"></i></div>
         <div class="container">
 
-            <a href="#">
+            <a href="">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./images/한국/경복궁.jpg" alt="imgErr">
+                        <img src="./images/한국/경복궁.jpg" alt="">
                     </div>
                     <div class="content">
-                        <h2>한국</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                            Minus distinctio quo repellendus sint ratione placeat. Fuga et incidunt maiores. <br>
-                            Amet vitae distinctio unde fugit sint enim perspiciatis necessitatibus molestiae provident.
-                        </p>
+                        <h2>한국</h2><br>
+                        <p>5000년의 역사를 가지고 있는 한국<br>
+                        	한국은 서쪽의 중국과 동쪽의 일본 사이에 놓여 있으며 고유한 언어를 사용한다. <br>
+                        	최근 케이팝이나 드라마 등 문화적으로 많은 주목을 받고 있다.</p><br>
+                        <p class="content-detail">주요 관광지 : 서울, 제주도, 부산</p>
                     </div>
                 </div>
             </a>
 
-            <a href="#">
+            <a href="">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./images/일본/후지산_밤.jpeg" alt="imgErr">
+                        <img src="./images/일본/후지산_밤.jpeg" alt="">
                     </div>
                     <div class="content">
-                        <h2>일본</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                            Minus distinctio quo repellendus sint ratione placeat. Fuga et incidunt maiores. <br>
-                            Amet vitae distinctio unde fugit sint enim perspiciatis necessitatibus molestiae provident.
-                        </p>
+                    	<h2>일본</h2><br>
+                        <p>동아시아에 있는 섬으로 이루어진 나라
+                        	독특한 문화 양식, 애니메이션으로 유명한 나라이다.
+                        	"태양이 떠오르는 나라" 라고 불리기도 한다</p><br>
+                        <p class="content-detail">주요 관광지 : 도쿄, 오사카, 쿄토</p>
                     </div>
-                </div>
+                </div>    
             </a>
-
-            <a href="#">
+            
+            <a href="">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./images/미국/링컨기념관.jpeg" alt="imgErr">
+                        <img src="./images/미국/링컨기념관.jpeg" alt="">
                     </div>
                     <div class="content">
                         <h2>미국</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                            Minus distinctio quo repellendus sint ratione placeat. Fuga et incidunt maiores. <br>
-                            Amet vitae distinctio unde fugit sint enim perspiciatis necessitatibus molestiae provident.
-                        </p>
+                        <p>50개 주와 1개의 특별구로 이루어진 연방제 공화국<br>
+                        	다양한 인종이 섞여 있는 나라이며 이민자의 나라로 불리기도 한다. <br>
+                        	여행하기 좋은 나라로 유명하다.</p><br>
+                        <p class="content-detail">주요 관광지 : 뉴욕, 샌프란시스코, 보스턴</p>
                     </div>
                 </div>
             </a>
 
-            <a href="#">
+            <a href="">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./images/프랑스/콩코르드다리.jpeg" alt="imgErr">
+                        <img src="./images/프랑스/에펠탑.jpg" alt="">
                     </div>
                     <div class="content">
                         <h2>프랑스</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                            Minus distinctio quo repellendus sint ratione placeat. Fuga et incidunt maiores. <br>
-                            Amet vitae distinctio unde fugit sint enim perspiciatis necessitatibus molestiae provident.
-                        </p>
-                    </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="card">
-                    <div class="imgBx">
-                        <img src="./images/영국/빅벤.jpeg" alt="">
-                    </div>
-                    <div class="content">
-                        <h2>영국</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                            Minus distinctio quo repellendus sint ratione placeat. Fuga et incidunt maiores. <br>
-                            Amet vitae distinctio unde fugit sint enim perspiciatis necessitatibus molestiae provident.
-                        </p>
-                    </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="card">
-                    <div class="imgBx">
-                        <img src="./images/중국/만리장성.jpeg" alt="">
-                    </div>
-                    <div class="content">
-                        <h2>중국</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                            Minus distinctio quo repellendus sint ratione placeat. Fuga et incidunt maiores. <br>
-                            Amet vitae distinctio unde fugit sint enim perspiciatis necessitatibus molestiae provident.
-                        </p>
+                        <p>서유럽에 위치한 예술과 낭만의 나라<br>
+                        	세계에서 가장 인기있는 여행지 중 하나이며 유명한 소설, 드라마, 영화 등의 배경이 된 곳이다.<br>
+                        	디저트로 유명한 나라이기도 하다.</p><br>
+                        <p class="content-detail">주요 관광지 : 파리, 마르세유, 몽펠리에</p>
                     </div>
                 </div>
             </a>
         </div>
-        <a href="#" class="more">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            더 보기
-        </a>
     </section>
     <!-- card 끝 -->
 
@@ -228,10 +192,7 @@
                     <h2>Tripaza</h2>
                 </div>
                 <div class="footer-font">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
-                        Quas, vel vero? Officiis ipsa dolor sequi animi, <br>
-                        autem voluptates dicta reprehenderit inventore dolores fuga cupiditate incidunt. <br>
-                        Delectus animi doloremque laboriosam exercitationem!</p>
+                    <p> 2022 Team Project &copy; copyright </p>
                 </div>
                 <hr>
                 <div class="footer-icon">
@@ -243,7 +204,6 @@
         </div>
     </footer>
     <!-- footer 끝-->
-
 
 </body>
 

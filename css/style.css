@@ -648,6 +648,7 @@ input[id="menuicon"]:checked+label+div {
 }
 /* information section*/
 .information-container {
+    font-family: 'Happiness-Sans-Title';
     width: 1300px;
     height: 900px;
 
@@ -677,6 +678,13 @@ input[id="menuicon"]:checked+label+div {
     width: 100%;
     height: 100%;
 }
+
+.information-content{
+	font-family: 'Happiness-Sans-Title';
+    font-size: large;
+	width: 600px;
+}
+
 /* information section 끝 */
 
 /* introduce 시작 */
@@ -731,6 +739,7 @@ input[id="menuicon"]:checked+label+div {
     }
 }
 #introduce-wrapper {
+    font-family: 'Happiness-Sans-Title';
     height: 1400px;
 }
 #introduce-wrapper .introduce-container .introduce-title {
@@ -861,7 +870,6 @@ input[id="menuicon"]:checked+label+div {
 
 #country > h2 {
     text-align: center;
-    
     font-size: 2.5rem;
     font-weight: bolder;
 }
@@ -923,12 +931,19 @@ input[id="menuicon"]:checked+label+div {
     transition-delay: .3s;
     
 }
+.content-detail{
+	font-family: 'Happiness-Sans-Title';
+}
+
 /* card 부분 끝 */
+
 
 
 /* footer 부분 */
 footer {
-    background: linear-gradient(#fff, #000);
+    background: #bdc3c7;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 300px;
     text-align: center;
     align-items: center;
@@ -950,7 +965,7 @@ footer hr {
 }
 .footer-icon i{
     font-size: 30px;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: 20px;
     color: #fff;
     transition: all .3s;
@@ -1015,5 +1030,11 @@ footer hr {
     color: white;
 }
 
+.user-profile{
+	color: #0151E5;
+}
+.user-profile:hover{
+	cursor: pointer;
+}
 /* user 부분 끝*/
 

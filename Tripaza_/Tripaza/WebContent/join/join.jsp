@@ -12,10 +12,17 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
 @font-face {
-font-family: 'Happiness-Sans-Title';
-src: url("../css/fonts/screen/ttf/Happiness-Sans-Title.ttf");
-font-weight: normal;
-font-style: normal;
+    font-family: 'Happiness-Sans-Title';
+    src: url("../css/fonts/screen/ttf/Happiness-Sans-Title.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DMSerifDisplay-Regular';
+    src: url("../css/DM_Serif_Display/DMSerifDisplay-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
 }
  
  * {
@@ -35,6 +42,7 @@ a {
 }
 
 body{
+    /*background: -webkit-radial-gradient(60% 60%, circle, yellow, #fff);*/
     -ms-overflow-style: none;
     }
     
@@ -194,8 +202,11 @@ input[id="menuicon"]:checked+label+div {
     width: 100%;
    
 }
+
+
 .sidebar-item li a:hover{
     color: gray;
+
 }
 
 /* 슬라이드 바 끝 */
@@ -252,50 +263,8 @@ input[id="menuicon"]:checked+label+div {
 .title-login li {
     margin-left: 20px;
 }
+
 /* header 부분 끝 */
-@keyframes font-slider {
-    from {
-        left: -280px;
-        opacity: 0;
-    }
-    to {
-        left: 8%;
-        opacity: 1;
-    }
-    
-}
-@keyframes font-disapper {
-    from {
-        left: 8%;
-        opacity: 1;
-    }
-    to {
-        left: -280px;
-        opacity: 0;
-    }
-}
-
-#visual-container {
-    background-image: url(/images/global.JPG);
-    background-position-y: 100px;
-    background-position-x: center;
-    background-repeat: no-repeat;
-    height: 1300px;
-}
-
-.visual-font {
-    position: absolute;
-    font-size: 5rem;
-    top: 280px;
-    left: 8%;
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    animation: font-slider 1s;
-}
-
-.visual-font .map-button {
-    font-family: 'Happiness-Sans-Title';
-}
 
 /* 회원가입 페이지 시작 */
 
@@ -307,7 +276,7 @@ input[id="menuicon"]:checked+label+div {
     text-align: center;
     
 }
-#join-container > div > div.info-form > table {
+#join-container > .join > .info-form > table {
     line-height: 80px;
 
 }
@@ -317,6 +286,7 @@ input[id="menuicon"]:checked+label+div {
     font-size: 2rem;
     font-weight: bold;
 }
+
 .join-input {
     width: 80%;
 }
@@ -327,6 +297,7 @@ input[id="menuicon"]:checked+label+div {
     padding: 20px;
     opacity: 0.5;
 }
+
 .join-input-di input{
     width: 41.5%;
     border-radius: 3px;
@@ -334,6 +305,7 @@ input[id="menuicon"]:checked+label+div {
     padding: 20px;
     opacity: 0.5;
 }
+
 .join select {
     padding: 20px;
     opacity: 0.5;
@@ -349,7 +321,7 @@ input[id="menuicon"]:checked+label+div {
 .submit button {
     padding: 20px;
     border: 1px solid #0151E5;
-    width: 70%;
+    width: 80%;
 }
 
 .ubmit button:nth-of-type(2) {
@@ -375,9 +347,6 @@ input[id="menuicon"]:checked+label+div {
 .submit .login{
     padding-bottom: 50px;
     color: #0151E5;
-}
-#userGd {
-    width: 100%;
 }
 
 /* footer 부분 */
@@ -421,8 +390,7 @@ footer hr {
     </style>
 </head>
 <body>
-    <form action="joinProc.jsp" method="post">
-    	<header>
+	<header>
         <ul class="title">
             <div class="title-logo">
                 <input type="checkbox" id="menuicon">
@@ -448,6 +416,8 @@ footer hr {
             </div>
         </ul>
     </header>
+    
+    <form action="joinProc.jsp" method="post">
     <section id="join-container">
         <div class="join">
             <div class="join-title">
@@ -457,46 +427,46 @@ footer hr {
                 <table>
                     <tr>
                         <td>아이디</td>
-                        <td class="join-input"><input type="text" name="id" id="id"></td>
-                    </tr>
-                    <tr>
-                        <td>비밀번호</td>
-                        <td class="join-input"><input type="password" name="pwd" id="pwd"></td>
+                       	<td class="join-input"><input type="text" name="id" id="id"></td>
+                   	</tr>
+                   	<tr>
+                       	<td>비밀번호</td>
+                       	<td class="join-input"><input type="password" name="pwd" id="pwd"></td>
+
+                   	</tr>
+                   	<tr>
+                       	<td>비밀번호 재확인</td>
+                       	<td class="join-input"> <input type="password" name="pwdCk" id="pwdCk"></td>
+
+                   	</tr>
+                   	<tr>
+                       	<td>닉네임</td>
+                       	<td class="join-input"><input type="text" name="nick" id="nick"></td>
 
                     </tr>
-                    <tr>
-                        <td>비밀번호 재확인</td>
-                        <td class="join-input"> <input type="password" name="pwdCk" id="pwdCk"></td>
+                   	<tr>
+                       	<td>이름</td>
+                       	<td class="join-input"><input type="text" name="name" id="name"></td>
 
-                    </tr>
-                    <tr>
-                        <td>닉네임</td>
-                        <td class="join-input"><input type="text" name="name" id="nick"></td>
-
-                    </tr>
-                    <tr>
-                        <td>이름</td>
-                        <td class="join-input"><input type="text" name="name" id="name"></td>
-
-                    </tr>
-                    <tr>
-                        <td>성별</td>
-                        <td class="join-input-gender"> <select name="gender" id="gender">
-                        <option value="" selected>성별</option>
-                        <option value="male">남자</option>
-                        <option value="female">여자</option>
-                        <option value="none">선택 안함</option>
-                    </select></td>
-                    </tr>
-                    <tr>
-                        <td>휴대전화</td>
-                        <td class="join-input"><input type="tel" name="tel" id="tel" placeholder="전화번호 입력"></td>
-                    </tr>
+                   	</tr>
+                   	<tr>
+                       	<td>성별</td>
+                       	<td class="join-input-gender"> <select name="gender" id="gender">
+                       	<option value="" selected>성별</option>
+                       	<option value="male">남자</option>
+                       	<option value="female">여자</option>
+                       	<option value="none">선택 안함</option>
+                   	</select></td>
+                   	</tr>
+                   	<tr>
+                       	<td>휴대전화</td>
+                       	<td class="join-input"><input type="tel" name="tel" id="tel" placeholder="전화번호 입력"></td>
+                   	</tr>
                 </table>
                 <div class="submit">
-                    <a href="#"><button class="join-submit">가입하기</button></a> <br><br>
-                    이미 계정이 있으신가요? -> <a href="http://localhost:8090/Tripaza/login/login.jsp" class="login">로그인</a>
-                </div>
+                   	<a href="#"><button class="join-submit">가입하기</button></a> <br><br>
+                   	이미 계정이 있으신가요? -> <a href="http://localhost:8090/login/login.jsp" class="login">로그인</a>
+               	</div>
             </div>
         </div>
     </section>
