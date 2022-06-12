@@ -58,7 +58,7 @@ body{
 
 }
 
-.title h1 {
+.title a {
     font-weight: bold;
     position: absolute;
     left: 13%;
@@ -606,7 +606,7 @@ input[id="menuicon"]:checked+label+div {
     padding: 20px;
     opacity: 0.5;
 }
-.join-input-di input{
+.join-input-id input{
     width: 41.5%;
     border-radius: 3px;
     border: 1px solid rgba(0, 0, 0, 0.322);
@@ -623,7 +623,7 @@ input[id="menuicon"]:checked+label+div {
 .submit button {
     padding: 20px;
     border: 1px solid #0151E5;
-    width: 100%;
+    width: 50%;
 }
 
 .ubmit button:nth-of-type(2) {
@@ -988,14 +988,53 @@ footer hr {
 /* user 부분 시작*/
 .user-wrapper {
     display: flex;
-    height: 1000px;
+    height: 1200px;
     justify-content: center;
     align-items: center;
-    line-height: 40px;
+    line-height: 80px;
+    font-weight: bold;
+    width: 1000px;
+    
+}
+.user-wrapper td p {
+    line-height: 18px;
 }
 .user-wrapper i{
     font-size: 40px;
 
+}
+.user-wrapper input {
+    margin-left: 40px;
+    width: 100%;
+    padding: 20px;
+}
+.user-wrapper textarea {
+    margin-left: 40px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    resize: none;
+}
+.user-wrapper td p {
+    margin-left: 40px;
+}
+.btn-data {
+    padding: 20px;
+    width: 15%;
+    border: 1px solid #0151E5;
+}
+
+.btn-data {
+    background-color: white;
+    margin-top: 10px;
+    width: 100%;
+    transition: all .3s;
+}
+
+.btn-data:hover {
+    cursor: pointer;
+    background-color: #0151E5;
+    color: white;
 }
 
 .user-profile{
