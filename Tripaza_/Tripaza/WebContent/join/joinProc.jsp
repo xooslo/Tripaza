@@ -1,4 +1,5 @@
- <%@page import="trip.MemberTrip"%>
+ <%@page import="dao.MemberDAO"%>
+<%@page import="trip.MemberTrip"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -10,10 +11,9 @@
 <body>
 <%
 	String id, pwd, pwdCk, nick, name, gender, tel;
-	MemberTrip trip = new MemberTrip();
+	MemberDAO dao = new MemberDAO();
 	int n = 0;
-	
-	System.out.println("--------------------1111");
+
 	id = request.getParameter("id");
 	pwd = request.getParameter("pwd");
 	pwdCk = request.getParameter("pwdCk");
@@ -22,13 +22,15 @@
 	gender = request.getParameter("gender");
 	tel = request.getParameter("tel");
 	
-	n = trip.insertMember(id, pwd, pwdCk, nick, name, gender, tel);
-	
-	System.out.println("--------------------4444");
+	if(pwd.equals(pwdCk)){
+		n = dao.insertMember(id, pwd, pwdCk, nick, name, gender, tel);
+	} else {
+		out.println("<script> alert('비밀번호가 일치하지 않습니다.'); history.back(); </script>");
+	}
 	
 	if(n > 0)
 		response.sendRedirect("/login/login.jsp");
-	else
+	else 
 		out.print("<script> history.back() </script>");
 %>
 </body>

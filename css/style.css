@@ -991,5 +991,11 @@ footer hr {
 
 }
 
+.user-profile{
+	color: #0151E5;
+}
+.user-profile:hover{
+	cursor: pointer;
+}
 /* user 부분 끝*/
 

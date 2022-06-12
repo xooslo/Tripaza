@@ -24,7 +24,7 @@ public class LogoutServlet extends HttpServlet {
 		
 		if(id != null) {
 			session.removeAttribute("loginOK");
-			response.sendRedirect("/login/index.jsp");
+			response.sendRedirect("/index.jsp");
 		}
 	}
 }

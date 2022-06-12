@@ -37,6 +37,7 @@ a {
 }
 
 body{
+    /*background: -webkit-radial-gradient(60% 60%, circle, yellow, #fff);*/
     -ms-overflow-style: none;
     }
     
@@ -196,8 +197,11 @@ input[id="menuicon"]:checked+label+div {
     width: 100%;
    
 }
+
+
 .sidebar-item li a:hover{
     color: gray;
+
 }
 
 /* 슬라이드 바 끝 */
@@ -224,28 +228,61 @@ input[id="menuicon"]:checked+label+div {
 }
 .title-login a {
     transition: all .3s ease;
-    padding: 10px;
+    padding: 0px 10px;
     border-radius: 10px;
+    position: relative;
 }
 
 .title-login li {
     margin-left: 20px;
 }
 
-.title-login a:hover {
-    background-color: rgba(0, 0, 0, 0.514);
-    color: white;
-    transition: all .8s ease;
+.title-login li a:hover{
+    color: black;
+}
+
+.title-login li a:after{
+    content: "";
+    position: absolute;
+    background-color: #0151E5;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: .3s;
+
+}
+.title-login li a:hover:after{
+    width: 100%;
+   
+}
+
+/* header 부분 끝 */
+@keyframes font-slider {
+    from {
+        left: -280px;
+        opacity: 0;
+    }
+    to {
+        left: 8%;
+        opacity: 1;
+    }
     
 }
-/* header 부분 끝 */
+@keyframes font-disapper {
+    from {
+        left: 8%;
+        opacity: 1;
+    }
+    to {
+        left: -280px;
+        opacity: 0;
+    }
+}
 
 #visual-container {
-    background-image: url(/images/global.JPG);
-    background-position-y: 100px;
-    background-position-x: center;
-    background-repeat: no-repeat;
-    height: 1300px;
+    height: 1000px;
+    position: relative;
 }
 
 .visual-font {
@@ -360,28 +397,327 @@ input[id="menuicon"]:checked+label+div {
     transition-delay: .3s;
 
 }
+.more{
+    color: rgba(0, 0, 0, 0.374);
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 2.7rem;
+    font-weight: bolder;
+    transition:all .5s ease-in;
+    position: absolute;
+    right: 0;
+    margin-right: 80px;
+    transform: translate(-50%);
+    margin-top: 50px;
+    padding: 10px;
+
+}
+.more:hover {
+    color: black;
+    
+    
+}
+.more span {
+    display: block;
+    position: absolute;
+    background-color: #0151E5;
+}
+.more span:nth-child(1) {
+    left: 0;
+    bottom: 0;
+    width: 1px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform .3s;
+    
+
+}
+.more:hover span:nth-child(1) {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform .3s;
+}
+
+
+.more span:nth-child(2) {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .3s;
+
+}
+.more:hover span:nth-child(2) {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform .3s;
+}
+
+
+.more span:nth-child(3) {
+    right: 0;
+    bottom: 0;
+    width: 1px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform .3s;
+    transition-delay: .3s;
+
+
+}
+.more:hover span:nth-child(3) {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform .3s;
+    transition-delay: .3s;
+
+}
+
+
+.more span:nth-child(4) {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .3s;
+    transition-delay: .3s;
+
+}
+.more:hover span:nth-child(4) {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform .3s;
+    transition-delay: .3s;
+
+}
 
 /* 버튼 디자인 끝 */
 
+/* information section*/
+.information-container {
+    width: 1300px;
+    height: 900px;
+}
+
+.information-container h2{
+    font-size: 45px;
+}
+
+.information-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.information-title {
+    text-align: center;
+    margin-bottom: 100px;
+}
+.information-img {
+    width: 500px;
+    height: 300px;
+}
+.information-img img {
+    width: 100%;
+    height: 100%;
+}
+/* information section 끝 */
+
+/* introduce 시작 */
+@keyframes visual-slider {
+    8.3% {
+        transform: translateX(0%);
+    }
+    16.6% {
+        transform: translateX(-100%);
+    }
+    24.9% {
+        transform: translateX(-100%);
+    }
+    33.2% {
+        transform: translateX(-200%);
+    }
+    41.5% {
+        transform: translateX(-200%);
+    }
+    49.8% {
+        transform: translateX(-300%);
+    }
+    58.1% {
+        transform: translateX(-300%);
+    }
+    66.4% {
+        transform: translateX(-400%);
+    }
+    74.7% {
+        transform: translateX(-400%);
+    }
+    83% {
+        transform: translateX(-500%);
+    }
+    91.3% {
+        transform: translateX(-500%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+@keyframes i-go {
+    0% {
+        transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(40%);
+    }
+    100% {
+        transform: translateX(40%);
+    }
+}
+#introduce-wrapper {
+	font-family: 'Happiness-Sans-Title';
+    height: 1400px;
+}
+#introduce-wrapper .introduce-container .introduce-title {
+    text-align: center;
+    display: flex;
+    width: 8%;
+    align-items: center;
+
+}
+.introduce-title i{
+    font-size: 2.5rem;
+    margin-top: 10px;
+    animation: i-go infinite 3s;
+    transition: all .3s;
+}
+.introduce-title h2{
+    font-size: 40px;
+}
+
+.introduce-content {
+    text-align: center;
+    font-size: 18px;
+    
+}
+
+.visual-container {
+    height: 34vw;
+    border-radius: 125px;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+.visual-img {
+    height: 100%;
+    width: 100%;
+    animation: visual-slider  35s infinite;
+}
+.introduce-font {
+    text-align: center;
+}
+.introduce-img:nth-of-type(1) {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    position: absolute;
+}
+.introduce-img img:nth-of-type(1) {
+    object-fit: cover;
+    
+    height: 100%;
+    width: 100%;
+}
+.introduce-img:nth-of-type(2) {
+    right: -100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+.introduce-img img:nth-of-type(2) {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.introduce-img:nth-of-type(3) {
+    right: -200%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+.introduce-img img:nth-of-type(3) {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.introduce-img:nth-of-type(4) {
+    right: -300%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+.introduce-img img:nth-of-type(4) {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.introduce-img:nth-of-type(5) {
+    right: -400%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+.introduce-img img:nth-of-type(5) {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.introduce-img:nth-of-type(6) {
+    right: -500%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+.introduce-img img:nth-of-type(6) {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* introduce 끝 */
 /* card 부분 시작 */
 @keyframes country-font {
     
 }
 #country {
     top: 80%;
-    height: 1300px;
+    height: 1050px;
 }
 
 #country > h2 {
-    text-align: left;
-    padding-left: 100px;
+    text-align: center;
+    
     font-size: 2.5rem;
     font-weight: bolder;
 }
 .container {
     position: relative;
-    width: 100%;
-    display: flex;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3,3fr);
+    grid-gap: 0px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -434,7 +770,13 @@ input[id="menuicon"]:checked+label+div {
     transition-delay: .3s;
     
 }
+
+.content-detail{
+	font-family: 'Happiness-Sans-Title';
+}
 /* card 부분 끝 */
+
+
 
 /* footer 부분 */
 footer {
@@ -499,13 +841,13 @@ footer hr {
                     <div class="sidebar-item">
                         <li><a href="#">홈</a></li><br>
                         <li><a href="#">나라 별 보기</a></li><br>
-                        <li><a href="#">커뮤니티</a></li><br>
-                        <li><a href="#">개인</a></li><br>
+                        <li><a href="http://localhost:8090/community/board.jsp">커뮤니티</a></li><br>
+                        <li><a href="http://localhost:8090/user/user.jsp">개인</a></li><br>
                     </div>
                 </div>
                 <h1>Tripaza</h1>
             </div>
-                <form action="" method="get">
+                <form action="/logout" method="get">
                 	<div class="title-login">
                     	<li><a href="http://localhost:8090/index.jsp">로그아웃</a></li>
                 	</div>
@@ -530,6 +872,58 @@ footer hr {
     </section>
     <!-- visual 끝 -->
 
+	<!-- 설명 시작 -->
+    <!-- br, item 부분 나중에 수정-->
+    <section id="information-wrapper">
+        <div class="information-container">
+            <div class="information-title">
+                <h2>Tripaza</h2>
+                <i class="fa-solid fa-plane-departure"></i>
+            </div>
+            <div class="information-box">
+
+                <div class="information-img">
+                    <img src="./images/trip.jpg" alt="">
+                </div>
+                <div class="information-content">
+                    <p>Tripaza 는 코로나 종식에 한발짝 더 가까워진 지금 <br>
+                    	 해외여행에 보다 쉽게 접근할 수 있도록,<br>
+                    	 낯선 곳에서 어려움 없이 즐길 수 있기를 바라는 마음으로 만들어졌습니다.<br><br>
+                    	당신이 가는 그 곳이 나중에 아름다운 추억으로 남기를 바라며 </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- 설명 끝 -->
+    <section id="introduce-wrapper">
+            <div class="introduce-container">
+                <div class="introduce-title">
+                    <h2>Tripaza</h2>
+                    <i class="fa-solid fa-plane"></i>
+                </div>
+                <div class="introduce-content">
+                    <p>나라별 소개</p>
+                </div>
+                <div class="visual-container">
+                    <div class="visual-img">
+                        <div class="introduce-img"><img src="./images/미국/링컨기념관.jpeg" alt=""></div>
+                        <div class="introduce-img"><img src="./images/영국/빅벤.jpeg" alt=""></div>
+                        <div class="introduce-img"><img src="./images/일본/후지산_밤.jpeg" alt=""></div>
+                        <div class="introduce-img"><img src="./images/중국/만리장성.jpeg" alt=""></div>
+                        <div class="introduce-img"><img src="./images/프랑스/몽생미셸_밤.jpg" alt=""></div>
+                        <div class="introduce-img"><img src="./images/한국/경복궁_밤.jpg" alt=""></div>
+                    </div>
+                </div>
+                <div class="introduce-font">
+                    <p>각 나라에서 가장 유명한 명소들을 방문해본 사람들의 감상과 경험담을 바탕으로 <br>
+                    	더 즐거운 여행을 계획하실 수 있습니다!</p>
+                </div>
+            </div>
+    </section>
+	
+
     <!-- card 시작 -->
     <section id="country">
         <h2>나라 별 보기</h2>
@@ -541,10 +935,11 @@ footer hr {
                         <img src="./images/한국/경복궁.jpg" alt="">
                     </div>
                     <div class="content">
-                        <h2>한국</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                            Minus distinctio quo repellendus sint ratione placeat. Fuga et incidunt maiores. <br>
-                            Amet vitae distinctio unde fugit sint enim perspiciatis necessitatibus molestiae provident.</p>
+                        <h2>한국</h2><br>
+                        <p>5000년의 역사를 가지고 있는 한국<br>
+                        	한국은 서쪽의 중국과 동쪽의 일본 사이에 놓여 있으며 고유한 언어를 사용한다. <br>
+                        	최근 케이팝이나 드라마 등 문화적으로 많은 주목을 받고 있다.</p><br>
+                        <p class="content-detail">주요 관광지 : 서울, 제주도, 부산</p>
                     </div>
                 </div>
             </a>
@@ -555,14 +950,15 @@ footer hr {
                         <img src="./images/일본/후지산_밤.jpeg" alt="">
                     </div>
                     <div class="content">
-                        <h2>일본</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                            Minus distinctio quo repellendus sint ratione placeat. Fuga et incidunt maiores. <br>
-                            Amet vitae distinctio unde fugit sint enim perspiciatis necessitatibus molestiae provident.</p>
+                    	<h2>일본</h2><br>
+                        <p>동아시아에 있는 섬으로 이루어진 나라
+                        	독특한 문화 양식, 애니메이션으로 유명한 나라이다.
+                        	"태양이 떠오르는 나라" 라고 불리기도 한다</p><br>
+                        <p class="content-detail">주요 관광지 : 도쿄, 오사카, 쿄토</p>
                     </div>
                 </div>    
             </a>
-
+            
             <a href="">
                 <div class="card">
                     <div class="imgBx">
@@ -570,9 +966,10 @@ footer hr {
                     </div>
                     <div class="content">
                         <h2>미국</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                            Minus distinctio quo repellendus sint ratione placeat. Fuga et incidunt maiores. <br>
-                            Amet vitae distinctio unde fugit sint enim perspiciatis necessitatibus molestiae provident.</p>
+                        <p>50개 주와 1개의 특별구로 이루어진 연방제 공화국<br>
+                        	다양한 인종이 섞여 있는 나라이며 이민자의 나라로 불리기도 한다. <br>
+                        	여행하기 좋은 나라로 유명하다.</p><br>
+                        <p class="content-detail">주요 관광지 : 뉴욕, 샌프란시스코, 보스턴</p>
                     </div>
                 </div>
             </a>
@@ -580,13 +977,14 @@ footer hr {
             <a href="">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./images/프랑스/콩코르드다리.jpeg" alt="">
+                        <img src="./images/프랑스/에펠탑.jpg" alt="">
                     </div>
                     <div class="content">
                         <h2>프랑스</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                            Minus distinctio quo repellendus sint ratione placeat. Fuga et incidunt maiores. <br>
-                            Amet vitae distinctio unde fugit sint enim perspiciatis necessitatibus molestiae provident.</p>
+                        <p>서유럽에 위치한 예술과 낭만의 나라<br>
+                        	세계에서 가장 인기있는 여행지 중 하나이며 유명한 소설, 드라마, 영화 등의 배경이 된 곳이다.<br>
+                        	디저트로 유명한 나라이기도 하다.</p><br>
+                        <p class="content-detail">주요 관광지 : 파리, 마르세유, 몽펠리에</p>
                     </div>
                 </div>
             </a>

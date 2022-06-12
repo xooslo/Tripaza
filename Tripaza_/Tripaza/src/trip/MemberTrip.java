@@ -67,4 +67,30 @@ public class MemberTrip {
 		}
 		return result;
 	}
+	
+	public String getCountry() {
+		String member_name = "";
+		
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		String sql = "select country from member where user_id=?";
+
+		conn = JDBCUtil.getConnection();
+
+		try {
+			pstmt = conn.prepareStatement(sql);
+			rs = pstmt.executeQuery();
+
+			while (rs.next()) {
+				member_name = rs.getString(1);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			JDBCUtil.close(conn, pstmt, rs);
+		}
+
+		return member_name;
+	}
 }

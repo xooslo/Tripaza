@@ -12,7 +12,7 @@ public class JDBCUtil {
 		
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl", "hr", "hr");
+			con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "1234");
 			
 		} catch (Exception e) {
 			System.out.println("DB 연결 실패");
