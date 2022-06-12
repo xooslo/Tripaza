@@ -964,20 +964,16 @@ footer hr {
 /* footer 부분 끝 */
 
 /* user 부분 시작*/
-.user-container{
+.user-wrapper {
     display: flex;
+    height: 1000px;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    height: 500px;
+    line-height: 40px;
 }
+.user-wrapper i{
+    font-size: 40px;
 
-.user-profile i{
-    color: lightblue;
-}
-
-.user-profile a{
-    text-decoration: none;
-    color: #0151E5;
 }
 
 /* user 부분 끝*/
