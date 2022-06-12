@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Tripaza-개인</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -33,16 +35,53 @@
                 </div>
                 <h1>Tripaza</h1>
             </div>
+            <div class="title-login">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+            </div>
         </ul>
     </header>
     <!-- 헤더 끝 -->
-    
-    <div class="user-container">
-        <div class="user-profile">
-            <a href="#"><i class="fa-solid fa-circle-user fa-10x"></i></a>
-            <br><br>
-            <p>프로필 사진 <a href="#">바꾸기</a></p>
-        </div>
-    </div>
+    <section>
+        <table class="user-wrapper">
+        <tr>
+            <td rowspan="2"><i class="fa-solid fa-circle-user fa-10x"></i></td>
+            <td>(닉네임)</td>
+        </tr>
+        <tr>
+            <td>프로필 사진 바꾸기</td>
+
+        </tr>
+        <tr>
+            <td>이름</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>웹사이트</td>
+            <td><input type="text" placeholder="웹사이트"></td>
+        </tr>
+        <tr>
+            <td>소개</td>
+            <td><textarea name="" id="" cols="20" rows="5"></textarea></td>
+        </tr>
+        <tr>
+            <td>이메일</td>
+            <td><input type="text" placeholder="example@gmail.com"></td>
+        </tr>
+        <tr>
+            <td>전화번호</td>
+            <td><input type="text" placeholder="+82 10-4739-5167"></td>
+        </tr>
+        <tr>
+            <td>성별</td>
+            <td><input type="text" placeholder="성별"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        </table>
+    </section>
 </body>
+
 </html>
