@@ -6,6 +6,13 @@
 }
 
 @font-face {
+    font-family: 'Happiness-Sans-Regular';
+    src: url("../css/fonts/screen/ttf/Happiness-Sans-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'DMSerifDisplay-Regular';
     src: url("../css/DM_Serif_Display/DMSerifDisplay-Regular.ttf");
     font-weight: normal;
@@ -999,3 +1006,20 @@ footer hr {
 }
 /* user 부분 끝*/
 
+.popup-tablele{
+    width: 650;
+    height: 300;
+    text-align: center;
+}
+.icon{
+    padding-left: 20px;
+    padding-top: 50px;
+}
+.table-text{
+    text-align: center;
+    font-family: 'Happiness-Sans-Regular';
+}
+.table-text2{
+    text-align: center;
+    font-family: 'Happiness-Sans-Title';
+}
