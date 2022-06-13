@@ -16,6 +16,7 @@
     <script src="./js/main.js"></script>
     <script src="./file/jquery-3.4.1.min.js"></script>
     <script>
+        // 모달창 jquery 부분
         $(() => {
             $('.fa-solid').click(() => {
                 $(".modal").fadeToggle();
@@ -26,6 +27,7 @@
                 $(".modal").fadeToggle();
             });
         })
+        // 모달창 jquery 부분 끝
     </script>
 
     <!-- 헤더 시작 -->
@@ -216,7 +218,7 @@
                     <div class="modal">
                         <div class="content">
                             <p>팝업</p>
-                            <button>닫기</button>
+                            <button class="close">닫기</button>
                         </div>
                     </div>
                     <a href="#"><i class="fa-regular fa-circle-question"></i></a>

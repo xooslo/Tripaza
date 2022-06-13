@@ -1045,24 +1045,7 @@ footer hr {
 	cursor: pointer;
 }
 /* user 부분 끝*/
-
-.popup-tablele{
-    width: 650;
-    height: 300;
-    text-align: center;
-}
-.icon{
-    padding-left: 20px;
-    padding-top: 50px;
-}
-.table-text{
-    text-align: center;
-    font-family: 'Happiness-Sans-Regular';
-}
-.table-text2{
-    text-align: center;
-    font-family: 'Happiness-Sans-Title';
-}
+/* 팝업 부분 시작 */
 .modal{    
     width: 100%;    
     height: 100vh;
@@ -1077,17 +1060,34 @@ footer hr {
 
 .content{
     margin: auto;
-    position: absolute;
+    position:absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    padding: 150px;
+    padding: 50px;
     background-color: white;
 }
 .content button {
     position: relative;
-    margin-top: 100px;
     width: 100%;
     margin:  0 auto;
-    margin-right: 300px;
+    margin-right: 600px;
+    margin-top: 600px;
 }
+.close {
+    background-color: white;
+    margin-bottom: ;
+    width: 100%;
+    transition: all .3s;
+    border: 1px black solid;
+    padding: 20px;
+
+}
+
+.close:hover {
+    cursor: pointer;
+    background-color: #0151E5;
+    color: white;
+}
+
+/* 팝업 부분 끝 */
