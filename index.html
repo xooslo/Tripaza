@@ -23,7 +23,7 @@
             });
         })
         $(() => {
-            $('.content').click(() => {
+            $('.content-popup').click(() => {
                 $(".modal").fadeToggle();
             });
         })
@@ -135,7 +135,11 @@
 
     <!-- card 시작 -->
     <section id="country">
-        <h2>나라 별 보기</h2>
+        <div class="country-title">
+            <h2>나라 별 보기</h2>
+            <i class="fa-solid fa-plane-arrival"></i>
+        </div>
+
         <div class="container">
 
             <a href="">
@@ -207,6 +211,7 @@
             <div class="footer-content">
                 <div class="footer-title">
                     <h2>Tripaza</h2>
+
                 </div>
                 <div class="footer-font">
                     <p> 2022 Team Project &copy; copyright </p>
@@ -216,7 +221,7 @@
                     <a href="https://github.com/xooslo/Tripaza"><i class="fa-brands fa-github"></i></a>
                     <a><i class="fa-solid fa-people-group"></i></a>
                     <div class="modal">
-                        <div class="content">
+                        <div class="content-popup">
                             <p>팝업</p>
                             <button class="close">닫기</button>
                         </div>

@@ -698,6 +698,19 @@ input[id="menuicon"]:checked+label+div {
     width: 100%;
 }
 /* information section*/
+
+/* information-animatinon i 부분 코드 시작 */
+@keyframes information-animation {
+    0% {
+        transform: translate(0%);
+    }
+    100% {
+        transform: translate(50%, -50%);
+    }
+    
+}
+/* information-animatinon i 부분 코드 끝 */
+
 .information-container {
     font-family: 'Happiness-Sans-Title';
     width: 1300px;
@@ -720,6 +733,14 @@ input[id="menuicon"]:checked+label+div {
 .information-title {
     text-align: center;
     margin-bottom: 100px;
+    display: flex;
+    width: 18%;
+    align-items: center;
+}
+.information-title i {
+    font-size: 2.0rem;  
+    margin-top: 10px;
+    animation:  information-animation infinite 3s;
 }
 .information-img {
     width: 500px;
@@ -739,6 +760,9 @@ input[id="menuicon"]:checked+label+div {
 /* information section 끝 */
 
 /* introduce 시작 */
+
+/* visual-slider 부분 시작 */
+
 @keyframes visual-slider {
     8.3% {
         transform: translateX(0%);
@@ -778,6 +802,11 @@ input[id="menuicon"]:checked+label+div {
         transform: translateX(0%);
     }
 }
+
+/* visual-slider 부분 끝 */
+
+/* introduce i animation 시작 */
+
 @keyframes i-go {
     0% {
         transform: translateX(0%);
@@ -789,6 +818,9 @@ input[id="menuicon"]:checked+label+div {
         transform: translateX(40%);
     }
 }
+
+/* introduce- i animation 끝 */
+
 #introduce-wrapper {
     font-family: 'Happiness-Sans-Title';
     height: 1400px;
@@ -910,10 +942,22 @@ input[id="menuicon"]:checked+label+div {
 }
 
 /* introduce 끝 */
+
+
 /* card 부분 시작 */
-@keyframes country-font {
-    
+
+/* country-animation i 부분 시작 */
+@keyframes country-animation {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translate(30% ,30%);
+    }
 }
+
+/* country-animation i 부분 끝 */
+
 #country {
     top: 80%;
     height: 1050px;
@@ -923,6 +967,17 @@ input[id="menuicon"]:checked+label+div {
     text-align: center;
     font-size: 2.5rem;
     font-weight: bolder;
+}
+.country-title {
+    display: flex;
+    width: 8%;
+    justify-content: center;
+
+}
+.country-title i {
+    font-size: 2rem;
+    animation: country-animation infinite 3s;
+    
 }
 .container {
     position: relative;
@@ -978,7 +1033,7 @@ input[id="menuicon"]:checked+label+div {
 .container .card:hover .content {
     visibility: visible;
     opacity: 1;
-    margin-top: 0px;
+    margin-top: 10px;
     transition-delay: .3s;
     
 }
@@ -991,6 +1046,7 @@ input[id="menuicon"]:checked+label+div {
 
 
 /* footer 부분 */
+
 footer {
     background: #bdc3c7;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
@@ -1030,6 +1086,7 @@ footer hr {
 /* footer 부분 끝 */
 
 /* user 부분 시작*/
+
 .user-wrapper {
     display: flex;
     height: 1300px;
@@ -1088,8 +1145,11 @@ footer hr {
 .user-profile:hover{
 	cursor: pointer;
 }
+
 /* user 부분 끝*/
+
 /* 팝업 부분 시작 */
+
 .modal{    
     width: 100%;    
     height: 100vh;
@@ -1102,7 +1162,7 @@ footer hr {
     display:none;
 }
 
-.content{
+.content-popup{
     margin: auto;
     position:absolute;
     left: 50%;
@@ -1111,7 +1171,7 @@ footer hr {
     padding: 50px;
     background-color: white;
 }
-.content button {
+.content-popup button {
     position: relative;
     width: 100%;
     margin:  0 auto;
