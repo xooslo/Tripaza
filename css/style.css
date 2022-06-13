@@ -8,6 +8,11 @@
 @font-face {
     font-family: 'Happiness-Sans-Regular';
     src: url("../css/fonts/screen/ttf/Happiness-Sans-Regular.ttf");
+}
+
+@font-face {
+    font-family: '웰컴체 Bold';
+    src: url("../css/welcome_font/웰컴체\ Bold.ttf");
     font-weight: normal;
     font-style: normal;
 }
@@ -15,8 +20,6 @@
 @font-face {
     font-family: 'DMSerifDisplay-Regular';
     src: url("../css/DM_Serif_Display/DMSerifDisplay-Regular.ttf");
-    font-weight: normal;
-    font-style: normal;
 }
  
  * {
@@ -234,7 +237,7 @@ input[id="menuicon"]:checked+label+div {
 .title-login li a:after{
     content: "";
     position: absolute;
-    background-color: #0151E5;
+    background-color: white;
     height: 3px;
     width: 0;
     left: 0;
@@ -245,13 +248,6 @@ input[id="menuicon"]:checked+label+div {
 .title-login li a:hover:after{
     width: 100%;
    
-}
-
-
-.title-login li a:hover{
-    color: black;
-
-
 }
 
 .title-login li {
@@ -284,6 +280,10 @@ input[id="menuicon"]:checked+label+div {
 #visual-container {
     height: 1000px;
     position: relative;
+    background-image: url(../images/비행기.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 1100px;
 }
 
 .visual-font {
@@ -299,6 +299,7 @@ input[id="menuicon"]:checked+label+div {
 .visual-font .map-button {
     font-family: 'Happiness-Sans-Title';
 }
+
 
 /* 버튼 디자인 시작 */
 .map-button{
@@ -496,6 +497,7 @@ input[id="menuicon"]:checked+label+div {
     transition-delay: .3s;
 
 }
+
 /* 버튼 디자인 끝 */
 
 /* 로그인 페이지 시작 */
@@ -1029,7 +1031,6 @@ footer hr {
     margin-top: 25px;
     width: 100%;
     transition: all .3s;
-
 }
 
 .btn-data:hover {
