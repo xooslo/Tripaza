@@ -35,7 +35,6 @@ public class ContentDAO {
 				
 			}
 
-			
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} finally {
