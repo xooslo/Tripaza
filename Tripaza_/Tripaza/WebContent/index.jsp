@@ -14,12 +14,29 @@
 }
 
 @font-face {
-    font-family: 'DMSerifDisplay-Regular';
-    src: url("../css/DM_Serif_Display/DMSerifDisplay-Regular.ttf");
+    font-family: 'Happiness-Sans-Regular';
+    src: url("../css/fonts/screen/ttf/Happiness-Sans-Regular.ttf");
+}
+
+@font-face {
+    font-family: '웰컴체 Bold';
+    src: url("../css/welcome_font/웰컴체\ Bold.ttf");
     font-weight: normal;
     font-style: normal;
 }
 
+@font-face {
+    font-family: '웰컴체 Regular';
+    src: url("../css/welcome_font/웰컴체\ Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DMSerifDisplay-Regular';
+    src: url("../css/DM_Serif_Display/DMSerifDisplay-Regular.ttf");
+}
+ 
  * {
     box-sizing: border-box;
     padding: 0;
@@ -37,6 +54,7 @@ a {
 }
 
 body{
+    /*background: -webkit-radial-gradient(60% 60%, circle, yellow, #fff);*/
     -ms-overflow-style: none;
     }
     
@@ -58,7 +76,7 @@ body{
 
 }
 
-.title h1 {
+.title a {
     font-weight: bold;
     position: absolute;
     left: 13%;
@@ -196,8 +214,11 @@ input[id="menuicon"]:checked+label+div {
     width: 100%;
    
 }
+
+
 .sidebar-item li a:hover{
     color: gray;
+
 }
 
 /* 슬라이드 바 끝 */
@@ -228,19 +249,70 @@ input[id="menuicon"]:checked+label+div {
     border-radius: 10px;
     position: relative;
 }
+.title-login li a:after{
+    content: "";
+    position: absolute;
+    background-color: #0151E5;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: .3s;
+
+}
+.title-login li a:hover:after{
+    width: 100%;
+   
+}
 
 .title-login li {
     margin-left: 20px;
 }
 
-.title-login a:hover {
-    background-color: rgba(0, 0, 0, 0.514);
-    color: white;
-    transition: all .8s ease;
-    
+
+.title-login-sub {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.title-login-sub:hover {
+    cursor: pointer;
+
+}
+.title-login-sub {
+    display: flex;
+    font-weight: bolder;
+    font-size: 1.2rem;
+
+}
+.title-login-sub a {
+    transition: all .3s ease;
+    padding: 0px 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.title-login-sub li a:after{
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: .3s;
+
+}
+.title-login-sub li a:hover:after{
+    width: 100%;
+   
+}
+
+.title-login-sub li {
+    margin-left: 20px;
 }
 /* header 부분 끝 */
-
 @keyframes font-slider {
     from {
         left: -280px;
@@ -266,6 +338,10 @@ input[id="menuicon"]:checked+label+div {
 #visual-container {
     height: 1000px;
     position: relative;
+    background-image: url(../images/비행기.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 1100px;
 }
 
 .visual-font {
@@ -281,6 +357,7 @@ input[id="menuicon"]:checked+label+div {
 .visual-font .map-button {
     font-family: 'Happiness-Sans-Title';
 }
+
 
 /* 버튼 디자인 시작 */
 .map-button{
@@ -482,15 +559,32 @@ input[id="menuicon"]:checked+label+div {
 /* 버튼 디자인 끝 */
 
 /* information section*/
+
+/* information-animatinon i 부분 코드 시작 */
+@keyframes information-animation {
+    0% {
+        transform: translate(0%);
+    }
+    100% {
+        transform: translate(50%, -50%);
+    }
+    
+}
+/* information-animatinon i 부분 코드 끝 */
+
 .information-container {
-	font-family: 'Happiness-Sans-Title';
+    font-family: 'Happiness-Sans-Title';
     width: 1300px;
     height: 900px;
+
 }
 
 .information-container h2{
     font-size: 45px;
+
 }
+
+
 
 .information-box {
     display: flex;
@@ -500,6 +594,14 @@ input[id="menuicon"]:checked+label+div {
 .information-title {
     text-align: center;
     margin-bottom: 100px;
+    display: flex;
+    width: 18%;
+    align-items: center;
+}
+.information-title i {
+    font-size: 2.0rem;  
+    margin-top: 10px;
+    animation:  information-animation infinite 3s;
 }
 .information-img {
     width: 500px;
@@ -511,16 +613,21 @@ input[id="menuicon"]:checked+label+div {
 }
 
 .information-content{
-	font-size: large;
+	font-family: 'Happiness-Sans-Title';
+    font-size: large;
 	width: 600px;
 }
 
 /* information section 끝 */
 
 /* introduce 시작 */
+
+/* visual-slider 부분 시작 */
+
 @keyframes visual-slider {
     8.3% {
         transform: translateX(0%);
+
     }
     16.6% {
         transform: translateX(-100%);
@@ -556,6 +663,11 @@ input[id="menuicon"]:checked+label+div {
         transform: translateX(0%);
     }
 }
+
+/* visual-slider 부분 끝 */
+
+/* introduce i animation 시작 */
+
 @keyframes i-go {
     0% {
         transform: translateX(0%);
@@ -568,18 +680,20 @@ input[id="menuicon"]:checked+label+div {
     }
 }
 
+/* introduce- i animation 끝 */
+
 #introduce-wrapper {
-	font-family: 'Happiness-Sans-Title';
+    font-family: 'Happiness-Sans-Title';
     height: 1400px;
 }
-
 #introduce-wrapper .introduce-container .introduce-title {
     text-align: center;
     display: flex;
     width: 8%;
     align-items: center;
-}
 
+
+}
 .introduce-title i{
     font-size: 2.5rem;
     margin-top: 10px;
@@ -690,19 +804,41 @@ input[id="menuicon"]:checked+label+div {
 
 /* introduce 끝 */
 
+
 /* card 부분 시작 */
-@keyframes country-font {
-    
+
+/* country-animation i 부분 시작 */
+@keyframes country-animation {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translate(30% ,30%);
+    }
 }
+
+/* country-animation i 부분 끝 */
+
 #country {
     top: 80%;
-    height: 1300px;
+    height: 1050px;
 }
 
 #country > h2 {
     text-align: center;
     font-size: 2.5rem;
     font-weight: bolder;
+}
+.country-title {
+    display: flex;
+    width: 8%;
+    justify-content: center;
+
+}
+.country-title i {
+    font-size: 2rem;
+    animation: country-animation infinite 3s;
+    
 }
 .container {
     position: relative;
@@ -758,18 +894,20 @@ input[id="menuicon"]:checked+label+div {
 .container .card:hover .content {
     visibility: visible;
     opacity: 1;
-    margin-top: 0px;
+    margin-top: 10px;
     transition-delay: .3s;
     
 }
-
 .content-detail{
 	font-family: 'Happiness-Sans-Title';
 }
 
 /* card 부분 끝 */
 
+
+
 /* footer 부분 */
+
 footer {
     background: #bdc3c7;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
@@ -808,14 +946,87 @@ footer hr {
 
 /* footer 부분 끝 */
 
+/* 팝업 부분 시작 */
+
+.modal{    
+    width: 100%;    
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    display:none;
+}
+
+.content-popup{
+    margin: auto;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    background-color: white;
+}
+.content-popup button {
+    position: relative;
+    margin-top: 100px;
+    width: 120px;
+    margin:  0 auto;
+    margin-right: 80px;
+    margin-left: 80px;
+}
+.close {
+    background-color: white;
+    transition: all .3s;
+    border: 1px black solid;
+    padding: 20px;
+}
+.close:hover {
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+}
+
+.content-popup i{
+    color: #000;
+    padding-right: 5px;
+}
+
+.content-popup .content-text{
+    font-family: '웰컴체 Regular';
+    color: #000;
+    padding-left: 15px;
+}
+.content-popup h1{
+    color: #000;
+}
+
+
+/* 팝업 부분 끝 */
 </style>
 </head>
-<body>
 <body>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="./js/main.js"></script>
+    <script src="./file/jquery-3.4.1.min.js"></script>
+    <script>
+        // 모달창 jquery 부분
+        $(() => {
+            $('.fa-solid').click(() => {
+                $(".modal").fadeToggle();
+            });
+        })
+        $(() => {
+            $('.content-popup').click(() => {
+                $(".modal").fadeToggle();
+            });
+        })
+        // 모달창 jquery 부분 끝
+    </script>
 
     <!-- 헤더 시작 -->
     <header>
@@ -830,17 +1041,19 @@ footer hr {
                 <div class="sidebar">
                     <h2>Tripaza</h2><br>
                     <div class="sidebar-item">
-                    	<div class="title-login">
-                    		<li><a href="http://localhost:8090/login/login.jsp">로그인</a></li>
-                    		<li><a href="http://localhost:8090/join/join.jsp">회원가입</a></li>
-                		</div><br><br>
+                        <div class="title-login-sub">
+                            <li><a href="http://localhost:8090/login/login.jsp">로그인</a></li>
+                            <li><a href="http://localhost:8090/join/join.jsp">회원가입</a></li>
+                        </div><br><br>
                         <li><a href="#">홈</a></li><br>
                         <li><a href="#">나라 별 보기</a></li><br>
                         <li><a href="http://localhost:8090/login/login.jsp">커뮤니티</a></li><br>
                         <li><a href="http://localhost:8090/login/login.jsp">개인</a></li><br>
                     </div>
                 </div>
-                <h1>Tripaza</h1>
+                <a href="#">
+                    <h1>Tripaza</h1>
+                </a>
             </div>
         </ul>
     </header>
@@ -877,9 +1090,9 @@ footer hr {
                 </div>
                 <div class="information-content">
                     <p>Tripaza 는 코로나 종식에 한발짝 더 가까워진 지금 <br>
-                    	 해외여행에 보다 쉽게 접근할 수 있도록,<br>
-                    	 낯선 곳에서 어려움 없이 즐길 수 있기를 바라는 마음으로 만들어졌습니다.<br><br>
-                    	당신이 가는 그 곳이 나중에 아름다운 추억으로 남기를 바라며 </p>
+                        해외여행에 보다 쉽게 접근할 수 있도록,<br>
+                        낯선 곳에서 어려움 없이 즐길 수 있기를 바라는 마음으로 만들어졌습니다.<br><br>
+                        당신이 가는 그 곳이 나중에 아름다운 추억으로 남기를 바라며 </p>
                 </div>
             </div>
 
@@ -888,35 +1101,39 @@ footer hr {
     </section>
     <!-- 설명 끝 -->
     <section id="introduce-wrapper">
-            <div class="introduce-container">
-                <div class="introduce-title">
-                    <h2>Tripaza</h2>
-                    <i class="fa-solid fa-plane"></i>
-                </div>
-                <div class="introduce-content">
-                    <p>나라별 소개</p>
-                </div>
-                <div class="visual-container">
-                    <div class="visual-img">
-                        <div class="introduce-img"><img src="./images/미국/링컨기념관.jpeg" alt=""></div>
-                        <div class="introduce-img"><img src="./images/영국/빅벤.jpeg" alt=""></div>
-                        <div class="introduce-img"><img src="./images/일본/후지산_밤.jpeg" alt=""></div>
-                        <div class="introduce-img"><img src="./images/중국/만리장성.jpeg" alt=""></div>
-                        <div class="introduce-img"><img src="./images/프랑스/몽생미셸_밤.jpg" alt=""></div>
-                        <div class="introduce-img"><img src="./images/한국/경복궁_밤.jpg" alt=""></div>
-                    </div>
-                </div>
-                <div class="introduce-font">
-                    <p>각 나라에서 가장 유명한 명소들을 방문해본 사람들의 감상과 경험담을 바탕으로 <br>
-                    	더 즐거운 여행을 계획하실 수 있습니다!</p>
+        <div class="introduce-container">
+            <div class="introduce-title">
+                <h2>Tripaza</h2>
+                <i class="fa-solid fa-plane"></i>
+            </div>
+            <div class="introduce-content">
+                <p>나라별 소개</p>
+            </div>
+            <div class="visual-container">
+                <div class="visual-img">
+                    <div class="introduce-img"><img src="./images/미국/링컨기념관.jpeg" alt=""></div>
+                    <div class="introduce-img"><img src="./images/영국/빅벤.jpeg" alt=""></div>
+                    <div class="introduce-img"><img src="./images/일본/후지산_밤.jpeg" alt=""></div>
+                    <div class="introduce-img"><img src="./images/중국/만리장성.jpeg" alt=""></div>
+                    <div class="introduce-img"><img src="./images/프랑스/몽생미셸_밤.jpg" alt=""></div>
+                    <div class="introduce-img"><img src="./images/한국/경복궁_밤.jpg" alt=""></div>
                 </div>
             </div>
+            <div class="introduce-font">
+                <p>각 나라에서 가장 유명한 명소들을 방문해본 사람들의 감상과 경험담을 바탕으로 <br>
+                    더 즐거운 여행을 계획하실 수 있습니다!</p>
+            </div>
+        </div>
     </section>
-	
+
 
     <!-- card 시작 -->
     <section id="country">
-        <h2>나라 별 보기</h2>
+        <div class="country-title">
+            <h2>나라 별 보기</h2>
+            <i class="fa-solid fa-plane-arrival"></i>
+        </div>
+
         <div class="container">
 
             <a href="">
@@ -927,8 +1144,8 @@ footer hr {
                     <div class="content">
                         <h2>한국</h2><br>
                         <p>5000년의 역사를 가지고 있는 한국<br>
-                        	한국은 서쪽의 중국과 동쪽의 일본 사이에 놓여 있으며 고유한 언어를 사용한다. <br>
-                        	최근 케이팝이나 드라마 등 문화적으로 많은 주목을 받고 있다.</p><br>
+                            한국은 서쪽의 중국과 동쪽의 일본 사이에 놓여 있으며 고유한 언어를 사용한다. <br>
+                            최근 케이팝이나 드라마 등 문화적으로 많은 주목을 받고 있다.</p><br>
                         <p class="content-detail">주요 관광지 : 서울, 제주도, 부산</p>
                     </div>
                 </div>
@@ -940,15 +1157,15 @@ footer hr {
                         <img src="./images/일본/후지산_밤.jpeg" alt="">
                     </div>
                     <div class="content">
-                    	<h2>일본</h2><br>
+                        <h2>일본</h2><br>
                         <p>동아시아에 있는 섬으로 이루어진 나라
-                        	독특한 문화 양식, 애니메이션으로 유명한 나라이다.
-                        	"태양이 떠오르는 나라" 라고 불리기도 한다</p><br>
+                            독특한 문화 양식, 애니메이션으로 유명한 나라이다.
+                            "태양이 떠오르는 나라" 라고 불리기도 한다</p><br>
                         <p class="content-detail">주요 관광지 : 도쿄, 오사카, 쿄토</p>
                     </div>
-                </div>    
+                </div>
             </a>
-            
+
             <a href="">
                 <div class="card">
                     <div class="imgBx">
@@ -957,8 +1174,8 @@ footer hr {
                     <div class="content">
                         <h2>미국</h2>
                         <p>50개 주와 1개의 특별구로 이루어진 연방제 공화국<br>
-                        	다양한 인종이 섞여 있는 나라이며 이민자의 나라로 불리기도 한다. <br>
-                        	여행하기 좋은 나라로 유명하다.</p><br>
+                            다양한 인종이 섞여 있는 나라이며 이민자의 나라로 불리기도 한다. <br>
+                            여행하기 좋은 나라로 유명하다.</p><br>
                         <p class="content-detail">주요 관광지 : 뉴욕, 샌프란시스코, 보스턴</p>
                     </div>
                 </div>
@@ -972,8 +1189,8 @@ footer hr {
                     <div class="content">
                         <h2>프랑스</h2>
                         <p>서유럽에 위치한 예술과 낭만의 나라<br>
-                        	세계에서 가장 인기있는 여행지 중 하나이며 유명한 소설, 드라마, 영화 등의 배경이 된 곳이다.<br>
-                        	디저트로 유명한 나라이기도 하다.</p><br>
+                            세계에서 가장 인기있는 여행지 중 하나이며 유명한 소설, 드라마, 영화 등의 배경이 된 곳이다.<br>
+                            디저트로 유명한 나라이기도 하다.</p><br>
                         <p class="content-detail">주요 관광지 : 파리, 마르세유, 몽펠리에</p>
                     </div>
                 </div>
@@ -988,6 +1205,7 @@ footer hr {
             <div class="footer-content">
                 <div class="footer-title">
                     <h2>Tripaza</h2>
+
                 </div>
                 <div class="footer-font">
                     <p> 2022 Team Project &copy; copyright </p>
@@ -995,7 +1213,34 @@ footer hr {
                 <hr>
                 <div class="footer-icon">
                     <a href="https://github.com/xooslo/Tripaza"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-solid fa-people-group"></i></a>
+                    <a><i class="fa-solid fa-people-group"></i></a>
+                    <div class="modal">
+                            <div class="content-popup">
+                                <h1>개발자 소개</h1>
+                                <table>
+                                    <tr>
+                                        <td><i class="fa-solid fa-user-astronaut fa-6x"></i></td>
+                                        <td><i class="fa-solid fa-user-ninja fa-6x"></i></td>
+                                        <td><i class="fa-solid fa-user-secret fa-6x"></i></td>
+                                        <td><i class="fa-solid fa-circle-user fa-6x"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="content-text">팀장</th>
+                                        <td class="content-text">팀원</td>
+                                        <td class="content-text">팀원</td>
+                                        <td class="content-text">팀원</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-text">임은솔</td>
+                                        <td class="content-text">신유찬</td>
+                                        <td class="content-text">김용환</td>
+                                        <td class="content-text">임수연</td>
+                                    </tr>
+                                </table>
+                                <br><br>
+                                <button class="close">닫기</button>
+                            </div>
+                        </div>
                     <a href="#"><i class="fa-regular fa-circle-question"></i></a>
                 </div>
             </div>

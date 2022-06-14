@@ -6,11 +6,35 @@
 <meta charset="UTF-8">
 <title>Tripaza</title>
 <style>
-	@font-face {
+@font-face {
     font-family: 'Happiness-Sans-Title';
     src: url("../css/fonts/screen/ttf/Happiness-Sans-Title.ttf");
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'Happiness-Sans-Regular';
+    src: url("../css/fonts/screen/ttf/Happiness-Sans-Regular.ttf");
+}
+
+@font-face {
+    font-family: '웰컴체 Bold';
+    src: url("../css/welcome_font/웰컴체\ Bold.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '웰컴체 Regular';
+    src: url("../css/welcome_font/웰컴체\ Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DMSerifDisplay-Regular';
+    src: url("../css/DM_Serif_Display/DMSerifDisplay-Regular.ttf");
 }
  
  * {
@@ -30,6 +54,7 @@ a {
 }
 
 body{
+    /*background: -webkit-radial-gradient(60% 60%, circle, yellow, #fff);*/
     -ms-overflow-style: none;
     }
     
@@ -51,7 +76,7 @@ body{
 
 }
 
-.title h1 {
+.title a {
     font-weight: bold;
     position: absolute;
     left: 13%;
@@ -190,8 +215,10 @@ input[id="menuicon"]:checked+label+div {
    
 }
 
+
 .sidebar-item li a:hover{
     color: gray;
+
 }
 
 /* 슬라이드 바 끝 */
@@ -238,17 +265,53 @@ input[id="menuicon"]:checked+label+div {
    
 }
 
-
-.title-login li a:hover{
-    color: black;
-
-
-}
-
 .title-login li {
     margin-left: 20px;
 }
 
+
+.title-login-sub {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.title-login-sub:hover {
+    cursor: pointer;
+
+}
+.title-login-sub {
+    display: flex;
+    font-weight: bolder;
+    font-size: 1.2rem;
+
+}
+.title-login-sub a {
+    transition: all .3s ease;
+    padding: 0px 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.title-login-sub li a:after{
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: .3s;
+
+}
+.title-login-sub li a:hover:after{
+    width: 100%;
+   
+}
+
+.title-login-sub li {
+    margin-left: 20px;
+}
 /* header 부분 끝 */
 
 /* 로그인 페이지 시작 */
@@ -329,44 +392,6 @@ input[id="menuicon"]:checked+label+div {
 }
 /* 로그인 페이지 끝 */
 
-/* footer 부분 */
-footer {
-    background: #bdc3c7;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    height: 300px;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    flex: 1;
-    color: white;
-
-}
-.footer-title h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-.footer-font {
-    line-height: 25px;
-}
-footer hr {
-    width: 100%;
-    margin-top: 20px;
-}
-.footer-icon i{
-    font-size: 30px;
-    margin-top: 30px;
-    margin-left: 20px;
-    color: #fff;
-    transition: all .3s;
-
-}
-.footer-icon a:hover i{
-    cursor: pointer;
-    transform: translateY(-25%);
-}
-
-/* footer 부분 끝 */
 </style>
 </head>
 <body>
@@ -389,18 +414,24 @@ footer hr {
                     <span></span>
                 </label>
                     <div class="sidebar">
-                        <h2>Tripaza</h2><br>
-                        <div class="sidebar-item">
-                        	<li><a href="http://localhost:8090/index.jsp">홈</a></li><br>
-                        	<li><a href="#">나라 별 보기</a></li><br>
-                            <li><a href="http://localhost:8090/login/login.jsp">커뮤니티</a></li><br>
-                            <li><a href="http://localhost:8090/login/login.jsp">개인</a></li>
-                        </div>
+                    <h2>Tripaza</h2><br>
+                    <div class="sidebar-item">
+                        <div class="title-login-sub">
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="http://localhost:8090/join/join.jsp">회원가입</a></li>
+                        </div><br><br>
+                        <li><a href="http://localhost:8090/index.jsp">홈</a></li><br>
+                        <li><a href="#">나라 별 보기</a></li><br>
+                        <li><a href="http://localhost:8090/login/login.jsp">커뮤니티</a></li><br>
+                        <li><a href="http://localhost:8090/login/login.jsp">개인</a></li><br>
                     </div>
-                <h1>Tripaza</h1>
+                </div>
+                <a href="http://localhost:8090/index.jsp">
+                    <h1>Tripaza</h1>
+                </a>
             </div>
             <div class="title-login">
-                <li><a href="">로그인</a></li>
+                <li><a href="#">로그인</a></li>
                 <li><a href="http://localhost:8090/join/join.jsp">회원가입</a></li>
             </div>
         </ul>

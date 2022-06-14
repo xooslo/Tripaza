@@ -35,7 +35,6 @@ public class ContentDAO {
 				
 			}
 
-			
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} finally {
@@ -198,7 +197,7 @@ public String readWritter(String id) {
 		
 	}
 	
-	public int addContent(String title, String content, int country, String writter) {
+	public int addContent(String title, String content, String country, String writter) {
 		int n=0;
 		
 		Connection conn = null;
@@ -212,7 +211,7 @@ public String readWritter(String id) {
 			pstmt.setInt(1, getLastIndex());
 			pstmt.setString(2, title);
 			pstmt.setString(3, content);
-			pstmt.setInt(4, country);
+			pstmt.setString(4, country);
 			pstmt.setString(5, writter);
 			n = pstmt.executeUpdate();
 
@@ -225,18 +224,20 @@ public String readWritter(String id) {
 		return n;
 	}
 
-	public int updateContent(String id, String title, String content) {
+	public int updateContent(String id, String title, String content, String country) {
 		int n = 0;
 
 		Connection conn = null;
 		PreparedStatement pstmt = null;
-		String sql = "update contents set title = ?, content=? where id = ?";
+		String sql = "update contents set title=?, content=?, country=? where id = ?";
 		conn = JDBCUtil.getConnection();
 
 		try {
 			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1,title);
+			pstmt.setString(1, title);
 			pstmt.setString(2, content);
+			pstmt.setString(3, country);
+			pstmt.setString(4, id);
 			n = pstmt.executeUpdate();
 
 		} catch (SQLException e) {

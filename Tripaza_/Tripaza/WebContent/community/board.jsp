@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Tripaza 커뮤니티</title>
 <style>
 @font-face {
     font-family: 'Happiness-Sans-Title';
@@ -15,10 +15,27 @@
 }
 
 @font-face {
-    font-family: 'DMSerifDisplay-Regular';
-    src: url("../css/DM_Serif_Display/DMSerifDisplay-Regular.ttf");
+    font-family: 'Happiness-Sans-Regular';
+    src: url("../css/fonts/screen/ttf/Happiness-Sans-Regular.ttf");
+}
+
+@font-face {
+    font-family: '웰컴체 Bold';
+    src: url("../css/welcome_font/웰컴체\ Bold.ttf");
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+    font-family: '웰컴체 Regular';
+    src: url("../css/welcome_font/웰컴체\ Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DMSerifDisplay-Regular';
+    src: url("../css/DM_Serif_Display/DMSerifDisplay-Regular.ttf");
 }
  
  * {
@@ -60,7 +77,7 @@ body{
 
 }
 
-.title h1 {
+.title a {
     font-weight: bold;
     position: absolute;
     left: 13%;
@@ -233,15 +250,6 @@ input[id="menuicon"]:checked+label+div {
     border-radius: 10px;
     position: relative;
 }
-
-.title-login li {
-    margin-left: 20px;
-}
-
-.title-login li a:hover{
-    color: black;
-}
-
 .title-login li a:after{
     content: "";
     position: absolute;
@@ -255,11 +263,60 @@ input[id="menuicon"]:checked+label+div {
 }
 .title-login li a:hover:after{
     width: 100%;
+   
 }
 
+.title-login li {
+    margin-left: 20px;
+}
+
+
+.title-login-sub {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.title-login-sub:hover {
+    cursor: pointer;
+
+}
+.title-login-sub {
+    display: flex;
+    font-weight: bolder;
+    font-size: 1.2rem;
+
+}
+.title-login-sub a {
+    transition: all .3s ease;
+    padding: 0px 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.title-login-sub li a:after{
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: .3s;
+
+}
+.title-login-sub li a:hover:after{
+    width: 100%;
+   
+}
+
+.title-login-sub li {
+    margin-left: 20px;
+}
 /* header 부분 끝 */
 
 /* footer 부분 */
+
 footer {
     background: #bdc3c7;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
@@ -297,10 +354,167 @@ footer hr {
 }
 
 /* footer 부분 끝 */
+
+/* 팝업 부분 시작 */
+
+.modal{    
+    width: 100%;    
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    display:none;
+}
+
+.content-popup{
+    margin: auto;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    background-color: white;
+}
+.content-popup button {
+    position: relative;
+    margin-top: 100px;
+    width: 120px;
+    margin:  0 auto;
+    margin-right: 80px;
+    margin-left: 80px;
+}
+.close {
+    background-color: white;
+    transition: all .3s;
+    border: 1px black solid;
+    padding: 20px;
+}
+.close:hover {
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+}
+
+.content-popup i{
+    color: #000;
+    padding-right: 5px;
+}
+
+.content-popup .content-text{
+    font-family: '웰컴체 Regular';
+    color: #000;
+    padding-left: 15px;
+}
+.content-popup h1{
+    color: #000;
+}
+
+/* 팝업 부분 끝 */
+
+/* 커뮤니티 페이지 시작 */
+
+.contents-container {
+	font-family: 'Happiness-Sans-Regular';
+    margin: 0 auto;
+    transform: translateY(40%);
+    width: 100%;
+    height: 750px;
+    text-align: center;
+    
+}
+.contents-container >  table {
+    line-height: 30px;
+    width: 1400px;
+    border-right: none;
+    border-left: none;
+    border-color: #b2b2b2;
+
+}
+
+.contents-input {
+    width: 80%;
+}
+.contents-input input {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.322);
+    padding: 20px;
+    opacity: 0.5;
+}
+
+.contents-input-di input{
+    width: 41.5%;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.322);
+    padding: 20px;
+    opacity: 0.5;
+}
+
+.go-write button {
+	font-family: 'Happiness-Sans-Regular';
+	float: left;
+	padding: 10px;
+    border: 1px solid #0151E5;
+    width: 100px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+    background-color: #0151E5;
+	color: white;
+}
+
+.goTo-write:hover{
+	background-color: white;
+	color: black;
+	cursor: pointer;
+}
+
+.board-plus{
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.board-id{
+	background-color: #e5edfc;
+	border-right: 1px solid black;
+}
+
+.board-title{
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	background-color: #e5edfc;
+}
+.board-country{
+	border-left: 1px solid black;
+	background-color: #e5edfc;
+}
+
 </style>
 </head>
 <body>
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./js/main.js"></script>
+    <script src="./file/jquery-3.4.1.min.js"></script>
+    <script>
+        // 모달창 jquery 부분
+        $(() => {
+            $('.fa-solid').click(() => {
+                $(".modal").fadeToggle();
+            });
+        })
+        $(() => {
+            $('.content-popup').click(() => {
+                $(".modal").fadeToggle();
+            });
+        })
+        // 모달창 jquery 부분 끝
+    </script>
+    
 	<!-- 헤더 시작 -->
     <header>
         <ul class="title">
@@ -314,13 +528,15 @@ footer hr {
                 <div class="sidebar">
                     <h2>Tripaza</h2><br>
                     <div class="sidebar-item">
-                        <li><a href="#">홈</a></li><br>
+                        <li><a href="http://localhost:8090/index-after.jsp">홈</a></li><br>
                         <li><a href="#">나라 별 보기</a></li><br>
-                        <li><a href="http://localhost:8090/community/board.jsp">커뮤니티</a></li><br>
+                        <li><a href="#">커뮤니티</a></li><br>
                         <li><a href="http://localhost:8090/user/user.jsp">개인</a></li><br>
                     </div>
                 </div>
-                <h1>Tripaza</h1>
+                <a href="http://localhost:8090/index-after.jsp">
+                    <h1>Tripaza</h1>
+                </a>
             </div>
                 <form action="/logout" method="get">
                 	<div class="title-login">
@@ -333,11 +549,17 @@ footer hr {
     
     <!-- 커뮤니티 시작 -->
 	<ul>
-	<% ContentDAO dao=new ContentDAO(); ArrayList<ArrayList<String>> list = dao.getContentList();%>
-		<table border="1">
-			<th>id</th>
-			<th>제목</th>
-			<th>지역</th>
+		<div class="contents-container">
+			<% ContentDAO dao=new ContentDAO(); ArrayList<ArrayList<String>> list = dao.getContentList();%>
+			<div class="go-write">
+				<a href="http://localhost:8090/community/write.jsp"><button class="goTo-write">글 작성하기</button></a>
+        	</div><br><br><br>
+			<table>
+				<tr>
+					<th class="board-id">id</th>
+					<th class="board-title">제목</th>
+					<th class="board-country">지역</th>
+				</tr>
 <% 
 	for(int i=0; i<list.size();i++){ 
 		out.print("<tr>");
@@ -345,7 +567,7 @@ footer hr {
 				if(j==2){
 					j+=1;
 				}
-				out.print("<td>");
+				out.print("<td class='board-plus'>");
 				out.print("<a href='/community/read.jsp?id="+list.get(i).get(0)+"'>");
 				out.print(list.get(i).get(j));
 				out.print("</a>");
@@ -354,10 +576,11 @@ footer hr {
 		out.print("</tr>");
 	}
 %>							
-		</table>
+			</table>
+		</div>
 	</ul>
-	<button type="button" class="btn btn-warning"><a href="./write.jsp">작성하기</a></button>	
 	<!-- 커뮤니티 끝 -->	
+	
 	
 	<!-- footer 시작-->
     <footer>
@@ -365,6 +588,7 @@ footer hr {
             <div class="footer-content">
                 <div class="footer-title">
                     <h2>Tripaza</h2>
+
                 </div>
                 <div class="footer-font">
                     <p> 2022 Team Project &copy; copyright </p>
@@ -372,7 +596,34 @@ footer hr {
                 <hr>
                 <div class="footer-icon">
                     <a href="https://github.com/xooslo/Tripaza"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-solid fa-people-group"></i></a>
+                    <a><i class="fa-solid fa-people-group"></i></a>
+                    <div class="modal">
+                            <div class="content-popup">
+                                <h1>개발자 소개</h1>
+                                <table>
+                                    <tr>
+                                        <td><i class="fa-solid fa-user-astronaut fa-6x"></i></td>
+                                        <td><i class="fa-solid fa-user-ninja fa-6x"></i></td>
+                                        <td><i class="fa-solid fa-user-secret fa-6x"></i></td>
+                                        <td><i class="fa-solid fa-circle-user fa-6x"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="content-text">팀장</th>
+                                        <td class="content-text">팀원</td>
+                                        <td class="content-text">팀원</td>
+                                        <td class="content-text">팀원</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-text">임은솔</td>
+                                        <td class="content-text">신유찬</td>
+                                        <td class="content-text">김용환</td>
+                                        <td class="content-text">임수연</td>
+                                    </tr>
+                                </table>
+                                <br><br>
+                                <button class="close">닫기</button>
+                            </div>
+                        </div>
                     <a href="#"><i class="fa-regular fa-circle-question"></i></a>
                 </div>
             </div>

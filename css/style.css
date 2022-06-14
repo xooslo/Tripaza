@@ -18,6 +18,13 @@
 }
 
 @font-face {
+    font-family: '웰컴체 Regular';
+    src: url("../css/welcome_font/웰컴체\ Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'DMSerifDisplay-Regular';
     src: url("../css/DM_Serif_Display/DMSerifDisplay-Regular.ttf");
 }
@@ -682,6 +689,7 @@ input[id="menuicon"]:checked+label+div {
     margin-top: 10px;
     width: 50%;
     transition: all .3s;
+
 }
 
 .join-submit:hover {
@@ -1173,10 +1181,11 @@ footer hr {
 }
 .content-popup button {
     position: relative;
-    width: 100%;
+    margin-top: 100px;
+    width: 120px;
     margin:  0 auto;
-    margin-right: 600px;
-    margin-top: 600px;
+    margin-right: 80px;
+    margin-left: 80px;
 }
 .close {
     background-color: white;
@@ -1184,12 +1193,10 @@ footer hr {
     transition: all .3s;
     border: 1px black solid;
     padding: 20px;
-
 }
-
 .close:hover {
     cursor: pointer;
-    background-color: #0151E5;
+    background-color: #111;
     color: white;
     border-color: white;
 }
