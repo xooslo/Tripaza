@@ -21,7 +21,7 @@
 
 	if(writter.equals(id2)){
 		dao.deleteContent(id);
-		out.print("<script>alert('삭제가 완료되었습니다.');window.location.href = '/board.jsp';</script>");
+		out.print("<script>alert('삭제가 완료되었습니다.');window.location.href = 'http://localhost:8090/community/board.jsp';</script>");
 	}else{
 		out.print("<script>alert('게시글은 작성자 본인만 삭제할 수 있습니다.');history.back();");
 	}

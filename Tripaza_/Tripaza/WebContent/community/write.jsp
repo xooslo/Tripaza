@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>커뮤니티 글 쓰기</title>
 <style>
 @font-face {
     font-family: 'Happiness-Sans-Title';
@@ -315,10 +315,11 @@ input[id="menuicon"]:checked+label+div {
 /* header 부분 끝 */
 
 #write-container {
+	font-family: 'Happiness-Sans-Regular';
     margin: 0 auto;
     transform: translateY(40%);
     width: 50%;
-    height: 600px;
+    height: 500px;
     text-align: center;
     
 }
@@ -332,6 +333,18 @@ input[id="menuicon"]:checked+label+div {
     margin-bottom: 50px;
     font-size: 2rem;
     font-weight: bold;
+}
+
+#title {
+    margin-bottom: 20px;
+    width: 450px;
+    height: 30px;
+}
+
+#country{
+	margin-bottom: 10px;
+    width: 450px;
+    height: 30px;
 }
 
 .btn-submit {
@@ -348,22 +361,22 @@ input[id="menuicon"]:checked+label+div {
 }
 
 .btn-submit {
+	font-family: 'Happiness-Sans-Regular';
     background-color: #0151E5;
     margin-top: 10px;
     width: 20%;
     color: white;
+    margin-bottom: 50px;
 }
 
 .btn-submit:hover {
     cursor: pointer;
-    background-color: #0151E5;
+    background-color: #224499;
     color: white;
 }
 
-
-
-
 .btn-reset {
+	font-family: 'Happiness-Sans-Regular';
     padding: 20px;
     border: 1px solid #0151E5;
     width: 80%;
@@ -385,6 +398,12 @@ input[id="menuicon"]:checked+label+div {
 
 .btn-reset:hover {
     cursor: pointer;
+    border: 1px solid #e6e6fa;
+    background-color: #e6e6fa;
+}
+
+#content{
+	font-family: 'Happiness-Sans-Regular';
 }
 
 </style>
@@ -406,7 +425,7 @@ input[id="menuicon"]:checked+label+div {
                     <div class="sidebar-item">
                         <li><a href="http://localhost:8090/index-after.jsp">홈</a></li><br>
                         <li><a href="#">나라 별 보기</a></li><br>
-                        <li><a href="#">커뮤니티</a></li><br>
+                        <li><a href="http://localhost:8090/community/board.jsp">커뮤니티</a></li><br>
                         <li><a href="http://localhost:8090/user/user.jsp">개인</a></li><br>
                     </div>
                 </div>
@@ -427,21 +446,29 @@ input[id="menuicon"]:checked+label+div {
 		<div class="write">
 			<form action="/WriteContent" method="get">
 				<div class="write-title">
-				<h1>글 작성하기</h1>
-			</div>
+					<h1>글 작성하기</h1>
+				</div>
 			<div class="write-form">
 				<table>
 					<tr>
-						<td><label for="title" class="title">제목</label></td>
+						<td><select name="country" id="country">
+								<option value="" selected>나라 선택</option>
+								<option value="한국">한국</option>
+								<option value="한국">일본</option>
+								<option value="한국">미국</option>
+								<option value="한국">프랑스</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
 						<td><input type="text" name="title" id="title" placeholder="제목 입력"></td>
 					</tr>
 					<tr>
-						<td><label for="content" class="title">내용</label></td>
-						<td><textarea name="content" id="content" cols="60" rows="20" placeholder="내용 입력"></textarea></td>
+						<td><textarea name="content" id="content" cols="65" rows="20" placeholder="내용 입력"></textarea></td>
 					</tr>
 				</table>
-				<input type="submit" value="완료" class="btn-submit">
-                <a href="./board.php"><input type="button" href="./board.php" value="취소" class="btn-reset"></a>
+				<input type="submit" value="등록하기" class="btn-submit">
+                <a href="./board.php"><input type="button" href="./board.php" value="등록 취소" class="btn-reset"></a>
 			</div>
 			</form>
 		</div>

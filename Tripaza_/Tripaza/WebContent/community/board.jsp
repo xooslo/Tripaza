@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Tripaza 커뮤니티</title>
 <style>
 @font-face {
     font-family: 'Happiness-Sans-Title';
@@ -412,8 +412,86 @@ footer hr {
     color: #000;
 }
 
-
 /* 팝업 부분 끝 */
+
+/* 커뮤니티 페이지 시작 */
+
+.contents-container {
+	font-family: 'Happiness-Sans-Regular';
+    margin: 0 auto;
+    transform: translateY(40%);
+    width: 100%;
+    height: 750px;
+    text-align: center;
+    
+}
+.contents-container >  table {
+    line-height: 30px;
+    width: 1400px;
+    border-right: none;
+    border-left: none;
+    border-color: #b2b2b2;
+
+}
+
+.contents-input {
+    width: 80%;
+}
+.contents-input input {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.322);
+    padding: 20px;
+    opacity: 0.5;
+}
+
+.contents-input-di input{
+    width: 41.5%;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.322);
+    padding: 20px;
+    opacity: 0.5;
+}
+
+.go-write button {
+	font-family: 'Happiness-Sans-Regular';
+	float: left;
+	padding: 10px;
+    border: 1px solid #0151E5;
+    width: 100px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+    background-color: #0151E5;
+	color: white;
+}
+
+.goTo-write:hover{
+	background-color: white;
+	color: black;
+	cursor: pointer;
+}
+
+.board-plus{
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.board-id{
+	background-color: #e5edfc;
+	border-right: 1px solid black;
+}
+
+.board-title{
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	background-color: #e5edfc;
+}
+.board-country{
+	border-left: 1px solid black;
+	background-color: #e5edfc;
+}
+
 </style>
 </head>
 <body>
@@ -471,11 +549,17 @@ footer hr {
     
     <!-- 커뮤니티 시작 -->
 	<ul>
-	<% ContentDAO dao=new ContentDAO(); ArrayList<ArrayList<String>> list = dao.getContentList();%>
-		<table border="1">
-			<th>id</th>
-			<th>제목</th>
-			<th>지역</th>
+		<div class="contents-container">
+			<% ContentDAO dao=new ContentDAO(); ArrayList<ArrayList<String>> list = dao.getContentList();%>
+			<div class="go-write">
+				<a href="http://localhost:8090/community/write.jsp"><button class="goTo-write">글 작성하기</button></a>
+        	</div><br><br><br>
+			<table>
+				<tr>
+					<th class="board-id">id</th>
+					<th class="board-title">제목</th>
+					<th class="board-country">지역</th>
+				</tr>
 <% 
 	for(int i=0; i<list.size();i++){ 
 		out.print("<tr>");
@@ -483,7 +567,7 @@ footer hr {
 				if(j==2){
 					j+=1;
 				}
-				out.print("<td>");
+				out.print("<td class='board-plus'>");
 				out.print("<a href='/community/read.jsp?id="+list.get(i).get(0)+"'>");
 				out.print(list.get(i).get(j));
 				out.print("</a>");
@@ -492,9 +576,9 @@ footer hr {
 		out.print("</tr>");
 	}
 %>							
-		</table>
+			</table>
+		</div>
 	</ul>
-	<button type="button" class="btn btn-warning"><a href="./write.jsp">작성하기</a></button>	
 	<!-- 커뮤니티 끝 -->	
 	
 	

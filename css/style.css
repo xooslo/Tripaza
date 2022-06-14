@@ -689,6 +689,7 @@ input[id="menuicon"]:checked+label+div {
     margin-top: 10px;
     width: 50%;
     transition: all .3s;
+
 }
 
 .join-submit:hover {

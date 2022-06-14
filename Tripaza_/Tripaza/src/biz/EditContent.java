@@ -39,12 +39,13 @@ public class EditContent extends HttpServlet {
 		String id = request.getParameter("id");
 		String title = request.getParameter("title");
 		String content = request.getParameter("content");
+		String country = request.getParameter("country");
 		HttpSession session = request.getSession();
 
 		ContentDAO dao = new ContentDAO();
-		dao.updateContent(id,title, content);
+		dao.updateContent(id, title, content, country);
 		out.println("<script> alert('수정이 완료되었습니다.'); </script>");
-		response.sendRedirect("/community/board.jsp");
+		response.sendRedirect("http://localhost:8090/community/board.jsp");
 	}
 
 

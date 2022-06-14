@@ -37,9 +37,10 @@ public class WriteContent extends HttpServlet {
 		String content = request.getParameter("content");
 		HttpSession session = request.getSession();
 		String writter = (String)session.getAttribute("loginOK").toString();
+		String country = request.getParameter("country");
 		System.out.println(writter);
 		ContentDAO dao = new ContentDAO();
-		dao.addContent(title, content, 0, writter);
+		dao.addContent(title, content, country, writter);
 		out.println("<script> alert('작성이 완료되었습니다.'); </script>");
 		response.sendRedirect("/community/board.jsp");
 	}
