@@ -10,6 +10,28 @@
 </head>
 
 <body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./js/main.js"></script>
+    <script src="./file/jquery-3.4.1.min.js"></script>
+    <script>
+        // 모달창 jquery 부분
+        $(() => {
+            $('.fa-solid').click(() => {
+                $(".modal").fadeToggle();
+            });
+        })
+        $(() => {
+            $('.content-popup').click(() => {
+                $(".modal").fadeToggle();
+            });
+        })
+    // 모달창 jquery 부분 끝
+    </script>
+
+
+    <!-- 헤더 시작 -->
     <header>
         <ul class="title">
             <div class="title-logo">
@@ -22,14 +44,19 @@
                 <div class="sidebar">
                     <h2>Tripaza</h2><br>
                     <div class="sidebar-item">
-                        <li><a href="#">홈</a></li>
-                        <li><a href="#">나라 별 보기</a></li>
-                        <li><a href="#">커뮤니티</a></li>
-                        <li><a href="#">개인</a></li>
+                        <div class="title-login-sub">
+                            <li><a href="http://localhost:8090/login/login.jsp">로그인</a></li>
+                            <li><a href="http://localhost:8090/join/join.jsp">회원가입</a></li>
+                        </div><br><br>
+                        <li><a href="#">홈</a></li><br>
+                        <li><a href="#">나라 별 보기</a></li><br>
+                        <li><a href="http://localhost:8090/login/login.jsp">커뮤니티</a></li><br>
+                        <li><a href="http://localhost:8090/login/login.jsp">개인</a></li><br>
                     </div>
                 </div>
-                <a href="http://127.0.0.1:5500/index.html"><h1>Tripaza</h1></a>
-
+                <a href="http://127.0.0.1:5500/index.html">
+                    <h1>Tripaza</h1>
+                </a>
             </div>
             <div class="title-login">
                 <li><a href="http://127.0.0.1:5500/login.html">로그인</a></li>
@@ -37,12 +64,88 @@
             </div>
         </ul>
     </header>
+    <!-- 헤더 끝 -->
 
     <!-- section 시작 -->
-    <section id="main">
+    <div class="Section-1">
+        <section id="main">
+            <div id="wrapper1">
+                <div id="wrappper2">
+                    <div class="aside">
+                        <h1>프랑스
+                            <i class="fa-solid fa-globe"></i>
+                        </h1>
+                        <h4><i class="fa-solid fa-house"></i> 홈 〉 나라 별 보기 〉 프랑스 </h4>
+
+                        <div class="Section-2">
+                            <aside class="sub1">
+                                <div class="community">
+                                    <ul>
+                                        <li class="community-move"><a href="http://localhost:8090/login/login.jsp"> 커뮤니티
+                                                가기</a>&nbsp;<i class="fa-solid fa-angles-right"></i>
+                                        </li><br>
+                                        <input type="text" class="li3">
+                                        <input type="button" class="li4" value=" 검색 ">
+                                    </ul><br>
+
+                                    <ul>
+                                        <h3>나라 정보</h3>
+                                        <li class="li2"><i class="fa-solid fa-flag"></i> 파리 </li>
+                                        <li class="li2"><i class="fa-solid fa-language"></i> 프랑스어 </li>
+                                        <li class="li2"><i class="fa-solid fa-sack-dollar"></i> 유로(€) </li>
+                                        <li class="li2"><i class="fa-solid fa-temperature-half"></i> 2°C ~ 25°C </li>
+                                    </ul>
+                                </div>
+                            </aside>
+                        </div>
+                        <hr>
 
 
-    </section>
+                        <h2>랜드마크</h2>
+                        <p>소제목1</p>
+                        <img src="./images/프랑스/에펠탑(2).jpg" alt="ImgErr" id="imgF">
+
+                        <p>소제목2</p>
+                        <img src="./images/프랑스/에투알 개선문.jpg" alt="ImgErr" id="imgF">
+                        <hr>
+
+                        <h2>대표음식</h2>
+                        <p>소제목3</p>
+                        <img src="./images/프랑스/대표음식.jpg" alt="ImgErr" id="imgF">
+                        <hr>
+
+                        <h2>문화</h2>
+                        <p>소제목3</p>
+                        <img src="./images/프랑스/몽생미셸.jpg" alt="ImgErr" id="imgF">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!--  
+    <div class="Section-2">
+        <section class="sub1">
+            <div class="community">
+                <ul>
+                    <li class="community-move"><a href="http://localhost:8090/login/login.jsp"> 커뮤니티 가기</a>
+                    </li><br>
+                    <input type="text" class="li2">
+                    <input type="button" class="li3" value=" 검색 ">
+                </ul><br>
+
+                <ul>
+                    <h3>제목5</h3>
+                    <li class="li2">내용8</li>
+                    <li class="li2">내용9</li>
+                    <li class="li2">내용10</li>
+                    <li class="li2">내용11</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    -->
     <!-- section 끝 -->
 
 
