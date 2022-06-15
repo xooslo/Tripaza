@@ -1094,7 +1094,7 @@ footer hr {
 /* 팝업 부분 시작 */
 .modal{    
     width: 100%;    
-    height: 50vh;
+    height: 100vh;
     position: fixed;
     left: 0;
     top: 0;
@@ -1108,19 +1108,22 @@ footer hr {
 .content-popup{
     margin: auto;
     position:absolute;
+    width: 720px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    padding: 40px;
+    padding: 30px;
     background-color: white;
+    height: 50%;
+    align-items: center;
 }
 .content-popup button {
     position: relative;
     margin-top: 100px;
-    width: 120px;
+    width: 50%;
     margin:  0 auto;
-    margin-right: 80px;
-    margin-left: 80px;
+    margin-top: 50px;
+    
 }
 .close {
     background-color: white;
@@ -1141,7 +1144,8 @@ footer hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(180%);
+    margin-top: 70px;
+
 }
 .popup-table .popup-text i{
     color: black;
@@ -1234,6 +1238,5 @@ footer hr {
 }
 
 /* user 부분 끝*/
-
 
 
