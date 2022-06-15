@@ -18,6 +18,13 @@
 }
 
 @font-face {
+    font-family: '웰컴체 Regular';
+    src: url("../css/welcome_font/웰컴체\ Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'DMSerifDisplay-Regular';
     src: url("../css/DM_Serif_Display/DMSerifDisplay-Regular.ttf");
 }
@@ -682,6 +689,7 @@ input[id="menuicon"]:checked+label+div {
     margin-top: 10px;
     width: 50%;
     transition: all .3s;
+
 }
 
 .join-submit:hover {
@@ -1103,15 +1111,16 @@ footer hr {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    padding: 50px;
+    padding: 40px;
     background-color: white;
 }
 .content-popup button {
     position: relative;
-    width: 100%;
+    margin-top: 100px;
+    width: 120px;
     margin:  0 auto;
-    margin-right: 600px;
-    margin-top: 600px;
+    margin-right: 80px;
+    margin-left: 80px;
 }
 .close {
     background-color: white;
@@ -1119,12 +1128,10 @@ footer hr {
     transition: all .3s;
     border: 1px black solid;
     padding: 20px;
-
 }
-
 .close:hover {
     cursor: pointer;
-    background-color: #0151E5;
+    background-color: #111;
     color: white;
     border-color: white;
 }
@@ -1147,7 +1154,11 @@ footer hr {
     text-align: center;
     font-weight: bold;
     font-size: 2rem;
+    line-height: 40px;
    
+}
+.popup-text p:nth-child(1) {
+    margin-top: 10px;
 }
 .popup-title h2 {
     color: black;
