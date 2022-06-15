@@ -397,8 +397,11 @@ input[id="menuicon"]:checked+label+div {
 
 
 /* footer 부분 */
+
 footer {
-    background: linear-gradient(to right, #1f40ff, #fc3f0081);
+    background: #bdc3c7;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 300px;
     text-align: center;
     align-items: center;
@@ -407,35 +410,30 @@ footer {
     color: white;
 
 }
-
 .footer-title h2 {
     font-size: 3rem;
-    padding: 10px;
-    /*margin-bottom: 20px;*/
+    margin-bottom: 20px;
 }
-
 .footer-font {
     line-height: 25px;
 }
-
 footer hr {
     width: 100%;
     margin-top: 20px;
 }
-
-.footer-icon i {
+.footer-icon a > i{
     font-size: 30px;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: 20px;
     color: #fff;
     transition: all .3s;
 
 }
-
-.footer-icon a:hover i {
+.footer-icon a:hover i{
     cursor: pointer;
     transform: translateY(-25%);
 }
+/* 팝업 부분 시작 */
 .modal{    
     width: 100%;    
     height: 100vh;
@@ -448,14 +446,66 @@ footer hr {
     display:none;
 }
 
-.content{
-    color: black;
+.content-popup{
     margin: auto;
-    position: absolute;
+    position:absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    padding: 30px;
+    padding: 50px;
     background-color: white;
 }
+.content-popup button {
+    position: relative;
+    width: 100%;
+    margin:  0 auto;
+    margin-right: 600px;
+    margin-top: 600px;
+}
+.close {
+    background-color: white;
+    width: 100%;
+    transition: all .3s;
+    border: 1px black solid;
+    padding: 20px;
+
+}
+
+.close:hover {
+    cursor: pointer;
+    background-color: #0151E5;
+    color: white;
+    border-color: white;
+}
+.popup-table {
+    color: black;
+    line-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(180%);
+}
+.popup-table .popup-text i{
+    color: black;
+    align-items: center;
+
+}
+.popup-text p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+   
+}
+.popup-title h2 {
+    color: black;
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: '웰컴체 Bold';
+
+    
+}
+/* 팝업 부분 끝 */
+
 /* footer 부분 끝 */
