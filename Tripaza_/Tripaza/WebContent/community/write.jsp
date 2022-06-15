@@ -424,7 +424,7 @@ input[id="menuicon"]:checked+label+div {
                     <h2>Tripaza</h2><br>
                     <div class="sidebar-item">
                         <li><a href="http://localhost:8090/index-after.jsp">홈</a></li><br>
-                        <li><a href="#">나라 별 보기</a></li><br>
+                        <li><a href="http://localhost:8090/map-after.jsp">나라 별 보기</a></li><br>
                         <li><a href="http://localhost:8090/community/board.jsp">커뮤니티</a></li><br>
                         <li><a href="http://localhost:8090/user/user.jsp">개인</a></li><br>
                     </div>
@@ -454,9 +454,9 @@ input[id="menuicon"]:checked+label+div {
 						<td><select name="country" id="country">
 								<option value="" selected>나라 선택</option>
 								<option value="한국">한국</option>
-								<option value="한국">일본</option>
-								<option value="한국">미국</option>
-								<option value="한국">프랑스</option>
+								<option value="일본">일본</option>
+								<option value="미국">미국</option>
+								<option value="프랑스">프랑스</option>
 							</select>
 						</td>
 					</tr>
@@ -464,7 +464,7 @@ input[id="menuicon"]:checked+label+div {
 						<td><input type="text" name="title" id="title" placeholder="제목 입력"></td>
 					</tr>
 					<tr>
-						<td><textarea name="content" id="content" cols="65" rows="20" placeholder="내용 입력"></textarea></td>
+						<td><textarea name="content" id="content" cols="63" rows="20" placeholder="내용 입력"></textarea></td>
 					</tr>
 				</table>
 				<input type="submit" value="등록하기" class="btn-submit">

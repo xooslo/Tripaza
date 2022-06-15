@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Tripaza</title>
+<title>로그인</title>
 <style>
 @font-face {
     font-family: 'Happiness-Sans-Title';
@@ -421,7 +421,7 @@ input[id="menuicon"]:checked+label+div {
                             <li><a href="http://localhost:8090/join/join.jsp">회원가입</a></li>
                         </div><br><br>
                         <li><a href="http://localhost:8090/index.jsp">홈</a></li><br>
-                        <li><a href="#">나라 별 보기</a></li><br>
+                        <li><a href="http://localhost:8090/map.jsp">나라 별 보기</a></li><br>
                         <li><a href="http://localhost:8090/login/login.jsp">커뮤니티</a></li><br>
                         <li><a href="http://localhost:8090/login/login.jsp">개인</a></li><br>
                     </div>

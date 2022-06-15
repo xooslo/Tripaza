@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Tripaza-개인</title>
+<title>프로필 수정</title>
 <style>
 @font-face {
     font-family: 'Happiness-Sans-Title';
@@ -335,18 +335,6 @@ input[id="menuicon"]:checked+label+div {
         <tr>
             <td>닉네임</td>
             <td><input type="text"></td>
-        </tr>
-        <tr>
-            <td>웹사이트</td>
-            <td><input type="text" placeholder="웹사이트"></td>
-        </tr>
-        <tr>
-            <td>소개</td>
-            <td><textarea name="" id="" cols="20" rows="5"></textarea></td>
-        </tr>
-        <tr>
-            <td>이메일</td>
-            <td><input type="text" placeholder="example@gmail.com"></td>
         </tr>
         <tr>
             <td>전화번호</td>

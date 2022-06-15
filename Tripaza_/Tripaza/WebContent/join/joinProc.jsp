@@ -29,7 +29,7 @@
 	}
 	
 	if(n > 0)
-		response.sendRedirect("/login/login.jsp");
+		response.sendRedirect("http://localhost:8090/login/login.jsp");
 	else 
 		out.print("<script> history.back() </script>");
 %>

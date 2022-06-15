@@ -307,6 +307,10 @@ input[id="menuicon"]:checked+label+div {
     height: 40px;
 }
 
+.li3:hover{
+    cursor: pointer;
+}
+
 .li4{
     background-color: #505792;
     color: whitesmoke;

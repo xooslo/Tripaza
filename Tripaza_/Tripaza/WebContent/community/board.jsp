@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Tripaza 커뮤니티</title>
+<title>커뮤니티</title>
 <style>
 @font-face {
     font-family: 'Happiness-Sans-Title';
@@ -315,6 +315,28 @@ input[id="menuicon"]:checked+label+div {
 }
 /* header 부분 끝 */
 
+@keyframes font-slider {
+    from {
+        left: -280px;
+        opacity: 0;
+    }
+    to {
+        left: 8%;
+        opacity: 1;
+    }
+    
+}
+@keyframes font-disapper {
+    from {
+        left: 8%;
+        opacity: 1;
+    }
+    to {
+        left: -280px;
+        opacity: 0;
+    }
+}
+
 /* footer 부분 */
 
 footer {
@@ -412,6 +434,7 @@ footer hr {
     color: #000;
 }
 
+
 /* 팝업 부분 끝 */
 
 /* 커뮤니티 페이지 시작 */
@@ -427,7 +450,7 @@ footer hr {
 }
 .contents-container >  table {
     line-height: 30px;
-    width: 1400px;
+    width: 1800px;
     border-right: none;
     border-left: none;
     border-color: #b2b2b2;
@@ -529,7 +552,7 @@ footer hr {
                     <h2>Tripaza</h2><br>
                     <div class="sidebar-item">
                         <li><a href="http://localhost:8090/index-after.jsp">홈</a></li><br>
-                        <li><a href="#">나라 별 보기</a></li><br>
+                        <li><a href="http://localhost:8090/map-after.jsp">나라 별 보기</a></li><br>
                         <li><a href="#">커뮤니티</a></li><br>
                         <li><a href="http://localhost:8090/user/user.jsp">개인</a></li><br>
                     </div>

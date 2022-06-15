@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Tripaza 커뮤니티</title>
+<title>커뮤니티</title>
 <style>
 @font-face {
     font-family: 'Happiness-Sans-Title';
@@ -374,7 +374,7 @@ p{
                     <h2>Tripaza</h2><br>
                     <div class="sidebar-item">
                         <li><a href="http://localhost:8090/index-after.jsp">홈</a></li><br>
-                        <li><a href="#">나라 별 보기</a></li><br>
+                        <li><a href="http://localhost:8090/map-after.jsp">나라 별 보기</a></li><br>
                         <li><a href="http://localhost:8090/community/board.jsp">커뮤니티</a></li><br>
                         <li><a href="http://localhost:8090/user/user.jsp">개인</a></li><br>
                     </div>
@@ -394,19 +394,19 @@ p{
 	
 	<section id="post">
             <div class="post-wrap">
-            
+            	<hr><br>
             		<button type="button" class="back-btn"><a href="http://localhost:8090/community/board.jsp">목록으로 돌아가기</a></button>
                     <button type="button" class="delete-btn"><a href="./delete.jsp?id=<%= id %>&writter=<%= writter %>">삭제하기</a></button>
                     <button type="button" class="edit-btn"><a href="./edit.jsp?id=<%= id %>&writter=<%= writter %>">수정하기</a></button>
-                    
+                
                 <div class="post-inf">
                     <div class="post-tit">
                     	<% out.print("<h3>"+title+"</h3>"); %><br>
                     	<% out.print("<p>"+writter+"</p>"); %>
-                    </div><br><br>
+                    </div><br><hr>
                     <div class="top-info">
                         <% out.print("나라 : "+"<p>"+country+"</p>"); %>
-                    </div>
+                    </div><hr><br>
                 </div>
                 <div class="post-contents">
                     <% out.print("<h4>"+content+"</h4>"); %>

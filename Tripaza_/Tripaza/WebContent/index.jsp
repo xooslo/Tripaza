@@ -313,6 +313,47 @@ input[id="menuicon"]:checked+label+div {
     margin-left: 20px;
 }
 /* header 부분 끝 */
+
+#circle {
+	float: right;
+	width : 500px;
+	height : 500px;
+	border-radius: 50%;
+	background-color: #82A0AA;
+	margin-top: 200px;
+	margin-right: 200px;
+}
+
+#circle2 {
+	float: right;
+	width : 200px;
+	height : 200px;
+	border-radius: 50%;
+	background-color: #A3CFCD;
+	margin-top: 200px;
+	margin-right: 100px;
+}
+
+#circle3 {
+	float: right;
+	width : 350px;
+	height : 350px;
+	border-radius: 50%;
+	background-color: #2A272A;
+	margin-top: 500px;
+	margin-right: -500px;
+}
+
+.airplane-img{
+	float: right;
+	margin-top: 450px;
+	margin-right: -800px;
+}
+
+.airplane-img img{
+	width : 400px;
+}
+
 @keyframes font-slider {
     from {
         left: -280px;
@@ -338,26 +379,21 @@ input[id="menuicon"]:checked+label+div {
 #visual-container {
     height: 1000px;
     position: relative;
-    background-image: url(../images/비행기.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 1100px;
 }
 
 .visual-font {
+	font-family: 'DMSerifDisplay-Regular';
     position: absolute;
     font-size: 5rem;
     top: 280px;
     left: 8%;
     color: black;
-    font-family: 'DMSerifDisplay-Regular';
     animation: font-slider 1s;
 }
 
 .visual-font .map-button {
     font-family: 'Happiness-Sans-Title';
 }
-
 
 /* 버튼 디자인 시작 */
 .map-button{
@@ -581,13 +617,11 @@ input[id="menuicon"]:checked+label+div {
 
 .information-container h2{
     font-size: 45px;
-
+	margin-top: 100px;
 }
 
-
-
 .information-box {
-    display: flex;
+	display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -600,7 +634,7 @@ input[id="menuicon"]:checked+label+div {
 }
 .information-title i {
     font-size: 2.0rem;  
-    margin-top: 10px;
+    margin-top: 110px;
     animation:  information-animation infinite 3s;
 }
 .information-img {
@@ -684,7 +718,7 @@ input[id="menuicon"]:checked+label+div {
 
 #introduce-wrapper {
     font-family: 'Happiness-Sans-Title';
-    height: 1400px;
+    height: 1200px;
 }
 #introduce-wrapper .introduce-container .introduce-title {
     text-align: center;
@@ -1046,7 +1080,7 @@ footer hr {
                             <li><a href="http://localhost:8090/join/join.jsp">회원가입</a></li>
                         </div><br><br>
                         <li><a href="#">홈</a></li><br>
-                        <li><a href="#">나라 별 보기</a></li><br>
+                        <li><a href="http://localhost:8090/map.jsp">나라 별 보기</a></li><br>
                         <li><a href="http://localhost:8090/login/login.jsp">커뮤니티</a></li><br>
                         <li><a href="http://localhost:8090/login/login.jsp">개인</a></li><br>
                     </div>
@@ -1064,7 +1098,7 @@ footer hr {
         <div class="visual-font">
             <p><span class="f">Smart item</span> for</p>
             <p>your brand are here</p>
-            <a href="#" class="map-button">
+            <a href="http://localhost:8090/map.jsp" class="map-button">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -1072,6 +1106,13 @@ footer hr {
                 지도로 가기
             </a>
         </div>
+        
+        <div id="circle"></div>
+        <div id="circle2"></div>
+        <div id="circle3"></div>
+        <div class="airplane-img">
+        	<img src="./images/비행기.png">
+    	</div>
     </section>
     <!-- visual 끝 -->
 
@@ -1130,13 +1171,13 @@ footer hr {
     <!-- card 시작 -->
     <section id="country">
         <div class="country-title">
-            <h2>나라 별 보기</h2>
+            <h2>나라 별 <br>보기</h2>
             <i class="fa-solid fa-plane-arrival"></i>
         </div>
 
         <div class="container">
 
-            <a href="">
+            <a href="http://localhost:8090/country/korea.jsp">
                 <div class="card">
                     <div class="imgBx">
                         <img src="./images/한국/경복궁.jpg" alt="">
@@ -1151,7 +1192,7 @@ footer hr {
                 </div>
             </a>
 
-            <a href="">
+            <a href="http://localhost:8090/country/japan.jsp">
                 <div class="card">
                     <div class="imgBx">
                         <img src="./images/일본/후지산_밤.jpeg" alt="">
@@ -1166,7 +1207,7 @@ footer hr {
                 </div>
             </a>
 
-            <a href="">
+            <a href="http://localhost:8090/country/america.jsp">
                 <div class="card">
                     <div class="imgBx">
                         <img src="./images/미국/링컨기념관.jpeg" alt="">
@@ -1181,7 +1222,7 @@ footer hr {
                 </div>
             </a>
 
-            <a href="">
+            <a href="http://localhost:8090/country/france.jsp">
                 <div class="card">
                     <div class="imgBx">
                         <img src="./images/프랑스/에펠탑.jpg" alt="">

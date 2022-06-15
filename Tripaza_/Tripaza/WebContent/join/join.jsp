@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tripaza 회원가입</title>
+    <title>회원가입</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -422,7 +422,7 @@ input[id="menuicon"]:checked+label+div {
                             <li><a href="#">회원가입</a></li>
                         </div><br><br>
                         <li><a href="http://localhost:8090/index.jsp">홈</a></li><br>
-                        <li><a href="#">나라 별 보기</a></li><br>
+                        <li><a href="http://localhost:8090/map.jsp">나라 별 보기</a></li><br>
                         <li><a href="http://localhost:8090/login/login.jsp">커뮤니티</a></li><br>
                         <li><a href="http://localhost:8090/login/login.jsp">개인</a></li><br>
                     </div>
